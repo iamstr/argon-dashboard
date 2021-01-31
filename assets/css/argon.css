@@ -2729,11 +2729,6 @@ pre code
     background-color: #fff;
     box-shadow: 0 3px 9px rgba(50, 50, 9, 0), 3px 4px 8px rgba(94, 114, 228, .1);
 }
-.form-control::-ms-input-placeholder
-{
-    opacity: 1; 
-    color: #adb5bd;
-}
 .form-control::placeholder
 {
     opacity: 1; 
@@ -5311,7 +5306,6 @@ input[type='button'].btn-block
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
 
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
 }
 .custom-select:focus
@@ -5461,7 +5455,6 @@ input[type='button'].btn-block
     background-color: transparent;
 
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
 }
 .custom-range:focus
@@ -5536,8 +5529,7 @@ input[type='button'].btn-block
     background-color: #5e72e4;
     box-shadow: 0 .1rem .25rem rgba(0, 0, 0, .1);
 
-    -moz-appearance: none;
-         appearance: none;
+    appearance: none;
 }
 @media (prefers-reduced-motion: reduce)
 {
@@ -7858,7 +7850,6 @@ button.close
     background-color: transparent;
 
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
 }
 
@@ -20057,10 +20048,6 @@ a.btn-icon-only
         transition: none;
     }
 }
-.form-control:focus::-ms-input-placeholder
-{
-    color: #adb5bd;
-}
 .form-control:focus::placeholder
 {
     color: #adb5bd;
@@ -20320,10 +20307,6 @@ textarea[resize='horizontal']
 {
     background-color: #fff;
 }
-.has-success .form-control::-ms-input-placeholder
-{
-    color: #2dce89;
-}
 .has-success .form-control::placeholder
 {
     color: #2dce89;
@@ -20340,10 +20323,6 @@ textarea[resize='horizontal']
 .has-danger .form-control
 {
     background-color: #fff;
-}
-.has-danger .form-control::-ms-input-placeholder
-{
-    color: #fb6340;
 }
 .has-danger .form-control::placeholder
 {
@@ -22452,10 +22431,6 @@ textarea[resize='horizontal']
 {
     color: rgba(255, 255, 255, .9);
 }
-.navbar-search-dark .form-control::-ms-input-placeholder
-{
-    color: rgba(255, 255, 255, .6);
-}
 .navbar-search-dark .form-control::placeholder
 {
     color: rgba(255, 255, 255, .6);
@@ -22481,10 +22456,6 @@ textarea[resize='horizontal']
 .navbar-search-light .form-control
 {
     color: rgba(0, 0, 0, .9);
-}
-.navbar-search-light .form-control::-ms-input-placeholder
-{
-    color: rgba(0, 0, 0, .6);
 }
 .navbar-search-light .form-control::placeholder
 {
@@ -26041,11 +26012,6 @@ a.text-lighter:focus
     background-color: transparent;
     box-shadow: none;
 }
-.bootstrap-tagsinput input::-ms-input-placeholder
-{
-    opacity: 1; 
-    color: #adb5bd;
-}
 .bootstrap-tagsinput input::placeholder
 {
     opacity: 1; 
@@ -28901,14 +28867,6 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     outline: 0;
     background-color: #fff;
     box-shadow: 0 3px 9px rgba(50, 50, 9, 0), 3px 4px 8px rgba(94, 114, 228, .1);
-}
-.select2-container .select2-selection--single::-ms-input-placeholder,
-.select2-container--default.select2-container--focus .select2-selection--multiple::-ms-input-placeholder,
-.select2-container--default .select2-selection--multiple::-ms-input-placeholder,
-.select2-container--default .select2-search--dropdown .select2-search__field::-ms-input-placeholder
-{
-    opacity: 1; 
-    color: #adb5bd;
 }
 .select2-container .select2-selection--single::placeholder,
 .select2-container--default.select2-container--focus .select2-selection--multiple::placeholder,
