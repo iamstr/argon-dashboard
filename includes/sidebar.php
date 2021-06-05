@@ -18,8 +18,16 @@
                 <span class="nav-link-text">Dashboard</span>
               </a>
             </li>
+            </ul>
+             <!-- Divider -->
+          <hr class="my-3">
+          <!-- Heading -->
+          <h6 class="navbar-heading p-0 text-muted">
+            <span class="docs-normal">Maid Details</span>
+          </h6>
+             <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="icons">
+              <a class="nav-link" href="new-girl">
                 <i class="ni ni-fat-add text-orange"></i>
                 <span class="nav-link-text">New Girl</span>
               </a>
@@ -30,6 +38,32 @@
                 <span class="nav-link-text">View Girls</span>
               </a>
             </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link " href="upgrade.html">
+                <i class="ni ni-image text-danger"></i>
+                <span class="nav-link-text">Upload Doc </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="upgrade.html">
+                <i class="ni ni-send text-warning"></i>
+                <span class="nav-link-text">Send CV </span>
+              </a>
+            </li>
+            </ul>
+
+
+ <!-- Divider -->
+          <hr class="my-3">
+          <!-- Heading -->
+          <h6 class="navbar-heading p-0 text-muted">
+            <span class="docs-normal">Processes</span>
+          </h6>
+
+ <ul class="navbar-nav">
+
             <li class="nav-item">
               <a class="nav-link" href="map">
                 <i class="ni ni-books text-primary"></i>
@@ -38,7 +72,7 @@
             </li>
 
 
-
+           
 
 
 
@@ -75,18 +109,7 @@
               </a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link " href="upgrade.html">
-                <i class="ni ni-image text-danger"></i>
-                <span class="nav-link-text">Upload Doc </span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="upgrade.html">
-                <i class="ni ni-send text-warning"></i>
-                <span class="nav-link-text">Send CV </span>
-              </a>
-            </li>
+          
 
 
 
@@ -96,7 +119,7 @@
           <hr class="my-3">
           <!-- Heading -->
           <h6 class="navbar-heading p-0 text-muted">
-            <span class="docs-normal">Processes</span>
+            <span class="docs-normal">Miscellaneous </span>
           </h6>
          <?php include("nav.php");?>
         </div>

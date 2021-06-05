@@ -104,7 +104,7 @@ gulp.task("concat:js", function (done) {
 
 gulp.task("minify:js", function (cb) {
   return gulp
-    .src([paths.src.base + "/assets/js/argon.js"])
+    .src([paths.src.base + "assets/js/argon.js"])
     .pipe(uglify())
     .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest(paths.dist.base + "/js"));

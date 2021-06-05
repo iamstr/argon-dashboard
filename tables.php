@@ -366,7 +366,7 @@
       </div>
     </nav>
     <!-- Header -->
-    <!-- Header -->
+    <!-- Header 
     <div class="header bg-primary pb-6">
       <div class="container-fluid">
         <div class="header-body">
@@ -396,8 +396,356 @@
         </div>
       </div>
     </div>
+    -->
     <!-- Page content -->
-    <div class="container-fluid mt--6">
+    <div class="container-fluid mt-5">
+      <div class="card p-4">
+        <p>
+          <button
+            class="btn btn-icon btn-secondary btn-sm"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            <span class="btn-inner--icon"><i class="ni ni-ui-04"></i></span>
+            <span class="btn-inner--text">Filter</span>
+          </button>
+        </p>
+        <div class="collapse show" id="collapseExample">
+          <div class="card-body str-view">
+            <h3 class="str-view-header text-muted">Change View</h3>
+            <div class="str-view-row d-flex flex-wrap">
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" autocomplete="off" /> fullname
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" autocomplete="off" /> ID
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" autocomplete="off" /> Phone Number
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" autocomplete="off" /> County
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" autocomplete="off" /> Religion
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> birth
+                  certificate
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> first
+                  medical
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> photos
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> passport
+                  number
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> passport
+                  issue place
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> good
+                  conduct
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> next of
+                  kin names
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> next of
+                  kin relation
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> next of
+                  kin id
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> next of
+                  kin number
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> agent
+                  name
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> agent
+                  number
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> school
+                  start date
+                </label>
+              </div>
+
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> school
+                  name
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> school
+                  end date
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> school
+                  certificate
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> cv
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> cv given
+                  date
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> saudia
+                  agency
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> musaned
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> sponspor
+                  name
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" />
+                  Enjaz
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" />
+                  destination
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" />
+                  Full Medical
+                </label>
+              </div>
+
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> yellow
+                  fever
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> pcr check
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> t-shirts
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> pregancy
+                  test
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> ticket
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> travel
+                  date
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> arrival
+                  date
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" /> duration
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
       <div class="row">
         <div class="col">
           <div class="card">
@@ -409,7 +757,7 @@
             <div class="table-responsive">
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
-                  <tr>
+                  <tr class="table-agent position-relative">
                     <th scope="col" class="sort" data-sort="name">Project</th>
                     <th scope="col" class="sort" data-sort="budget">Budget</th>
                     <th scope="col" class="sort" data-sort="status">Status</th>
@@ -417,11 +765,11 @@
                     <th scope="col" class="sort" data-sort="completion">
                       Completion
                     </th>
-                    <th scope="col"></th>
+                    <th scope="col" class="position-sticky">Actions</th>
                   </tr>
                 </thead>
                 <tbody class="list">
-                  <tr>
+                  <tr class="table-agent-row">
                     <th scope="row">
                       <div class="media align-items-center">
                         <a href="#" class="avatar rounded-circle mr-3">
@@ -438,6 +786,7 @@
                       </div>
                     </th>
                     <td class="budget">$2500 USD</td>
+
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-warning"></i>
@@ -509,6 +858,44 @@
                         </div>
                       </div>
                     </td>
+                    <td class="budget">SUSAN BITENGO</td>
+                    <td class="budget">21234500</td>
+                    <td class="budget">0700321456</td>
+                    <td class="budget">KISII</td>
+                    <td class="budget">NON MUSLIM</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">AK0123456</td>
+                    <td class="budget">NAIROBI</td>
+                    <td class="budget">QUEUED</td>
+                    <td class="budget">JOSEPH NYAMAO</td>
+                    <td class="budget">FATHER</td>
+                    <td class="budget">00000000</td>
+                    <td class="budget">0745612308</td>
+                    <td class="budget">DAVID JACK</td>
+                    <td class="budget">0700000111</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">Argon School Of Homecare</td>
+                    <td class="budget">25 <sup>th</sup> April 2021</td>
+                    <td class="budget">Cert1000</td>
+                    <td class="budget">NO CV</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">AL Argon</td>
+                    <td class="budget">Available</td>
+                    <td class="budget">SAEED AL GHIRIAMA</td>
+                    <td class="budget">Riyadh</td>
+                    <td class="budget">Paid</td>
+                    <td class="budget">Okay</td>
+                    <td class="budget">Yellow Fever</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">Available</td>
+                    <td class="budget">Pregancy Test</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">01 <sup>th</sup> April 2021</td>
+                    <td class="budget">03 <sup>th</sup> April 2021</td>
+                    <td class="budget">3 Days</td>
+
                     <td class="text-right">
                       <div class="dropdown">
                         <a
@@ -533,7 +920,7 @@
                       </div>
                     </td>
                   </tr>
-                  <tr>
+                  <tr class="table-agent-row">
                     <th scope="row">
                       <div class="media align-items-center">
                         <a href="#" class="avatar rounded-circle mr-3">
@@ -550,6 +937,7 @@
                       </div>
                     </th>
                     <td class="budget">$1800 USD</td>
+
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
@@ -621,6 +1009,44 @@
                         </div>
                       </div>
                     </td>
+                    <td class="budget">SUSAN BITENGO</td>
+                    <td class="budget">21234500</td>
+                    <td class="budget">0700321456</td>
+                    <td class="budget">KISII</td>
+                    <td class="budget">NON MUSLIM</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">AK0123456</td>
+                    <td class="budget">NAIROBI</td>
+                    <td class="budget">QUEUED</td>
+                    <td class="budget">JOSEPH NYAMAO</td>
+                    <td class="budget">FATHER</td>
+                    <td class="budget">00000000</td>
+                    <td class="budget">0745612308</td>
+                    <td class="budget">DAVID JACK</td>
+                    <td class="budget">0700000111</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">Argon School Of Homecare</td>
+                    <td class="budget">25 <sup>th</sup> April 2021</td>
+                    <td class="budget">Cert1000</td>
+                    <td class="budget">NO CV</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">AL Argon</td>
+                    <td class="budget">Available</td>
+                    <td class="budget">SAEED AL GHIRIAMA</td>
+                    <td class="budget">Riyadh</td>
+                    <td class="budget">Paid</td>
+                    <td class="budget">Okay</td>
+                    <td class="budget">Yellow Fever</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">Available</td>
+                    <td class="budget">Pregancy Test</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">01 <sup>th</sup> April 2021</td>
+                    <td class="budget">03 <sup>th</sup> April 2021</td>
+                    <td class="budget">3 Days</td>
+
                     <td class="text-right">
                       <div class="dropdown">
                         <a
@@ -645,7 +1071,7 @@
                       </div>
                     </td>
                   </tr>
-                  <tr>
+                  <tr class="table-agent-row">
                     <th scope="row">
                       <div class="media align-items-center">
                         <a href="#" class="avatar rounded-circle mr-3">
@@ -660,6 +1086,7 @@
                       </div>
                     </th>
                     <td class="budget">$3150 USD</td>
+
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-danger"></i>
@@ -731,6 +1158,44 @@
                         </div>
                       </div>
                     </td>
+                    <td class="budget">SUSAN BITENGO</td>
+                    <td class="budget">21234500</td>
+                    <td class="budget">0700321456</td>
+                    <td class="budget">KISII</td>
+                    <td class="budget">NON MUSLIM</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">AK0123456</td>
+                    <td class="budget">NAIROBI</td>
+                    <td class="budget">QUEUED</td>
+                    <td class="budget">JOSEPH NYAMAO</td>
+                    <td class="budget">FATHER</td>
+                    <td class="budget">00000000</td>
+                    <td class="budget">0745612308</td>
+                    <td class="budget">DAVID JACK</td>
+                    <td class="budget">0700000111</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">Argon School Of Homecare</td>
+                    <td class="budget">25 <sup>th</sup> April 2021</td>
+                    <td class="budget">Cert1000</td>
+                    <td class="budget">NO CV</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">AL Argon</td>
+                    <td class="budget">Available</td>
+                    <td class="budget">SAEED AL GHIRIAMA</td>
+                    <td class="budget">Riyadh</td>
+                    <td class="budget">Paid</td>
+                    <td class="budget">Okay</td>
+                    <td class="budget">Yellow Fever</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">Available</td>
+                    <td class="budget">Pregancy Test</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">01 <sup>th</sup> April 2021</td>
+                    <td class="budget">03 <sup>th</sup> April 2021</td>
+                    <td class="budget">3 Days</td>
+
                     <td class="text-right">
                       <div class="dropdown">
                         <a
@@ -755,7 +1220,7 @@
                       </div>
                     </td>
                   </tr>
-                  <tr>
+                  <tr class="table-agent-row">
                     <th scope="row">
                       <div class="media align-items-center">
                         <a href="#" class="avatar rounded-circle mr-3">
@@ -771,7 +1236,7 @@
                         </div>
                       </div>
                     </th>
-                    <td class="budget">$4400 USD</td>
+                    <td class="budget">$2200 USD</td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-info"></i>
@@ -843,6 +1308,44 @@
                         </div>
                       </div>
                     </td>
+                    <td class="budget">SUSAN BITENGO</td>
+                    <td class="budget">21234500</td>
+                    <td class="budget">0700321456</td>
+                    <td class="budget">KISII</td>
+                    <td class="budget">NON MUSLIM</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">AK0123456</td>
+                    <td class="budget">NAIROBI</td>
+                    <td class="budget">QUEUED</td>
+                    <td class="budget">JOSEPH NYAMAO</td>
+                    <td class="budget">FATHER</td>
+                    <td class="budget">00000000</td>
+                    <td class="budget">0745612308</td>
+                    <td class="budget">DAVID JACK</td>
+                    <td class="budget">0700000111</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">Argon School Of Homecare</td>
+                    <td class="budget">25 <sup>th</sup> April 2021</td>
+                    <td class="budget">Cert1000</td>
+                    <td class="budget">NO CV</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">AL Argon</td>
+                    <td class="budget">Available</td>
+                    <td class="budget">SAEED AL GHIRIAMA</td>
+                    <td class="budget">Riyadh</td>
+                    <td class="budget">Paid</td>
+                    <td class="budget">Okay</td>
+                    <td class="budget">Yellow Fever</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">Available</td>
+                    <td class="budget">Pregancy Test</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">01 <sup>th</sup> April 2021</td>
+                    <td class="budget">03 <sup>th</sup> April 2021</td>
+                    <td class="budget">3 Days</td>
+
                     <td class="text-right">
                       <div class="dropdown">
                         <a
@@ -867,7 +1370,7 @@
                       </div>
                     </td>
                   </tr>
-                  <tr>
+                  <tr class="table-agent-row">
                     <th scope="row">
                       <div class="media align-items-center">
                         <a href="#" class="avatar rounded-circle mr-3">
@@ -884,6 +1387,7 @@
                       </div>
                     </th>
                     <td class="budget">$2200 USD</td>
+
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
@@ -955,6 +1459,44 @@
                         </div>
                       </div>
                     </td>
+                    <td class="budget">SUSAN BITENGO</td>
+                    <td class="budget">21234500</td>
+                    <td class="budget">0700321456</td>
+                    <td class="budget">KISII</td>
+                    <td class="budget">NON MUSLIM</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">YES</td>
+                    <td class="budget">AK0123456</td>
+                    <td class="budget">NAIROBI</td>
+                    <td class="budget">QUEUED</td>
+                    <td class="budget">JOSEPH NYAMAO</td>
+                    <td class="budget">FATHER</td>
+                    <td class="budget">00000000</td>
+                    <td class="budget">0745612308</td>
+                    <td class="budget">DAVID JACK</td>
+                    <td class="budget">0700000111</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">Argon School Of Homecare</td>
+                    <td class="budget">25 <sup>th</sup> April 2021</td>
+                    <td class="budget">Cert1000</td>
+                    <td class="budget">NO CV</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">AL Argon</td>
+                    <td class="budget">Available</td>
+                    <td class="budget">SAEED AL GHIRIAMA</td>
+                    <td class="budget">Riyadh</td>
+                    <td class="budget">Paid</td>
+                    <td class="budget">Okay</td>
+                    <td class="budget">Yellow Fever</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">Available</td>
+                    <td class="budget">Pregancy Test</td>
+                    <td class="budget">25 <sup>th</sup> March 2021</td>
+                    <td class="budget">01 <sup>th</sup> April 2021</td>
+                    <td class="budget">03 <sup>th</sup> April 2021</td>
+                    <td class="budget">3 Days</td>
+
                     <td class="text-right">
                       <div class="dropdown">
                         <a
@@ -1569,6 +2111,7 @@
                         </div>
                       </div>
                     </td>
+
                     <td class="text-right">
                       <div class="dropdown">
                         <a
@@ -1601,6 +2144,51 @@
       </div>
       <!-- Footer -->
       <?php include("includes/footer.php");?>
+      <script src="bower_components/bootstrap-table/dist/bootstrap-table.min.js"></script>
+      <script>
+        $(document).ready(function (e) {
+          const row = $(".table-agent");
+
+          const selectColumnActive = $(".btn.btn-outline-str-secondary.active"),
+            selectColumn = $(".btn.btn-outline-str-secondary");
+
+          selectColumn.each(function () {
+            let th = document.createElement("th"),
+              text = $(this).text().trim();
+
+            th.setAttribute("scope", "col");
+            th.setAttribute("class", "sort ");
+            th.setAttribute("data-sort", $(this).text().trim());
+            th.setAttribute("data-toggle-table", $(this).text().trim());
+            th.innerText = text.replace(/\s\s+/g, " ");
+
+            // row.append(th);
+            $(th).insertBefore("th:last-child");
+          });
+          selectColumn.click(function (e) {
+            // console.log(
+            //   $(`[data-toggle-table='${$(this).text().trim()}']`).index()
+            // );
+            const INDEX = $(
+              `[data-toggle-table='${$(this).text().trim()}']`
+            ).index();
+
+            if ($(this).hasClass("active")) {
+              $(`[data-toggle-table='${$(this).text().trim()}']`).hide();
+              $(".table-agent-row").each(function () {
+                // console.log();
+                $(this).children().eq(INDEX).hide();
+              });
+            } else {
+              $(`[data-toggle-table='${$(this).text().trim()}']`).show();
+              $(".table-agent-row").each(function () {
+                // console.log();
+                $(this).children().eq(INDEX).show();
+              });
+            }
+          });
+        });
+      </script>
     </div>
   </div>
 </body>
