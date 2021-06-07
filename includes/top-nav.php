@@ -140,7 +140,7 @@
                   </a>
                 </div>
                 <!-- View all -->
-                <a href="#!" class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
+                <a href="notification" class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
               </div>
             </li>
             <li class="nav-item dropdown">

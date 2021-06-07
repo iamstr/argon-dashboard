@@ -1,4 +1,4 @@
- <!-- Footer -->
+ <!-- Footer 
       <footer class="footer pt-0">
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-lg-6">
@@ -24,6 +24,7 @@
           </div>
         </div>
       </footer>
+      -->
 
 <!-- Argon Scripts -->
   <!-- Core -->
@@ -40,6 +41,6 @@
 
 
    
-</body>
+
 
 </html>
