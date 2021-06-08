@@ -96,6 +96,12 @@
              </a>
            </li>
            <li class="nav-item">
+             <a class="nav-link" href="embassy">
+               <i class="ni ni-badge text-orange"></i>
+               <span class="nav-link-text">Embassy</span>
+             </a>
+           </li>
+           <li class="nav-item">
              <a class="nav-link" href="clearance">
                <i class="ni ni-check-bold text-primary"></i>
                <span class="nav-link-text">Clearance</span>

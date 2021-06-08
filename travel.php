@@ -658,7 +658,6 @@
     </div>
   </div>
 </body>
-
 <script>
   $(document).ready(function() {
 
@@ -677,7 +676,6 @@
             $(this).addClass("active focus");
             // $(this).click()
             $(this).parent().click();
-            $($(this).children()[0]).attr("checked", true);
           });
 
           // $(".modal-body").html(...allButtonParent)
@@ -686,28 +684,12 @@
           allButtons.each(function(e) {
             $(this).removeClass("active focus");
             $(this).parent().click();
-            $($(this).children()[0]).removeAttr("checked");
-
             // $(this).click()
           });
         }
       });
 
 
-    }
-
-
-    const cloneClickHandler = function(element) {
-
-
-      console.log(typeof $(`${element}  .btn.btn-outline-secondary.active`))
-
-      $(`${element}  .btn.btn-outline-secondary.active`).each(function(e) {
-
-        $(this).parent().clone().appendTo(".selection-modal")
-
-
-      })
     }
 
     clickHandler(".selection", ".selected")
@@ -751,8 +733,24 @@
     });
 
 
-    $(".selection-button").click(() => cloneClickHandler(".selected"));
-    $(".suggestion-button").click(() => cloneClickHandler(".suggested"));
+    $(".selection-button").click(function(e) {
+      const allButtonsActive = $(
+        ".selected .btn.btn-outline-secondary "
+      ).filter(".selected  .btn.btn-outline-secondary.active");
+      console.log(...allButtonsActive);
+      allButtonsActive.each(function(e) {
+        $(".selection-modal").append($(this));
+      });
+    });
+    $(".suggestion-button").click(function(e) {
+      const allButtonsActive = $(
+        ".suggested .btn.btn-outline-secondary "
+      ).filter(".suggested .btn.btn-outline-secondary.active");
+      console.log(...allButtonsActive);
+      allButtonsActive.each(function(e) {
+        $(".selection-modal").append($(this));
+      });
+    });
   });
 
 </script>

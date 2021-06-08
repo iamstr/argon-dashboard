@@ -94,19 +94,19 @@
 
             <ul class="list-group custom-list-group rounded-3 d-none">
               <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
-                <span>Eminem</span>
+                <span class="maid-name">Eminem</span>
                 <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
               </li>
               <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
-                <span>Big Sean</span>
+                <span class="maid-name">Big Sean</span>
                 <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
               </li>
               <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
-                <span>Joe Cole</span>
+                <span class="maid-name">Joe Cole</span>
                 <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
               </li>
               <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
-                <span>Kendrik Lamar</span>
+                <span class="maid-name">Kendrik Lamar</span>
                 <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
               </li>
             </ul>
@@ -187,12 +187,12 @@
                   <div class="modal-body">
                     <div class="selection-modal d-flex flex-wrap mb-3"></div>
                     <div class="medical d-flex justify-content-between my-5">
-                      <label for="">Full Medical </label>
+                      <label for="">School Certificate </label>
 
                       <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
                         <label class="btn btn-secondary active">
                           <input type="radio" name="options" id="option1" autocomplete="off" checked />
-                          DONE
+                          COLLECTED
                         </label>
                         <label class="btn btn-secondary">
                           <input type="radio" name="options" id="option2" autocomplete="off" />
@@ -201,16 +201,30 @@
                       </div>
                     </div>
                     <div class="medical d-flex justify-content-between my-5">
-                      <label for="">Medical School</label>
+                      <label for=""> Full Medical</label>
 
                       <div class="btn-group btn-group-toggle mr-4 pr-4" data-toggle="buttons">
                         <label class="btn btn-secondary active">
                           <input type="radio" name="options" id="option1" autocomplete="off" checked />
-                          Bayan
+                          UPLOADED
                         </label>
                         <label class="btn btn-secondary">
                           <input type="radio" name="options" id="option2" autocomplete="off" />
-                          Tai
+                          PENDING
+                        </label>
+                      </div>
+                    </div>
+                    <div class="medical d-flex justify-content-between my-5">
+                      <label for=""> Good Conduct</label>
+
+                      <div class="btn-group btn-group-toggle mr-4 pr-4" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked />
+                          READY
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option2" autocomplete="off" />
+                          NOT READY
                         </label>
                       </div>
                     </div>
@@ -220,11 +234,11 @@
                       <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
                         <label class="btn btn-secondary active">
                           <input type="radio" name="options" id="option1" autocomplete="off" checked />
-                          NOT PAID
+                          PAID
                         </label>
                         <label class="btn btn-secondary">
                           <input type="radio" name="options" id="option2" autocomplete="off" />
-                          PAID
+                          NOT PAID
                         </label>
                       </div>
                     </div>
@@ -248,19 +262,22 @@
                       </div>
                     </div>
                     <div class="medical d-flex justify-content-between my-5">
-                      <label for="">Wakala</label>
+                      <label for="">Visa Form</label>
 
                       <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
                         <label class="btn btn-secondary active">
                           <input type="radio" name="options" id="option1" autocomplete="off" checked />
-                          NOT PAID
+                          PREPARED
                         </label>
                         <label class="btn btn-secondary">
                           <input type="radio" name="options" id="option2" autocomplete="off" />
-                          PAID
+                          NOT PREPARED
                         </label>
+
+
                       </div>
                     </div>
+
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">
@@ -294,7 +311,8 @@
                 <thead class="thead-light">
                   <tr class="table-agent position-relative">
                     <th scope="col" class="sort" data-sort="name">
-                      <div class="dropdown">
+                      Girl name
+                      <!--                   <div class="dropdown">
                         <a class="" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                           Girl name
                         </a>
@@ -312,13 +330,16 @@
                           <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                       </div>
+                       -->
                     </th>
                     <th scope="col" class="sort" data-sort="passport">
-                      <div class="dropdown">
+
+                      Passport Number
+                      <!--  <div class="dropdown">
                         <a class="" href="#passport" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                          Paasport Number
+                         
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" x-placement="bottom-end" style="
+                       <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" x-placement="bottom-end" style="
                             position: absolute;
                             will-change: transform;
                             top: 0px;
@@ -332,11 +353,15 @@
                           <a class="dropdown-item" href="#">AK01234567</a>
                         </div>
                       </div>
+                      
+                      -->
                     </th>
                     <th scope="col" class="sort" data-sort="medical">
+                      Full Medical Certificate
+                      <!--
                       <div class="dropdown">
                         <a class="" href="#medical" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                          Full Medical
+                          Full Medical Certificate
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" x-placement="bottom-end" style="
                             position: absolute;
@@ -347,269 +372,86 @@
                           ">
                           <input type="text" class="form-control form-control-muted" placeholder="Muted input" />
 
-                          <a class="dropdown-item" href="#">DONE </a>
+                          <a class="dropdown-item" href="#">COLLECTED </a>
                           <a class="dropdown-item" href="#">SCHEDULED</a>
                           <a class="dropdown-item" href="#">FAILED</a>
                         </div>
                       </div>
+-->
                     </th>
-                    <th scope="col" class="sort" data-sort="center">
-                      <div class="dropdown">
-                        <a class="" href="#medical" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                          Medical Center
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" x-placement="bottom-end" style="
-                            position: absolute;
-                            will-change: transform;
-                            top: 0px;
-                            left: 0px;
-                            transform: translate3d(-160px, 32px, 0px);
-                          ">
-                          <input type="text" class="form-control form-control-muted" placeholder="Muted input" />
 
-                          <a class="dropdown-item" href="#">BAYAN HOSPITAL</a>
-                          <a class="dropdown-item" href="#">TAI HOSPITAL</a>
-                          <a class="dropdown-item" href="#">FAILED</a>
-                        </div>
-                      </div>
-                    </th>
                     <th scope="col" class="sort" data-sort="wakala">
-                      <div class="dropdown">
-                        <a class="" href="#wakala" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                          Wakala
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" x-placement="bottom-end" style="
-                            position: absolute;
-                            will-change: transform;
-                            top: 0px;
-                            left: 0px;
-                            transform: translate3d(-160px, 32px, 0px);
-                          ">
-                          <input type="text" class="form-control form-control-muted" placeholder="Muted input" />
+                      Wakala
 
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
                     </th>
                     <th scope="col" class="sort" data-sort="enjaz">
-                      <div class="dropdown">
-                        <a class="" href="#enjaz" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                          Enjaz
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" x-placement="bottom-end" style="
-                            position: absolute;
-                            will-change: transform;
-                            top: 0px;
-                            left: 0px;
-                            transform: translate3d(-160px, 32px, 0px);
-                          ">
-                          <input type="text" class="form-control form-control-muted" placeholder="Muted input" />
+                      Enjaz
 
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
                     </th>
 
                     <th scope="col" class="sort" data-sort="status">
-                      <div class="dropdown">
-                        <a class="" href="#status" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                          Status
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" x-placement="bottom-end" style="
-                            position: absolute;
-                            will-change: transform;
-                            top: 0px;
-                            left: 0px;
-                            transform: translate3d(-160px, 32px, 0px);
-                          ">
-                          <input type="text" class="form-control form-control-muted" placeholder="Muted input" />
+                      Good Conduct
 
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
+                    </th>
+                    <th scope="col" class="sort" data-sort="status">
+                      School Certificate
+
+                    </th>
+                    <th scope="col" class="sort" data-sort="status">
+                      Visa Form
+
                     </th>
 
                     <th scope="col" class="position-sticky">Actions</th>
                   </tr>
                 </thead>
                 <tbody class="list">
+
                   <tr class="table-agent-row">
-                    <th scope="row" class="name">
-                      <div class="media align-items-center">
-                        <a href="#" class="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="assets/img/theme/bootstrap.jpg" />
-                        </a>
-                        <div class="media-body">
-                          <span class="name mb-0 text-sm">Argon Design System</span>
-                        </div>
-                      </div>
-                    </th>
-                    <td class="budget">Cert1234</td>
-                    <td class="budget">Argon School</td>
-                    <td class="budget">PLC-12WR</td>
-                    <td class="budget">PLC-12WR</td>
-                    <td class="budget">PLC-12WR</td>
+
+                    <td class="budget">Mary Moraa</td>
+                    <td class="budget">AK01244</td>
                     <td>
                       <span class="badge badge-dot mr-4">
-                        <i class="bg-warning"></i>
-                        <span class="status">Uploaded</span>
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
                       </span>
                     </td>
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PAID</span>
+                      </span>
                     </td>
-                  </tr>
-                  <tr class="table-agent-row">
-                    <th scope="row">
-                      <div class="media align-items-center">
-                        <a href="#" class="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="assets/img/theme/angular.jpg" />
-                        </a>
-                        <div class="media-body">
-                          <span class="name mb-0 text-sm">Angular Now UI Kit PRO</span>
-                        </div>
-                      </div>
-                    </th>
-                    <td class="budget">Cert1234</td>
-                    <td class="budget">Argon School</td>
-                    <td class="budget">PLC-12WR</td>
-                    <td class="budget">PLC-12WR</td>
-                    <td class="budget">PLC-12WR</td>
 
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">Paid</span>
+                        <span class="status">COLLECTED</span>
                       </span>
                     </td>
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-agent-row">
-                    <th scope="row">
-                      <div class="media align-items-center">
-                        <a href="#" class="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="assets/img/theme/sketch.jpg" />
-                        </a>
-                        <div class="media-body">
-                          <span class="name mb-0 text-sm">Black Dashboard</span>
-                        </div>
-                      </div>
-                    </th>
-                    <td class="budget">Cert1234</td>
-                    <td class="budget">Argon School</td>
-                    <td class="budget">PLC-12WR</td>
-                    <td class="budget">PLC-12WR</td>
-                    <td class="budget">PLC-12WR</td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-danger"></i>
-                        <span class="status">Cancelled</span>
-                      </span>
-                    </td>
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-agent-row">
-                    <th scope="row">
-                      <div class="media align-items-center">
-                        <a href="#" class="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="assets/img/theme/react.jpg" />
-                        </a>
-                        <div class="media-body">
-                          <span class="name mb-0 text-sm">React Material Dashboard</span>
-                        </div>
-                      </div>
-                    </th>
-                    <td class="budget">Cert1234</td>
-                    <td class="budget">Argon School</td>
-                    <td class="budget">PLC-12WR</td>
-                    <td class="budget">PLC-12WR</td>
-                    <td class="budget">PLC-12WR</td>
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">Paid</span>
-                      </span>
-                    </td>
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-agent-row">
-                    <th scope="row">
-                      <div class="media align-items-center">
-                        <a href="#" class="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="assets/img/theme/vue.jpg" />
-                        </a>
-                        <div class="media-body">
-                          <span class="name mb-0 text-sm">Vue Paper UI Kit PRO</span>
-                        </div>
-                      </div>
-                    </th>
-                    <td class="budget">Cert1234</td>
-                    <td class="budget">Argon School</td>
-                    <td class="budget">PLC-12WR</td>
-                    <td class="budget">PLC-12WR</td>
-                    <td class="budget">PLC-12WR</td>
 
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">Paid</span>
+                        <span class="status">READY</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">WRITTEN</span>
                       </span>
                     </td>
 
-                    <td class="text-right">
+
+                    <td class="text-center">
                       <div class="dropdown">
                         <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="fas fa-ellipsis-v"></i>
@@ -622,6 +464,292 @@
                       </div>
                     </td>
                   </tr>
+                  <tr class="table-agent-row">
+
+                    <td class="budget">Mary Moraa</td>
+                    <td class="budget">AK01244</td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PAID</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">READY</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">WRITTEN</span>
+                      </span>
+                    </td>
+
+
+                    <td class="text-center">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-agent-row">
+
+                    <td class="budget">Mary Moraa</td>
+                    <td class="budget">AK01244</td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PAID</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">READY</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">WRITTEN</span>
+                      </span>
+                    </td>
+
+
+                    <td class="text-center">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-agent-row">
+
+                    <td class="budget">Mary Moraa</td>
+                    <td class="budget">AK01244</td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PAID</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">READY</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">WRITTEN</span>
+                      </span>
+                    </td>
+
+
+                    <td class="text-center">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-agent-row">
+
+                    <td class="budget">Mary Moraa</td>
+                    <td class="budget">AK01244</td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PAID</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">READY</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">WRITTEN</span>
+                      </span>
+                    </td>
+
+
+                    <td class="text-center">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-agent-row">
+
+                    <td class="budget">Mary Moraa</td>
+                    <td class="budget">AK01244</td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PAID</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">READY</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">COLLECTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">WRITTEN</span>
+                      </span>
+                    </td>
+
+
+                    <td class="text-center">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
                 </tbody>
               </table>
             </div>
@@ -658,6 +786,8 @@
     </div>
   </div>
 </body>
+
+
 
 <script>
   $(document).ready(function() {
@@ -736,6 +866,7 @@
     $("body ").on("click", ".list-group-item span", function(e) {
       console.log(e.currentTarget.textContent);
       $(this).addClass("text-muted");
+      console.log($(this).text())
       $(this).parent().css({
         cursor: "no-drop",
         "pointer-events": "none"
