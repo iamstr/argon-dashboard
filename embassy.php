@@ -22,52 +22,52 @@
 
             <p class="h3 mt-1 mb-4">Suggestions</p>
             <div class="str-view-row suggested d-flex flex-wrap mb-3">
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> yellow
                   fever
                 </label>
               </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> pcr check
                 </label>
               </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> t-shirts
                 </label>
               </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> pregancy
                   test
                 </label>
               </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> ticket
                 </label>
               </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> travel
                   date
                 </label>
               </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> arrival
                   date
                 </label>
               </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> duration
                 </label>
               </div>
             </div>
-            <div class="btn-group btn-group-toggle ml-1 mb-5 mt-2" data-toggle="buttons">
+            <div class="btn-group btn-group-toggle ml-1 my-5 " data-toggle="buttons">
               <label class="btn btn-outline-default suggestion">
                 <input type="radio" name="options" id="option2" autocomplete="off" />Select All
               </label>
@@ -109,49 +109,53 @@
                 <span class="maid-name">Kendrik Lamar</span>
                 <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
               </li>
+              <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
+                <span class="maid-name">Immaculate Moraa Date</span>
+                <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
+              </li>
             </ul>
             <div class="my-5 py-3"></div>
             <p class="h3 mt-5 mb-4">Your Selection</p>
             <div class="str-view-row d-flex flex-wrap mb-3 selected">
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> Susan Bitengo
                 </label>
               </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> Valentine Moraa
                 </label>
               </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> Sheilah Jemutai
                 </label>
               </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> Doris Anyona
                   test
                 </label>
               </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> Leonidah Nyamira
                 </label>
               </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> Leah Bonareri
-                  date
+                  Date
                 </label>
               </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> Immaculate Moraa
-                  date
+                  Date
                 </label>
               </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> Felista Moraa
                 </label>
@@ -790,35 +794,41 @@
 
 
 <script>
+  /** future updates include
+   * pop over after an already selected is clicked
+   * on deselect remove all the buttons from the modal
+   */
   $(document).ready(function() {
-
+    //for the select all and deselect elements
     const clickHandler = function(element, elementParent) {
 
       $(element).click(function(e) {
-        // console.log(e.currentTarget.innerText)
+        // select all the element[selected||suggested] that are active
         const allButtons = $(`${elementParent} .btn.btn-outline-secondary`).filter(
             `${elementParent} .btn.btn-outline-secondary`
           ),
           allButtonParent = [];
         if (e.currentTarget.innerText === "Select All") {
           $(` ${element}-button`).removeClass("fade").addClass("show active");
-
+          //make the toggle active on select all
           allButtons.each(function(e) {
             $(this).addClass("active focus");
-            // $(this).click()
+
             $(this).parent().click();
             $($(this).children()[0]).attr("checked", true);
           });
 
-          // $(".modal-body").html(...allButtonParent)
+
         } else {
+
+          //make the deselection
           $(` ${element}-button`).removeClass("show active").addClass("fade");
           allButtons.each(function(e) {
             $(this).removeClass("active focus");
             $(this).parent().click();
             $($(this).children()[0]).removeAttr("checked");
 
-            // $(this).click()
+
           });
         }
       });
@@ -826,22 +836,56 @@
 
     }
 
-
+    //clone handler for selected & suggested divs, clones onto the modal
     const cloneClickHandler = function(element) {
 
 
-      console.log(typeof $(`${element}  .btn.btn-outline-secondary.active`))
+
 
       $(`${element}  .btn.btn-outline-secondary.active`).each(function(e) {
-
+        console.log($(`${element}`).siblings("button[data-toggle=modal]"))
         $(this).parent().clone().appendTo(".selection-modal")
 
 
       })
     }
 
+
+    //if there's a single active button then show the modal button
+    const showModalButton = function(button, element) {
+
+      let returnedValue = false;
+      const returned = [...$(` ${element} .str-toggle-button label`)].some(e => {
+
+        console.log($(e))
+        returnedValue = $(e).hasClass("active") === true
+        return $(e).hasClass("active") === true
+
+      })
+
+      if (returned) {
+
+        $(` ${button}-button`).removeClass("fade").addClass("show active");
+      }
+    }
+
     clickHandler(".selection", ".selected")
     clickHandler(".suggestion", ".suggested")
+
+    $(".selection-button").click(() => cloneClickHandler(".selected"));
+    $(".suggestion-button").click(() => cloneClickHandler(".suggested"));
+    showModalButton(".suggestion", ".suggested")
+    showModalButton(".selection", ".selected")
+
+
+
+    $(".str-toggle-button >label input").each(function(e) {
+
+
+      $(this).val($(this).parent().text().trim())
+
+    })
+
     $(".form-control.form-control-muted.search-input").focus();
     $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
     $(".list-group-item span").css({
@@ -864,9 +908,40 @@
     });
     $(".list-group-item").removeClass("d-flex");
     $("body ").on("click", ".list-group-item span", function(e) {
-      console.log(e.currentTarget.textContent);
+
       $(this).addClass("text-muted");
-      console.log($(this).text())
+
+      //      this is the clicked item text
+      const listText = $(this).text().trim();
+
+      //      checks if the selected text is part of the selected label 
+      const returned = [...$(".selected  .str-toggle-button")].some(e =>
+
+        {
+          let buttonText = e.children[0].innerText.replace(/\s/g, "").replace(/([A-Z])/g, ' $1').trim();
+
+
+          return buttonText === listText
+
+        }
+
+      );
+
+
+
+
+      if (!returned) {
+        //creates a clone from the first toggle button in the selected div
+        const button = $(".selected  .str-toggle-button:first-child").clone()
+        //        HTMLButtonElement>HTMLLabelElement>HTMLInputElement[radio]
+        button.children()[0].children[0].checked
+        button.children()[0].children[0].value = listText
+        button.children()[0].innerText = listText
+        button.clone().appendTo(".selected ")
+      }
+
+      //disabled after onclick
+
       $(this).parent().css({
         cursor: "no-drop",
         "pointer-events": "none"
@@ -877,13 +952,13 @@
       });
       $(".list-group.custom-list-group.rounded-3").addClass("d-none");
     });
+
+    //    onfocus show the HTMLUListElement
     $(".form-control.form-control-muted.search-input").focus(function() {
       $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
     });
 
 
-    $(".selection-button").click(() => cloneClickHandler(".selected"));
-    $(".suggestion-button").click(() => cloneClickHandler(".suggested"));
   });
 
 </script>

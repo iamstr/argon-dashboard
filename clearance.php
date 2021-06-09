@@ -190,22 +190,8 @@
                   </div>
                   <div class="modal-body">
                     <div class="selection-modal d-flex flex-wrap mb-3"></div>
-                    <div class="medical d-flex justify-content-between my-5 align-items-center">
-                      <label for=""> Pregnancy Test</label>
-
-                      <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
-                        <label class="btn btn-secondary active">
-                          <input type="radio" name="options" id="option1" autocomplete="off" checked />
-                          PASSED
-                        </label>
-                        <label class="btn btn-secondary">
-                          <input type="radio" name="options" id="option2" autocomplete="off" />
-                          FAILED
-                        </label>
-                      </div>
-                    </div>
-                    <div class="medical d-flex justify-content-between my-5 align-items-center">
-                      <label for=""> Yellow Fever</label>
+                    <div class="medical d-flex justify-content-between my-5">
+                      <label for=""> Attenstion List</label>
 
                       <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
                         <label class="btn btn-secondary active">
@@ -218,13 +204,13 @@
                         </label>
                       </div>
                     </div>
-                    <div class="medical d-flex justify-content-between my-5 align-items-center">
-                      <label for=""> PCR Status</label>
+                    <div class="medical d-flex justify-content-between my-5">
+                      <label for=""> Certificate Of Incorporation</label>
 
                       <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
                         <label class="btn btn-secondary active">
                           <input type="radio" name="options" id="option1" autocomplete="off" checked />
-                          RECIEVED
+                          PRINTED
                         </label>
                         <label class="btn btn-secondary">
                           <input type="radio" name="options" id="option2" autocomplete="off" />
@@ -232,47 +218,13 @@
                         </label>
                       </div>
                     </div>
-                    <div class="medical d-flex justify-content-between my-5 align-items-center">
-                      <label for=""> PCR Code</label>
-
-
-
-
-                      <input class="form-control w-75 " placeholder="CODE" type="text">
-
-                    </div>
-                    <div class="medical d-flex justify-content-between my-5  align-items-center">
-                      <label for=""> PRC Date</label>
-
-                      <div class="input-group w-75">
-
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
-                        </div>
-                        <input class="form-control datepicker" placeholder="Select date" type="text">
-                      </div>
-                    </div>
-                    <div class="medical d-flex justify-content-between my-5 align-items-center">
-                      <label for=""> T-shirt</label>
+                    <div class="medical d-flex justify-content-between my-5">
+                      <label for=""> Full Medical</label>
 
                       <div class="btn-group btn-group-toggle mr-4 pr-4" data-toggle="buttons">
                         <label class="btn btn-secondary active">
                           <input type="radio" name="options" id="option1" autocomplete="off" checked />
-                          GIVEN
-                        </label>
-                        <label class="btn btn-secondary">
-                          <input type="radio" name="options" id="option2" autocomplete="off" />
-                          NOT GIVEN
-                        </label>
-                      </div>
-                    </div>
-                    <div class="medical d-flex justify-content-between my-5 align-items-center">
-                      <label for="">Stamped Clearance Form</label>
-
-                      <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
-                        <label class="btn btn-secondary active">
-                          <input type="radio" name="options" id="option1" autocomplete="off" checked />
-                          READY
+                          PRINTED
                         </label>
                         <label class="btn btn-secondary">
                           <input type="radio" name="options" id="option2" autocomplete="off" />
@@ -280,8 +232,36 @@
                         </label>
                       </div>
                     </div>
-                    <div class="medical d-flex justify-content-between my-5 align-items-center">
-                      <label for="">Ticket</label>
+                    <div class="medical d-flex justify-content-between my-5">
+                      <label for=""> Good Conduct</label>
+
+                      <div class="btn-group btn-group-toggle mr-4 pr-4" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked />
+                          PRINTED
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option2" autocomplete="off" />
+                          PENDING
+                        </label>
+                      </div>
+                    </div>
+                    <div class="medical d-flex justify-content-between my-5">
+                      <label for="">Girl's Contract</label>
+
+                      <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked />
+                          PRINTED
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option2" autocomplete="off" />
+                          PENDING
+                        </label>
+                      </div>
+                    </div>
+                    <div class="medical d-flex justify-content-between my-5">
+                      <label for="">Next Of Kin ID Copy</label>
 
                       <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
                         <label class="btn btn-secondary active">
@@ -296,26 +276,36 @@
 
                       </div>
                     </div>
-                    <div class="medical d-flex justify-content-between my-5 align-items-center">
-                      <label for="">Travel Date</label>
+                    <div class="medical d-flex justify-content-between my-5">
+                      <label for="">Visa Form</label>
 
-                      <div class="input-group w-75">
+                      <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked />
+                          PRINTED
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option2" autocomplete="off" />
+                          PENDING
+                        </label>
 
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
-                        </div>
-                        <input class="form-control datepicker" placeholder="Select date" type="text">
+
                       </div>
                     </div>
-                    <div class="medical d-flex justify-content-between my-5 align-items-center">
-                      <label for="">Arrival Date</label>
+                    <div class="medical d-flex justify-content-between my-5">
+                      <label for="">Passport Copy</label>
 
-                      <div class="input-group w-75">
+                      <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked />
+                          PRINTED
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option2" autocomplete="off" />
+                          PENDING
+                        </label>
 
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
-                        </div>
-                        <input class="form-control datepicker" placeholder="Select date" type="text">
+
                       </div>
                     </div>
 
@@ -360,60 +350,43 @@
                       Passport Number
 
                     </th>
-
-                    <th scope="col" class="sort" data-sort="enjaz">
-                      Pregancy Test
-
-                    </th>
                     <th scope="col" class="sort" data-sort="medical">
-                      Yellow Fever
+                      Full Medical Certificate
 
                     </th>
 
                     <th scope="col" class="sort" data-sort="wakala">
-                      PCR Check Status
+                      Girl's Contract
 
                     </th>
-                    <th scope="col" class="sort" data-sort="wakala">
-                      PCR Check Date
-
-                    </th>
-
-                    <th scope="col" class="sort" data-sort="wakala">
-                      PCR Check Code
-
-                    </th>
-
-
-                    <th scope="col" class="sort" data-sort="status">
-                      Stamped Clearance
-
-                    </th>
-
                     <th scope="col" class="sort" data-sort="enjaz">
-                      T-shirts
+                      Form Contract
+
+                    </th>
+                    <th scope="col" class="sort" data-sort="enjaz">
+                      Form Of Bond
 
                     </th>
 
-
                     <th scope="col" class="sort" data-sort="status">
-                      Ticket
+                      Good Conduct
 
                     </th>
                     <th scope="col" class="sort" data-sort="status">
-                      Travel Date
-
-
+                      Passport Copy
 
                     </th>
                     <th scope="col" class="sort" data-sort="status">
-                      Arrival Date
+                      Visa Copy
+
+                    </th>
+                    <th scope="col" class="sort" data-sort="status">
+                      Next Of Kin
 
                     </th>
 
-
                     <th scope="col" class="sort" data-sort="status">
-                      Duration
+                      Certificate Of Incorporation
 
                     </th>
 
@@ -429,69 +402,57 @@
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">PASSED</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
-                      </span>
-                    </td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-warning"></i>
-                        <span class="status">PENDING</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
 
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">24TH JUN 2021</span>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">A12ERT</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status"> BOOKED </span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">24TH JUNE 2021 14:00</span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">25TH JUNE 2021 14:00</span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">1 DAY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
 
@@ -508,8 +469,6 @@
                       </div>
                     </td>
                   </tr>
-
-
                   <tr class="table-agent-row">
 
                     <td class="budget">Mary Moraa</td>
@@ -517,69 +476,57 @@
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">PASSED</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
-                      </span>
-                    </td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-warning"></i>
-                        <span class="status">PENDING</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
 
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">24TH JUN 2021</span>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">A12ERT</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status"> BOOKED </span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">24TH JUNE 2021 14:00</span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">25TH JUNE 2021 14:00</span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">1 DAY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
 
@@ -596,8 +543,6 @@
                       </div>
                     </td>
                   </tr>
-
-
                   <tr class="table-agent-row">
 
                     <td class="budget">Mary Moraa</td>
@@ -605,69 +550,57 @@
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">PASSED</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
-                      </span>
-                    </td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-warning"></i>
-                        <span class="status">PENDING</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
 
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">24TH JUN 2021</span>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">A12ERT</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status"> BOOKED </span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">24TH JUNE 2021 14:00</span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">25TH JUNE 2021 14:00</span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">1 DAY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
 
@@ -684,8 +617,6 @@
                       </div>
                     </td>
                   </tr>
-
-
                   <tr class="table-agent-row">
 
                     <td class="budget">Mary Moraa</td>
@@ -693,69 +624,57 @@
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">PASSED</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
-                      </span>
-                    </td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-warning"></i>
-                        <span class="status">PENDING</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
 
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">24TH JUN 2021</span>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">A12ERT</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status"> BOOKED </span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">24TH JUNE 2021 14:00</span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">25TH JUNE 2021 14:00</span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">1 DAY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
 
@@ -772,8 +691,6 @@
                       </div>
                     </td>
                   </tr>
-
-
                   <tr class="table-agent-row">
 
                     <td class="budget">Mary Moraa</td>
@@ -781,69 +698,57 @@
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">PASSED</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
-                      </span>
-                    </td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-warning"></i>
-                        <span class="status">PENDING</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
 
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">24TH JUN 2021</span>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">A12ERT</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status"> BOOKED </span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">24TH JUNE 2021 14:00</span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">25TH JUNE 2021 14:00</span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">1 DAY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
 
@@ -860,7 +765,6 @@
                       </div>
                     </td>
                   </tr>
-
                   <tr class="table-agent-row">
 
                     <td class="budget">Mary Moraa</td>
@@ -868,69 +772,57 @@
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">PASSED</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
-                      </span>
-                    </td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-warning"></i>
-                        <span class="status">PENDING</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
 
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">24TH JUN 2021</span>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">A12ERT</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">READY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status"> BOOKED </span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
-                        <span class="status">24TH JUNE 2021 14:00</span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">25TH JUNE 2021 14:00</span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">1 DAY</span>
+                        <span class="status">PRINTED</span>
                       </span>
                     </td>
 
@@ -947,6 +839,82 @@
                       </div>
                     </td>
                   </tr>
+                  <tr class="table-agent-row">
+
+                    <td class="budget">Mary Moraa</td>
+                    <td class="budget">AK01244</td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">PRINTED</span>
+                      </span>
+                    </td>
+
+                    <td class="text-center">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+
 
                 </tbody>
               </table>
