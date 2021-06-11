@@ -1,0 +1,16 @@
+{
+  "sizuhiko.brackets.prettier.onSave": true,
+  "path": {
+    "thirdparty/**.js": {
+      "sizuhiko.brackets.prettier.onSave": false
+    },
+    "**min**.js": {
+      "sizuhiko.brackets.prettier.onSave": false
+    }
+  },
+  "language": {
+    "json": {
+      "sizuhiko.brackets.prettier.onSave": false
+    }
+  }
+}
