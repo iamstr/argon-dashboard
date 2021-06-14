@@ -98,60 +98,111 @@
 
                 <?php include("includes/vectors/waiting.php");?></a>
 
+              <form action="" class="form">
+                <div class="d-flex justify-content-between my-5">
 
-              <div class="d-flex justify-content-between">
-
-                <div class="media-uploaded d-flex flex-column rounded shadow-lg mr-3 ">
+                  <div class="media-uploaded d-flex flex-column rounded shadow-lg mr-3 ">
 
 
-                  <img src="assets/img/girls/carol_enjaz.jpg" alt="" class="rounded-top" style="height: 200px; min-width:200px;max-width:100%" />
-                  <div class="p-4">
-                    <h4 class="my-1">birth certificate</h4>
-                    <input type="file" class="form-control">
+                    <img src="assets/img/girls/carol_enjaz.jpg" alt="" class="rounded-top girl_img" style="height: 200px; min-width:200px;max-width:100%" />
+                    <div class="p-4">
+                      <h4 class="my-1">Passport Photo</h4>
+                      <input type="file" class="form-control" name="pic[]">
+                    </div>
+
+                  </div>
+
+
+
+                  <div class="media-uploaded d-flex flex-column rounded shadow-lg mx-3 ">
+                    <img src="assets/img/girls/daizy.jpg" alt="" class="rounded-top girl_img" style="height: 200px; min-width:200px;max-width:100%">
+                    <div class="p-4">
+                      <h4 class="my-1">Full Photo</h4>
+                      <input type="file" class="form-control" name="full[]">
+                    </div>
+
+                  </div>
+
+
+
+                  <div class="media-uploaded d-flex flex-column rounded shadow-lg mx-3 ">
+
+                    <img src="assets/img/girls/TEBLA%20KIHAVI_enjaz.jpg" alt="" class="rounded-top girl_img" style="height: 200px; min-width:200px;max-width:100%">
+                    <div class="p-4">
+                      <h4 class="my-1">birth certificate</h4>
+                      <input type="file" class="form-control" name="birth[]">
+                    </div>
+
+
+                  </div>
+
+                  <div class="media-uploaded d-flex flex-column rounded shadow-lg mx-3 ">
+                    <img src="assets/img/girls/guto.jpg" alt="" class="rounded-top girl_img" style="height: 200px; min-width:200px;max-width:100%">
+                    <div class="p-4">
+                      <h4 class="my-1">ID </h4>
+                      <input type="file" class="form-control" name="id[]">
+                    </div>
+
                   </div>
 
                 </div>
 
 
+                <div class="d-flex justify-content-between my-5">
 
-                <div class="media-uploaded d-flex flex-column rounded shadow-lg mx-3 ">
-                  <img src="assets/img/girls/daizy.jpg" alt="" class="rounded-top" style="height: 200px; min-width:200px;max-width:100%">
-                  <div class="p-4">
-                    <h4 class="my-1">birth certificate</h4>
-                    <input type="file" class="form-control">
-                  </div>
-
-                </div>
+                  <div class="media-uploaded d-flex flex-column rounded shadow-lg mr-3 ">
 
 
+                    <img src="assets/img/girls/carol_enjaz.jpg" alt="" class="rounded-top girl_img" style="height: 200px; min-width:200px;max-width:100%" />
+                    <div class="p-4">
+                      <h4 class="my-1">Passport Copy </h4>
+                      <input type="file" class="form-control" name="passport[]">
+                    </div>
 
-                <div class="media-uploaded d-flex flex-column rounded shadow-lg mx-3 ">
-
-                  <img src="assets/img/girls/TEBLA%20KIHAVI_enjaz.jpg" alt="" class="rounded-top" style="height: 200px; min-width:200px;max-width:100%">
-                  <div class="p-4">
-                    <h4 class="my-1">birth certificate</h4>
-                    <input type="file" class="form-control">
                   </div>
 
 
-                </div>
 
-                <div class="media-uploaded d-flex flex-column rounded shadow-lg mx-3 ">
-                  <img src="assets/img/girls/guto.jpg" alt="" class="rounded-top" style="height: 200px; min-width:200px;max-width:100%">
-                  <div class="p-4">
-                    <h4 class="my-1">birth certificate</h4>
-                    <input type="file" class="form-control">
+                  <div class="media-uploaded d-flex flex-column rounded shadow-lg mx-3 ">
+                    <img src="assets/img/girls/daizy.jpg" alt="" class="rounded-top girl_img" style="height: 200px; min-width:200px;max-width:100%">
+                    <div class="p-4">
+                      <h4 class="my-1">Next Of Kin ID</h4>
+                      <input type="file" class="form-control" name="kin1[]">
+                    </div>
+
+                  </div>
+
+
+
+                  <div class="media-uploaded d-flex flex-column rounded shadow-lg mx-3 ">
+
+                    <img src="assets/img/girls/TEBLA%20KIHAVI_enjaz.jpg" alt="" class="rounded-top girl_img" style="height: 200px; min-width:200px;max-width:100%">
+                    <div class="p-4">
+                      <h4 class="my-1">Next of Kin ID 2</h4>
+                      <input type="file" class="form-control" name="kin2[]">
+                    </div>
+
+
+                  </div>
+
+                  <div class="media-uploaded d-flex flex-column bg-transparent mx-3 w-100 d-none ">
+                    <img src="assets/img/girls/guto.jpg" alt="" class="rounded-top girl_img d-none" style="height: 200px; min-width:200px;max-width:100%">
+                    <div class="p-4 d-none">
+                      <h4 class="my-1">ID </h4>
+                      <input type="file" class="form-control">
+                    </div>
+
                   </div>
 
                 </div>
-
-              </div>
-
+                
+                <button class="btn btn-warning btn-lg w-50 mx-auto btn-block" type="submit">Save Changes</button>
+              </form>
 
 
             </div>
-            <div class="card-footer">
-              <div class="">
+            <div class="card-footer border-0">
+              <div class="d-none">
                 <button class="btn btn-primary btn-block w-50 mx-auto btn-lg steps-form-button-next" type="button">
                   <span class="btn-inner--text">Next</span>
                   <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
@@ -211,20 +262,22 @@
     $("input[type=file]").change(function() {
 
       const display = $(".display-image"),
-        img = document.createElement("IMG"),
+        img = $(".girl_img"),
         input = this,
-        url = $(this).val(),
+        inputChild = $(this)[0]
+      url = $(this).val(),
         ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
-      img.height = "200"
-      img.width = "200"
-      $(img).addClass("mx-auto d-block rounded shadow-lg my-5")
+      //      img.height = "200"
+      //      img.width = "200"
+      //      $(img).addClass("mx-auto d-block rounded shadow-lg my-5")
       if (input.files && input.files[0] && (ext == "png" || ext == "jpeg" || ext == "jpg")) {
         var reader = new FileReader();
 
         reader.onload = function(e) {
-          $(img).attr('src', e.target.result);
+          console.log($(inputChild))
+          inputChild.parentElement.previousElementSibling.setAttribute('src', e.target.result);
           //          $(img).appendTo(display)
-          console.log(e)
+
           display.html(img)
         }
         reader.readAsDataURL(input.files[0]);

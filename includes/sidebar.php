@@ -46,12 +46,15 @@
                <span class="nav-link-text">Upload Doc </span>
              </a>
            </li>
+<!-- this would be in the next release          
            <li class="nav-item">
              <a class="nav-link " href="cv">
                <i class="ni ni-send text-warning"></i>
                <span class="nav-link-text">Send CV </span>
              </a>
            </li>
+           
+           -->
          </ul>
 
 

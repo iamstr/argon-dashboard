@@ -46,39 +46,7 @@
                   class="btn btn-outline-str-secondary active"
                   class="text-capitalize"
                 >
-                  <input type="checkbox" autocomplete="off" /> fullname
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" autocomplete="off" /> ID
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" autocomplete="off" /> Phone Number
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" autocomplete="off" /> County
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" autocomplete="off" /> Religion
+                  <input type="checkbox" autocomplete="off"checked /> fullname
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
@@ -86,7 +54,39 @@
                   class="btn btn-outline-str-secondary active"
                   class="text-capitalize"
                 >
-                  <input type="checkbox" checked autocomplete="off" /> birth
+                  <input type="checkbox" autocomplete="off"checked /> ID
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" autocomplete="off"checked /> Phone Number
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" autocomplete="off"checked /> County
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" autocomplete="off" checked/> Religion
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1" data-toggle="buttons">
+                <label
+                  class="btn btn-outline-str-secondary active"
+                  class="text-capitalize"
+                >
+                  <input type="checkbox" checked autocomplete="off" checked/> birth
                   certificate
                 </label>
               </div>
@@ -225,6 +225,7 @@
                   certificate
                 </label>
               </div>
+<!--        this is would be introducted in the next release      
               <div class="btn-group-toggle m-1" data-toggle="buttons">
                 <label
                   class="btn btn-outline-str-secondary active"
@@ -242,6 +243,8 @@
                   date
                 </label>
               </div>
+              
+              -->
               <div class="btn-group-toggle m-1" data-toggle="buttons">
                 <label
                   class="btn btn-outline-str-secondary active"
@@ -382,13 +385,10 @@
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr class="table-agent position-relative">
-                    <th scope="col" class="sort" data-sort="name">Project</th>
-                    <th scope="col" class="sort" data-sort="budget">Budget</th>
-                    <th scope="col" class="sort" data-sort="status">Status</th>
-                    <th scope="col">Users</th>
-                    <th scope="col" class="sort" data-sort="completion">
-                      Completion
-                    </th>
+<!--
+                    <th scope="col" class="sort" data-sort="name">Fullname</th>
+                   
+-->
                     <th scope="col" class="position-sticky">Actions</th>
                   </tr>
                 </thead>
@@ -404,86 +404,17 @@
                         </a>
                         <div class="media-body">
                           <span class="name mb-0 text-sm"
-                            >Argon Design System</span
+                            >Susan Bitengo</span
                           >
                         </div>
                       </div>
                     </th>
-                    <td class="budget">$2500 USD</td>
+                   
 
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-warning"></i>
-                        <span class="status">pending</span>
-                      </span>
-                    </td>
-                    <td>
-                      <div class="avatar-group">
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Ryan Tompson"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-1.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Romina Hadid"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-2.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Alexander Smith"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-3.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Jessica Doe"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-4.jpg"
-                          />
-                        </a>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="completion mr-2">60%</span>
-                        <div>
-                          <div class="progress">
-                            <div
-                              class="progress-bar bg-warning"
-                              role="progressbar"
-                              aria-valuenow="60"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="width: 60%"
-                            ></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="budget">SUSAN BITENGO</td>
+                   
                     <td class="budget">21234500</td>
+                   
+                    
                     <td class="budget">0700321456</td>
                     <td class="budget">KISII</td>
                     <td class="budget">NON MUSLIM</td>
@@ -513,14 +444,13 @@
                     <td class="budget">Okay</td>
                     <td class="budget">Yellow Fever</td>
                     <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">Available</td>
-                    <td class="budget">Pregancy Test</td>
+                   
                     <td class="budget">25 <sup>th</sup> March 2021</td>
                     <td class="budget">01 <sup>th</sup> April 2021</td>
                     <td class="budget">03 <sup>th</sup> April 2021</td>
                     <td class="budget">3 Days</td>
 
-                    <td class="text-right">
+                    <td class="text-center">
                       <div class="dropdown">
                         <a
                           class="btn btn-sm btn-icon-only text-light"
@@ -544,607 +474,8 @@
                       </div>
                     </td>
                   </tr>
-                  <tr class="table-agent-row">
-                    <th scope="row">
-                      <div class="media align-items-center">
-                        <a href="#" class="avatar rounded-circle mr-3">
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/angular.jpg"
-                          />
-                        </a>
-                        <div class="media-body">
-                          <span class="name mb-0 text-sm"
-                            >Angular Now UI Kit PRO</span
-                          >
-                        </div>
-                      </div>
-                    </th>
-                    <td class="budget">$1800 USD</td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">completed</span>
-                      </span>
-                    </td>
-                    <td>
-                      <div class="avatar-group">
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Ryan Tompson"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-1.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Romina Hadid"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-2.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Alexander Smith"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-3.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Jessica Doe"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-4.jpg"
-                          />
-                        </a>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="completion mr-2">100%</span>
-                        <div>
-                          <div class="progress">
-                            <div
-                              class="progress-bar bg-success"
-                              role="progressbar"
-                              aria-valuenow="100"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="width: 100%"
-                            ></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="budget">SUSAN BITENGO</td>
-                    <td class="budget">21234500</td>
-                    <td class="budget">0700321456</td>
-                    <td class="budget">KISII</td>
-                    <td class="budget">NON MUSLIM</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">AK0123456</td>
-                    <td class="budget">NAIROBI</td>
-                    <td class="budget">QUEUED</td>
-                    <td class="budget">JOSEPH NYAMAO</td>
-                    <td class="budget">FATHER</td>
-                    <td class="budget">00000000</td>
-                    <td class="budget">0745612308</td>
-                    <td class="budget">DAVID JACK</td>
-                    <td class="budget">0700000111</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">Argon School Of Homecare</td>
-                    <td class="budget">25 <sup>th</sup> April 2021</td>
-                    <td class="budget">Cert1000</td>
-                    <td class="budget">NO CV</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">AL Argon</td>
-                    <td class="budget">Available</td>
-                    <td class="budget">SAEED AL GHIRIAMA</td>
-                    <td class="budget">Riyadh</td>
-                    <td class="budget">Paid</td>
-                    <td class="budget">Okay</td>
-                    <td class="budget">Yellow Fever</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">Available</td>
-                    <td class="budget">Pregancy Test</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">01 <sup>th</sup> April 2021</td>
-                    <td class="budget">03 <sup>th</sup> April 2021</td>
-                    <td class="budget">3 Days</td>
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a
-                          class="btn btn-sm btn-icon-only text-light"
-                          href="#"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div
-                          class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
-                        >
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-agent-row">
-                    <th scope="row">
-                      <div class="media align-items-center">
-                        <a href="#" class="avatar rounded-circle mr-3">
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/sketch.jpg"
-                          />
-                        </a>
-                        <div class="media-body">
-                          <span class="name mb-0 text-sm">Black Dashboard</span>
-                        </div>
-                      </div>
-                    </th>
-                    <td class="budget">$3150 USD</td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-danger"></i>
-                        <span class="status">delayed</span>
-                      </span>
-                    </td>
-                    <td>
-                      <div class="avatar-group">
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Ryan Tompson"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-1.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Romina Hadid"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-2.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Alexander Smith"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-3.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Jessica Doe"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-4.jpg"
-                          />
-                        </a>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="completion mr-2">72%</span>
-                        <div>
-                          <div class="progress">
-                            <div
-                              class="progress-bar bg-danger"
-                              role="progressbar"
-                              aria-valuenow="72"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="width: 72%"
-                            ></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="budget">SUSAN BITENGO</td>
-                    <td class="budget">21234500</td>
-                    <td class="budget">0700321456</td>
-                    <td class="budget">KISII</td>
-                    <td class="budget">NON MUSLIM</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">AK0123456</td>
-                    <td class="budget">NAIROBI</td>
-                    <td class="budget">QUEUED</td>
-                    <td class="budget">JOSEPH NYAMAO</td>
-                    <td class="budget">FATHER</td>
-                    <td class="budget">00000000</td>
-                    <td class="budget">0745612308</td>
-                    <td class="budget">DAVID JACK</td>
-                    <td class="budget">0700000111</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">Argon School Of Homecare</td>
-                    <td class="budget">25 <sup>th</sup> April 2021</td>
-                    <td class="budget">Cert1000</td>
-                    <td class="budget">NO CV</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">AL Argon</td>
-                    <td class="budget">Available</td>
-                    <td class="budget">SAEED AL GHIRIAMA</td>
-                    <td class="budget">Riyadh</td>
-                    <td class="budget">Paid</td>
-                    <td class="budget">Okay</td>
-                    <td class="budget">Yellow Fever</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">Available</td>
-                    <td class="budget">Pregancy Test</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">01 <sup>th</sup> April 2021</td>
-                    <td class="budget">03 <sup>th</sup> April 2021</td>
-                    <td class="budget">3 Days</td>
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a
-                          class="btn btn-sm btn-icon-only text-light"
-                          href="#"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div
-                          class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
-                        >
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-agent-row">
-                    <th scope="row">
-                      <div class="media align-items-center">
-                        <a href="#" class="avatar rounded-circle mr-3">
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/react.jpg"
-                          />
-                        </a>
-                        <div class="media-body">
-                          <span class="name mb-0 text-sm"
-                            >React Material Dashboard</span
-                          >
-                        </div>
-                      </div>
-                    </th>
-                    <td class="budget">$2200 USD</td>
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-info"></i>
-                        <span class="status">on schedule</span>
-                      </span>
-                    </td>
-                    <td>
-                      <div class="avatar-group">
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Ryan Tompson"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-1.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Romina Hadid"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-2.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Alexander Smith"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-3.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Jessica Doe"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-4.jpg"
-                          />
-                        </a>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="completion mr-2">90%</span>
-                        <div>
-                          <div class="progress">
-                            <div
-                              class="progress-bar bg-info"
-                              role="progressbar"
-                              aria-valuenow="90"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="width: 90%"
-                            ></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="budget">SUSAN BITENGO</td>
-                    <td class="budget">21234500</td>
-                    <td class="budget">0700321456</td>
-                    <td class="budget">KISII</td>
-                    <td class="budget">NON MUSLIM</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">AK0123456</td>
-                    <td class="budget">NAIROBI</td>
-                    <td class="budget">QUEUED</td>
-                    <td class="budget">JOSEPH NYAMAO</td>
-                    <td class="budget">FATHER</td>
-                    <td class="budget">00000000</td>
-                    <td class="budget">0745612308</td>
-                    <td class="budget">DAVID JACK</td>
-                    <td class="budget">0700000111</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">Argon School Of Homecare</td>
-                    <td class="budget">25 <sup>th</sup> April 2021</td>
-                    <td class="budget">Cert1000</td>
-                    <td class="budget">NO CV</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">AL Argon</td>
-                    <td class="budget">Available</td>
-                    <td class="budget">SAEED AL GHIRIAMA</td>
-                    <td class="budget">Riyadh</td>
-                    <td class="budget">Paid</td>
-                    <td class="budget">Okay</td>
-                    <td class="budget">Yellow Fever</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">Available</td>
-                    <td class="budget">Pregancy Test</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">01 <sup>th</sup> April 2021</td>
-                    <td class="budget">03 <sup>th</sup> April 2021</td>
-                    <td class="budget">3 Days</td>
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a
-                          class="btn btn-sm btn-icon-only text-light"
-                          href="#"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div
-                          class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
-                        >
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-agent-row">
-                    <th scope="row">
-                      <div class="media align-items-center">
-                        <a href="#" class="avatar rounded-circle mr-3">
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/vue.jpg"
-                          />
-                        </a>
-                        <div class="media-body">
-                          <span class="name mb-0 text-sm"
-                            >Vue Paper UI Kit PRO</span
-                          >
-                        </div>
-                      </div>
-                    </th>
-                    <td class="budget">$2200 USD</td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">completed</span>
-                      </span>
-                    </td>
-                    <td>
-                      <div class="avatar-group">
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Ryan Tompson"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-1.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Romina Hadid"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-2.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Alexander Smith"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-3.jpg"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Jessica Doe"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-4.jpg"
-                          />
-                        </a>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="completion mr-2">100%</span>
-                        <div>
-                          <div class="progress">
-                            <div
-                              class="progress-bar bg-success"
-                              role="progressbar"
-                              aria-valuenow="100"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="width: 100%"
-                            ></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="budget">SUSAN BITENGO</td>
-                    <td class="budget">21234500</td>
-                    <td class="budget">0700321456</td>
-                    <td class="budget">KISII</td>
-                    <td class="budget">NON MUSLIM</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">AK0123456</td>
-                    <td class="budget">NAIROBI</td>
-                    <td class="budget">QUEUED</td>
-                    <td class="budget">JOSEPH NYAMAO</td>
-                    <td class="budget">FATHER</td>
-                    <td class="budget">00000000</td>
-                    <td class="budget">0745612308</td>
-                    <td class="budget">DAVID JACK</td>
-                    <td class="budget">0700000111</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">Argon School Of Homecare</td>
-                    <td class="budget">25 <sup>th</sup> April 2021</td>
-                    <td class="budget">Cert1000</td>
-                    <td class="budget">NO CV</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">AL Argon</td>
-                    <td class="budget">Available</td>
-                    <td class="budget">SAEED AL GHIRIAMA</td>
-                    <td class="budget">Riyadh</td>
-                    <td class="budget">Paid</td>
-                    <td class="budget">Okay</td>
-                    <td class="budget">Yellow Fever</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">Available</td>
-                    <td class="budget">Pregancy Test</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">01 <sup>th</sup> April 2021</td>
-                    <td class="budget">03 <sup>th</sup> April 2021</td>
-                    <td class="budget">3 Days</td>
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a
-                          class="btn btn-sm btn-icon-only text-light"
-                          href="#"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div
-                          class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
-                        >
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
+                  
+                  
                 </tbody>
               </table>
             </div>
@@ -1736,7 +1067,7 @@
                       </div>
                     </td>
 
-                    <td class="text-right">
+                    <td class="text-center">
                       <div class="dropdown">
                         <a
                           class="btn btn-sm btn-icon-only text-light"
