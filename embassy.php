@@ -16,12 +16,14 @@
           </button>
         </p>
         <div class="collapse show" id="collapseExample">
-          <div class="card-body str-view">
+        
+           
+               <div class="card-body str-view">
             <!-- <h3 class="str-view-header text-muted">Change View</h3> -->
 
 
-            <p class="h3 mt-1 mb-4">Suggestions</p>
-            <div class="str-view-row suggested d-flex flex-wrap mb-3">
+            <p class="h3 mt-1 mb-4 d-none">Suggestions</p>
+            <div class="str-view-row suggested d-none mb-3">
               <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> yellow
@@ -67,17 +69,17 @@
                 </label>
               </div>
             </div>
-            <div class="btn-group btn-group-toggle ml-1 my-5 " data-toggle="buttons">
+            <div class="btn-group btn-group-toggle ml-1 my-5  d-none" data-toggle="buttons">
               <label class="btn btn-outline-default suggestion">
-                <input type="radio" name="options" id="option2" autocomplete="off" />Select All
+                <input type="radio" value="" name="options" id="option2" autocomplete="off" />Select All
               </label>
-              <label class="btn btn-outline-default suggestion">
-                <input type="radio" name="options" id="option3" autocomplete="off" />Deselect All
+              <label class="btn btn-outline-default suggestion d-none">
+                <input type="radio" value="" name="options" id="option3" autocomplete="off" />Deselect All
               </label>
             </div>
 
             <!-- Button trigger modal -->
-            <button type="button " class="btn btn-primary suggestion-button fade" data-toggle="modal" data-target="#exampleModal">
+            <button type="button " class="btn btn-primary suggestion-button fade d-none" data-toggle="modal" data-target="#exampleModal">
               Show changes
             </button>
 
@@ -117,57 +119,15 @@
             <div class="my-5 py-3"></div>
             <p class="h3 mt-5 mb-4">Your Selection</p>
             <div class="str-view-row d-flex flex-wrap mb-3 selected">
-              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
-                <label class="btn btn-outline-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> Susan Bitengo
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
-                <label class="btn btn-outline-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> Valentine Moraa
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
-                <label class="btn btn-outline-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> Sheilah Jemutai
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
-                <label class="btn btn-outline-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> Doris Anyona
-                  test
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
-                <label class="btn btn-outline-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> Leonidah Nyamira
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
-                <label class="btn btn-outline-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> Leah Bonareri
-                  Date
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
-                <label class="btn btn-outline-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> Immaculate Moraa
-                  Date
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
-                <label class="btn btn-outline-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> Felista Moraa
-                </label>
-              </div>
+
             </div>
 
             <div class="btn-group btn-group-toggle ml-1 my-5" data-toggle="buttons">
               <label class="btn btn-outline-default selection">
-                <input type="radio" name="options" id="option2" autocomplete="off" />Select All
+                <input type="radio" value="" name="options" id="option2" autocomplete="off" />Select All
               </label>
               <label class="btn btn-outline-default selection">
-                <input type="radio" name="options" id="option3" autocomplete="off" />Deselect All
+                <input type="radio" value="" name="options" id="option3" autocomplete="off" />Deselect All
               </label>
             </div>
 
@@ -188,18 +148,20 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
+                  <form action="php_action/createEmbassy.php" method="post" id="#embassyForm">
                   <div class="modal-body">
+                   
                     <div class="selection-modal d-flex flex-wrap mb-3"></div>
                     <div class="medical d-flex justify-content-between my-5">
                       <label for="">School Certificate </label>
 
                       <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
                         <label class="btn btn-secondary active">
-                          <input type="radio" name="options" id="option1" autocomplete="off" checked />
+                          <input type="radio" value="collected" name="school" id="school1" autocomplete="off" checked />
                           COLLECTED
                         </label>
                         <label class="btn btn-secondary">
-                          <input type="radio" name="options" id="option2" autocomplete="off" />
+                          <input type="radio" value="pending" name="school" id="school2" autocomplete="off" />
                           PENDING
                         </label>
                       </div>
@@ -209,11 +171,11 @@
 
                       <div class="btn-group btn-group-toggle mr-4 pr-4" data-toggle="buttons">
                         <label class="btn btn-secondary active">
-                          <input type="radio" name="options" id="option1" autocomplete="off" checked />
+                          <input type="radio" value="uploaded" name="medical" id="medical1" autocomplete="off" checked />
                           UPLOADED
                         </label>
                         <label class="btn btn-secondary">
-                          <input type="radio" name="options" id="option2" autocomplete="off" />
+                          <input type="radio" value="pending" name="medical" id="medical2" autocomplete="off" />
                           PENDING
                         </label>
                       </div>
@@ -223,11 +185,11 @@
 
                       <div class="btn-group btn-group-toggle mr-4 pr-4" data-toggle="buttons">
                         <label class="btn btn-secondary active">
-                          <input type="radio" name="options" id="option1" autocomplete="off" checked />
+                          <input type="radio" value="ready" name="conduct" id="conduct1" autocomplete="off" checked />
                           READY
                         </label>
                         <label class="btn btn-secondary">
-                          <input type="radio" name="options" id="option2" autocomplete="off" />
+                          <input type="radio" value="NOT READY" name="conduct" id="conduct2" autocomplete="off" />
                           NOT READY
                         </label>
                       </div>
@@ -237,11 +199,11 @@
 
                       <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
                         <label class="btn btn-secondary active">
-                          <input type="radio" name="options" id="option1" autocomplete="off" checked />
+                          <input type="radio" value="paid" name="wakala" id="wakala" autocomplete="off" checked />
                           PAID
                         </label>
                         <label class="btn btn-secondary">
-                          <input type="radio" name="options" id="option2" autocomplete="off" />
+                          <input type="radio" value="not paid" name="wakala" id="wakala" autocomplete="off" />
                           NOT PAID
                         </label>
                       </div>
@@ -251,16 +213,16 @@
 
                       <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
                         <label class="btn btn-secondary active">
-                          <input type="radio" name="options" id="option1" autocomplete="off" checked />
+                          <input type="radio" value="not uploaded" name="enjaz" id="enjaz1" autocomplete="off" checked />
                           NOT UPLOADED
                         </label>
                         <label class="btn btn-secondary">
-                          <input type="radio" name="options" id="option2" autocomplete="off" />
+                          <input type="radio" value="uploaded" name="enjaz" id="enjaz2" autocomplete="off" />
                           UPLOADED
                         </label>
 
                         <label class="btn btn-secondary">
-                          <input type="radio" name="options" id="option4" autocomplete="off" />
+                          <input type="radio" value="paid" name="enjaz" id="enjaz3" autocomplete="off" />
                           PAID
                         </label>
                       </div>
@@ -270,27 +232,38 @@
 
                       <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
                         <label class="btn btn-secondary active">
-                          <input type="radio" name="options" id="option1" autocomplete="off" checked />
+                          <input type="radio" value="prepared" name="visa" id="visa1" autocomplete="off" checked />
                           PREPARED
                         </label>
                         <label class="btn btn-secondary">
-                          <input type="radio" name="options" id="option2" autocomplete="off" />
+                          <input type="radio" value="not prepared" name="visa" id="visa2" autocomplete="off" />
                           NOT PREPARED
                         </label>
 
 
                       </div>
                     </div>
+                     <div class="medical d-flex justify-content-between my-5 align-items-center">
+                      <label for=""> Enjaz Number</label>
 
+
+
+
+                      <input class="form-control w-75 " placeholder="E2145000" type="text" name="enjaz_number">
+
+                    </div>
+                    
+                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">
                       Close
                     </button>
-                    <button type="button" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary" id="embassySubmit">
                       Save changes
                     </button>
                   </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -298,6 +271,8 @@
             <div class="my-5 py-3"></div>
 
           </div>
+          
+          
         </div>
       </div>
     </div>
@@ -844,6 +819,7 @@
 
       $(`${element}  .btn.btn-outline-secondary.active`).each(function(e) {
         console.log($(`${element}`).siblings("button[data-toggle=modal]"))
+        console.log("so you are here... ",  $(this).parent())
         $(this).parent().clone().appendTo(".selection-modal")
 
 
@@ -907,12 +883,30 @@
       cursor: "pointer"
     });
     $(".list-group-item").removeClass("d-flex");
+    
+//    onkeyup attach the response to span
+    
+    $(".form-control.form-control-muted.search-input").keyup(function(){
+      
+ 
+      
+      
+      $.get("php_action/searchGirl?term="+$(this).val(), function(data, status){
+        
+        if(status){
+          
+          $(".custom-list-group").html(data)
+        }
+    console.log("Data: " + data + "\nStatus: " + status);
+  });
+});
     $("body ").on("click", ".list-group-item span", function(e) {
 
       $(this).addClass("text-muted");
 
       //      this is the clicked item text
       const listText = $(this).text().trim();
+      const ID = $(this).attr("id").trim();
 
       //      checks if the selected text is part of the selected label 
       const returned = [...$(".selected  .str-toggle-button")].some(e =>
@@ -932,12 +926,32 @@
 
       if (!returned) {
         //creates a clone from the first toggle button in the selected div
-        const button = $(".selected  .str-toggle-button:first-child").clone()
+//        const button = $(".selected  .str-toggle-button:first-child").clone()
         //        HTMLButtonElement>HTMLLabelElement>HTMLInputElement[radio]
-        button.children()[0].children[0].checked
-        button.children()[0].children[0].value = listText
-        button.children()[0].innerText = listText
-        button.clone().appendTo(".selected ")
+//        button.children()[0].children[0].checked
+//        button.children()[0].children[0].value = listText
+//        button.children()[0].innerText = listText
+//        button.clone().appendTo(".selected ")
+        const button=document.createElement("div"),
+              radio=document.createElement("input"),
+              label=document.createElement("label")
+        
+      
+        $(button).addClass("btn-group-toggle m-1 str-toggle-button")
+        $(label).addClass("btn btn-outline-secondary active")
+        $(button).attr("data-toggle","buttons")
+        $(radio).attr("checked","buttons")
+        $(radio).attr("autocomplete","off")
+        $(radio).attr("type","checkbox")
+        $(radio).attr("value",ID)
+        $(radio).attr("name","girls[]")
+        $(label).attr("data-ID",ID)
+        label.innerText = listText
+        label.appendChild(radio)
+        button.appendChild(label)
+        
+        
+        $(".selected ").append(button)
       }
 
       //disabled after onclick
@@ -957,6 +971,92 @@
     $(".form-control.form-control-muted.search-input").focus(function() {
       $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
     });
+    
+    
+//    ajax call
+    
+    
+        
+        	$("#embassySubmit").unbind('click').bind('click', function() {
+             
+              	
+              	$("#embassyForm").unbind('submit').bind('submit', function(e){
+                  e.preventDefault();
+              	 var form = $(this);
+				var formData = new FormData(this);
+                  console.log(formData)
+                  		$.ajax({
+					url : form.attr('action'),
+					type: form.attr('method'),
+					data: formData,
+					dataType: 'json',
+					cache: false,
+					contentType: false,
+					processData: false,
+					success:function(response) {
+                    console.log(response)
+						if(response.success == true) {
+							
+
+							$("html, body, div.modal, .modal-content, div.modal-body").animate({scrollTop: '0'}, 100);
+								$('.modal-body div').hide()									
+							// shows a successful message after operation
+							$('.modal-body').append('<div class="alert alert-success">'+
+		            '<button type="button" class="close" data-dismiss="alert">&times;</button>'+
+		            '<strong><i class="ni ni-like-2"></i></strong> '+ response.messages +
+		          '</div>');
+
+							// remove the mesages
+		          $(".alert-success").delay(1000).show(10, function() {
+								$(this).delay(3000).hide(10, function() {
+									$(this).remove();
+                                  $('.modal-body div').show()
+								});
+							}); // /.alert
+
+		          
+						} // /if response.success
+                      
+                      
+                      else{
+                        
+                        
+                        
+                        
+							$("html, body, div.modal, .modal-content, div.modal-body").animate({scrollTop: '0'}, 100);
+									$('.modal-body div').hide()								
+							// shows a successful message after operation
+							$('.modal-body').append('<div class="alert alert-warning shaking-2">'+
+		            '<button type="button" class="close" data-dismiss="alert">&times;</button>'+
+		            '<strong><i class="ni ni-like-2"></i></strong> '+ response.messages +
+		          '</div>');
+
+							// remove the mesages
+		          $(".alert-warning").delay(500).show(10, function() {
+								$(this).delay(3000).hide(10, function() {
+									$(this).remove();
+                                  $('.modal-body div').show()
+								});
+							}); // /.alert
+
+                        
+                        
+                        
+                        
+                        
+                      }
+						
+					} // /success function
+				}); // /ajax function
+                  
+                  return false;
+                  
+              	})
+        
+            })
+
+    
+    
 
 
   });

@@ -368,195 +368,266 @@
           </button>
         </p>
         <div class="collapse show" id="collapseExample">
-          <div class="card-body str-view">
+         
+          
+           
+               <div class="card-body str-view">
             <!-- <h3 class="str-view-header text-muted">Change View</h3> -->
-            <p class="h3 mb-4">Search Girl</p>
+
+
+            <p class="h3 mt-1 mb-4 d-none">Suggestions</p>
+            <div class="str-view-row suggested d-none mb-3">
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
+                <label class="btn btn-outline-secondary active" class="text-capitalize">
+                  <input type="checkbox" checked autocomplete="off" /> yellow
+                  fever
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
+                <label class="btn btn-outline-secondary active" class="text-capitalize">
+                  <input type="checkbox" checked autocomplete="off" /> pcr check
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
+                <label class="btn btn-outline-secondary active" class="text-capitalize">
+                  <input type="checkbox" checked autocomplete="off" /> t-shirts
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
+                <label class="btn btn-outline-secondary active" class="text-capitalize">
+                  <input type="checkbox" checked autocomplete="off" /> pregancy
+                  test
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
+                <label class="btn btn-outline-secondary active" class="text-capitalize">
+                  <input type="checkbox" checked autocomplete="off" /> ticket
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
+                <label class="btn btn-outline-secondary active" class="text-capitalize">
+                  <input type="checkbox" checked autocomplete="off" /> travel
+                  date
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
+                <label class="btn btn-outline-secondary active" class="text-capitalize">
+                  <input type="checkbox" checked autocomplete="off" /> arrival
+                  date
+                </label>
+              </div>
+              <div class="btn-group-toggle m-1 str-toggle-button" data-toggle="buttons">
+                <label class="btn btn-outline-secondary active" class="text-capitalize">
+                  <input type="checkbox" checked autocomplete="off" /> duration
+                </label>
+              </div>
+            </div>
+            <div class="btn-group btn-group-toggle ml-1 my-5  d-none" data-toggle="buttons">
+              <label class="btn btn-outline-default suggestion">
+                <input type="radio" value="" name="options" id="option2" autocomplete="off" />Select All
+              </label>
+              <label class="btn btn-outline-default suggestion d-none">
+                <input type="radio" value="" name="options" id="option3" autocomplete="off" />Deselect All
+              </label>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button " class="btn btn-primary suggestion-button fade d-none" data-toggle="modal" data-target="#exampleModal">
+              Show changes
+            </button>
+
+
+
+            <div class="my-3 py-3"></div>
+
+            <p class="h3 my-4">Search Girl</p>
 
             <div class="form-group position-relative">
-              <input
-                type="search"
-                class="form-control form-control-muted search-input"
-                placeholder="Search by Name or ID or Passport Number"
-              />
-              <img
-                src="assets/img/icons/search.svg"
-                alt="search icon"
-                class="search-input position-absolute"
-                style="width: 33px; top: 20%; right: 2%"
-              />
+              <input type="search" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" />
+              <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
             </div>
 
             <ul class="list-group custom-list-group rounded-3 d-none">
-              <li
-                class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks"
-              >
-                <span>Eminem</span
-                ><!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
+              <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
+                <span class="maid-name">Eminem</span>
+                <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
               </li>
-              <li
-                class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks"
-              >
-                <span>Big Sean</span
-                ><!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
+              <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
+                <span class="maid-name">Big Sean</span>
+                <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
               </li>
-              <li
-                class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks"
-              >
-                <span>Joe Cole</span
-                ><!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
+              <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
+                <span class="maid-name">Joe Cole</span>
+                <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
               </li>
-              <li
-                class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks"
-              >
-                <span>Kendrik Lamar</span
-                ><!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
+              <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
+                <span class="maid-name">Kendrik Lamar</span>
+                <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
+              </li>
+              <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
+                <span class="maid-name">Immaculate Moraa Date</span>
+                <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
               </li>
             </ul>
             <div class="my-5 py-3"></div>
             <p class="h3 mt-5 mb-4">Your Selection</p>
-            <div class="str-view-row d-flex flex-wrap mb-3">
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> yellow
-                  fever
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> pcr check
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> t-shirts
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> pregancy
-                  test
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> ticket
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> travel
-                  date
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> arrival
-                  date
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> duration
-                </label>
+            <div class="str-view-row d-flex flex-wrap mb-3 selected">
+
+            </div>
+
+            <div class="btn-group btn-group-toggle ml-1 my-5" data-toggle="buttons">
+              <label class="btn btn-outline-default selection">
+                <input type="radio" value="" name="options" id="option2" autocomplete="off" />Select All
+              </label>
+              <label class="btn btn-outline-default selection">
+                <input type="radio" value="" name="options" id="option3" autocomplete="off" />Deselect All
+              </label>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button " class="btn btn-primary selection-button fade" data-toggle="modal" data-target="#exampleModal">
+              Show changes
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Modal title
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <form action="php_action/createMusaned.php" method="post" id="#musanedForm">
+<!--                  <form action=""  id="#musanedForm">-->
+                  <div class="modal-body">
+                   
+                    <div class="selection-modal d-flex flex-wrap mb-3"></div>
+                    <div class="medical d-flex justify-content-between my-5">
+                      <label for="">Musaned Status </label>
+
+                      <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                          <input type="radio" value="collected" name="status" id="status1" autocomplete="off" checked />
+                          Available
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input type="radio" value="pending" name="status" id="status2" autocomplete="off" />
+                          Contracted
+                        </label>
+                         <label class="btn btn-secondary">
+                          <input type="radio" value="pending" name="status" id="status3" autocomplete="off" />
+                          Employed
+                        </label>
+                      </div>
+                    </div>
+                    <div class="medical d-flex justify-content-between my-5">
+                      <label for="">Saudi Agency </label>
+
+                      <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                          <input type="radio" value="1" name="agency" id="agency1" autocomplete="off" checked />
+                          Agency 1
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input type="radio" value="2" name="agency" id="agency2" autocomplete="off" />
+                         Agency 2
+                        </label>
+                         <label class="btn btn-secondary">
+                          <input type="radio" value="3" name="agency" id="agency3" autocomplete="off" />
+                          Agency 3
+                        </label>
+                      </div>
+                    </div>
+                    
+                    
+                     <div class="medical d-flex justify-content-between my-5 align-items-center">
+                      <label for=""> Sponsor Name</label>
+
+
+
+
+                      <input class="form-control w-50 " placeholder="E2145000" type="text" name="name">
+
+                    </div>
+                    
+                     <div class="medical d-flex justify-content-between my-5 align-items-center">
+                      <label for=""> Sponsor Number</label>
+
+
+
+
+                      <input class="form-control w-50 " placeholder="E2145000" type="text" name="number">
+
+                    </div>
+                    
+                     <div class="medical d-flex justify-content-between my-5 align-items-center">
+                      <label for=""> Sponsor ID Number</label>
+
+
+
+
+                      <input class="form-control w-50 " placeholder="E2145000" type="text" name="ID">
+
+                    </div>
+                    
+                    
+                     
+                     <div class="medical d-flex justify-content-between my-5 align-items-center">
+                      <label for=""> Sponsor Address</label>
+
+
+
+
+                      <input class="form-control w-50 " placeholder="E2145000" type="text" name="address">
+
+                    </div>
+                    
+                    
+                    
+                     <div class="medical d-flex justify-content-between my-5 align-items-center">
+                      <label for=""> Contract Number</label>
+
+
+
+
+                      <input class="form-control w-50 " placeholder="E2145000" type="text" name="contract_number">
+
+                    </div>
+                     <div class="medical d-flex justify-content-between my-5 align-items-center">
+                      <label for=""> Visa Number</label>
+
+
+
+
+                      <input class="form-control w-50 " placeholder="E2145000" type="text" name="visa_number">
+
+                    </div>
+                    
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                      Close
+                    </button>
+                    <button type="submit" class="btn btn-primary" id="musanedSubmit">
+                      Save changes
+                    </button>
+                  </div>
+                  </form>
+                </div>
               </div>
             </div>
+
             <div class="my-5 py-3"></div>
-            <p class="h3 mt-5 mb-4">Suggestions</p>
-            <div class="str-view-row d-flex flex-wrap mb-3">
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> yellow
-                  fever
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> pcr check
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> t-shirts
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> pregancy
-                  test
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> ticket
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> travel
-                  date
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> arrival
-                  date
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> duration
-                </label>
-              </div>
-            </div>
+
           </div>
+          
+          
+             
         </div>
       </div>
     </div>
@@ -909,8 +980,103 @@
     </div>
   </div>
 </body>
+
+
+
 <script>
-  $(document).ready(function () {
+  /** future updates include
+   * pop over after an already selected is clicked
+   * on deselect remove all the buttons from the modal
+   */
+  $(document).ready(function() {
+    //for the select all and deselect elements
+    const clickHandler = function(element, elementParent) {
+
+      $(element).click(function(e) {
+        // select all the element[selected||suggested] that are active
+        const allButtons = $(`${elementParent} .btn.btn-outline-secondary`).filter(
+            `${elementParent} .btn.btn-outline-secondary`
+          ),
+          allButtonParent = [];
+        if (e.currentTarget.innerText === "Select All") {
+          $(` ${element}-button`).removeClass("fade").addClass("show active");
+          //make the toggle active on select all
+          allButtons.each(function(e) {
+            $(this).addClass("active focus");
+
+            $(this).parent().click();
+            $($(this).children()[0]).attr("checked", true);
+          });
+
+
+        } else {
+
+          //make the deselection
+          $(` ${element}-button`).removeClass("show active").addClass("fade");
+          allButtons.each(function(e) {
+            $(this).removeClass("active focus");
+            $(this).parent().click();
+            $($(this).children()[0]).removeAttr("checked");
+
+
+          });
+        }
+      });
+
+
+    }
+
+    //clone handler for selected & suggested divs, clones onto the modal
+    const cloneClickHandler = function(element) {
+
+
+
+
+      $(`${element}  .btn.btn-outline-secondary.active`).each(function(e) {
+        console.log($(`${element}`).siblings("button[data-toggle=modal]"))
+        console.log("so you are here... ",  $(this).parent())
+        $(this).parent().clone().appendTo(".selection-modal")
+
+
+      })
+    }
+
+
+    //if there's a single active button then show the modal button
+    const showModalButton = function(button, element) {
+
+      let returnedValue = false;
+      const returned = [...$(` ${element} .str-toggle-button label`)].some(e => {
+
+        console.log($(e))
+        returnedValue = $(e).hasClass("active") === true
+        return $(e).hasClass("active") === true
+
+      })
+
+      if (returned) {
+
+        $(` ${button}-button`).removeClass("fade").addClass("show active");
+      }
+    }
+
+    clickHandler(".selection", ".selected")
+    clickHandler(".suggestion", ".suggested")
+
+    $(".selection-button").click(() => cloneClickHandler(".selected"));
+    $(".suggestion-button").click(() => cloneClickHandler(".suggested"));
+    showModalButton(".suggestion", ".suggested")
+    showModalButton(".selection", ".selected")
+
+
+
+    $(".str-toggle-button >label input").each(function(e) {
+
+
+      $(this).val($(this).parent().text().trim())
+
+    })
+
     $(".form-control.form-control-muted.search-input").focus();
     $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
     $(".list-group-item span").css({
@@ -918,13 +1084,93 @@
       width: "100%",
       display: "block"
     });
+    $("th[scope='col']").css({
+      cursor: "pointer",
+      position: "sticky",
+      left: 0,
+      top: 0
+    });
+    $("th .dropdown-menu").css({
+      "min-width": "20rem",
+      padding: "1rem"
+    });
     $(".list-group-item ").css({
       cursor: "pointer"
     });
     $(".list-group-item").removeClass("d-flex");
-    $("body ").on("click", ".list-group-item span", function (e) {
-      console.log(e.currentTarget.textContent);
+    
+//    onkeyup attach the response to span
+    
+    $(".form-control.form-control-muted.search-input").keyup(function(){
+      
+ 
+      
+      
+      $.get("php_action/searchGirl?term="+$(this).val(), function(data, status){
+        
+        if(status){
+          
+          $(".custom-list-group").html(data)
+        }
+    console.log("Data: " + data + "\nStatus: " + status);
+  });
+});
+    $("body ").on("click", ".list-group-item span", function(e) {
+
       $(this).addClass("text-muted");
+
+      //      this is the clicked item text
+      const listText = $(this).text().trim();
+      const ID = $(this).attr("id").trim();
+
+      //      checks if the selected text is part of the selected label 
+      const returned = [...$(".selected  .str-toggle-button")].some(e =>
+
+        {
+          let buttonText = e.children[0].innerText.replace(/\s/g, "").replace(/([A-Z])/g, ' $1').trim();
+
+
+          return buttonText === listText
+
+        }
+
+      );
+
+
+
+
+      if (!returned) {
+        //creates a clone from the first toggle button in the selected div
+//        const button = $(".selected  .str-toggle-button:first-child").clone()
+        //        HTMLButtonElement>HTMLLabelElement>HTMLInputElement[radio]
+//        button.children()[0].children[0].checked
+//        button.children()[0].children[0].value = listText
+//        button.children()[0].innerText = listText
+//        button.clone().appendTo(".selected ")
+        const button=document.createElement("div"),
+              radio=document.createElement("input"),
+              label=document.createElement("label")
+        
+      
+        $(button).addClass("btn-group-toggle m-1 str-toggle-button")
+        $(label).addClass("btn btn-outline-secondary active")
+        $(button).attr("data-toggle","buttons")
+        $(radio).attr("checked","buttons")
+        $(radio).attr("autocomplete","off")
+        $(radio).attr("type","checkbox")
+        $(radio).attr("value",ID)
+        $(radio).attr("name","girls[]")
+        $(label).attr("data-ID",ID)
+        label.innerText = listText
+        label.appendChild(radio)
+        button.appendChild(label)
+        
+        
+        $(".selected ").append(button)
+      }
+
+      //disabled after onclick
+
       $(this).parent().css({
         cursor: "no-drop",
         "pointer-events": "none"
@@ -935,9 +1181,99 @@
       });
       $(".list-group.custom-list-group.rounded-3").addClass("d-none");
     });
-    $(".form-control.form-control-muted.search-input").focus(function () {
+
+    //    onfocus show the HTMLUListElement
+    $(".form-control.form-control-muted.search-input").focus(function() {
       $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
     });
     
+    
+//    ajax call
+    
+    
+        
+        	$("#musanedSubmit").unbind('click').bind('click', function() {
+             
+              	
+              	$("#musanedForm").unbind('submit').bind('submit', function(e){
+//                  e.preventDefault();
+              	 var form = $(this);
+				var formData = new FormData(this);
+                  console.log(formData)
+                  		$.ajax({
+					url : form.attr('action'),
+					type: form.attr('method'),
+					data: formData,
+					dataType: 'json',
+//					cache: false,
+//					contentType: false,
+//					processData: false,
+					success:function(response) {
+                    console.log(response)
+						if(response.success == true) {
+							
+
+							$("html, body, div.modal, .modal-content, div.modal-body").animate({scrollTop: '0'}, 100);
+								$('.modal-body div').hide()									
+							// shows a successful message after operation
+							$('.modal-body').append('<div class="alert alert-success">'+
+		            '<button type="button" class="close" data-dismiss="alert">&times;</button>'+
+		            '<strong><i class="ni ni-like-2"></i></strong> '+ response.messages +
+		          '</div>');
+
+							// remove the mesages
+		          $(".alert-success").delay(1000).show(10, function() {
+								$(this).delay(3000).hide(10, function() {
+									$(this).remove();
+                                  $('.modal-body div').show()
+								});
+							}); // /.alert
+
+		          
+						} // /if response.success
+                      
+                      
+                      else{
+                        
+                        
+                        
+                        
+							$("html, body, div.modal, .modal-content, div.modal-body").animate({scrollTop: '0'}, 100);
+									$('.modal-body div').hide()								
+							// shows a successful message after operation
+							$('.modal-body').append('<div class="alert alert-warning shaking-2">'+
+		            '<button type="button" class="close" data-dismiss="alert">&times;</button>'+
+		            '<strong><i class="ni ni-like-2"></i></strong> '+ response.messages +
+		          '</div>');
+
+							// remove the mesages
+		          $(".alert-warning").delay(500).show(10, function() {
+								$(this).delay(3000).hide(10, function() {
+									$(this).remove();
+                                  $('.modal-body div').show()
+								});
+							}); // /.alert
+
+                        
+                        
+                        
+                        
+                        
+                      }
+						
+					} // /success function
+				}); // /ajax function
+                  
+                  return false;
+                  
+              	})
+        
+            })
+
+    
+    
+
+
   });
+
 </script>
