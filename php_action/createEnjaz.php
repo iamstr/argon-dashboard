@@ -6,20 +6,21 @@ $valid['success'] = array('success' => false, 'messages' => array());
 if(!empty($_POST)):
 $girls=$_POST['girls'];
 //$school=mysqli_real_escape_string($connect,$_POST['school']);
-//$enjaz_number=mysqli_real_escape_string($connect,$_POST['enjaz_number']);
-//$medical=mysqli_real_escape_string($connect,$_POST['medical']);
+$enjaz=mysqli_real_escape_string($connect,$_POST['enjaz']);
+$medical=mysqli_real_escape_string($connect,$_POST['medical']);
 //$conduct=mysqli_real_escape_string($connect,$_POST['conduct']);
 //$wakala=mysqli_real_escape_string($connect,$_POST['wakala']);
-$status=mysqli_real_escape_string($connect,$_POST['status']);
+$wakala=mysqli_real_escape_string($connect,$_POST['wakala']);
+$hospital=mysqli_real_escape_string($connect,$_POST['hospital']);
 
 $user=1;
-$date=date("Y-m-d");
+$date=date("Y-m-d H:m:s");
 
 foreach ($girls as $girl) {
   
   if(!empty($girl)):
   
-  $sql = "INSERT INTO `nea`( `nea_date`, `nea_status`, `girl_id`, `user_id`, `updatedBy`)  VALUES ( '$date' ,'$status','$girl','$user','$user')";
+  $sql = "INSERT INTO `enjaz`( `enjaz_status`, `enjaz_date`, `enjaz_medical`, `medical_id`,  `enjaz_wakala`, `user_id`, `updatedBy`)   VALUES ('$enjaz', '$date' ,'$medical', '$hospital','$girl','$user','$user')";
 				if($connect->query($sql) === TRUE) {
 					$valid['success'] = true;
                     $girl_id = $connect->insert_id;

@@ -980,10 +980,12 @@
           </div>
         </div>
       </div>
-      <?php include("includes/footer.php");?>
+      
     </div>
   </div>
-</body>
+  <script src="assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" defer></script>
+<?php include("includes/footer.php");?>
+       
 
 
 
