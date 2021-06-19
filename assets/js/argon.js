@@ -934,20 +934,23 @@ var Datepicker = (function () {
 
   // Methods
 
-  function init($this) {
+  function init(datepicker) {
     var options = {
       disableTouchKeyboard: true,
       autoclose: false
     };
-    console.log($this,"this is the date picker")
-    $this.datepicker(options);
+    
+    $(datepicker).datepicker(options);
   }
 
   // Events
 
   if ($datepicker.length) {
     $datepicker.each(function () {
-      init($(this));
+     
+        init($(this));
+      
+      
     });
   }
 })();

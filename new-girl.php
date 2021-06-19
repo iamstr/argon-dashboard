@@ -411,7 +411,7 @@
       </div>
     </form>
 
-    <script src="assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" defer></script>
+<!--    <script src="assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" defer></script>-->
 
     <?php include("includes/footer.php");?>
 
@@ -422,7 +422,11 @@
 
         $('.datepicker').datepicker({
           autoclose: true,
-          format: 'mm/dd/yyyy',
+           changeMonth: true,
+      changeYear: true,
+          format: 'yyyy-mm-dd',
+         defaultViewDate :new Date(),
+          startDate:"-38y",
           endDate: '-21y'
         });
 
