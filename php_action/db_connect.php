@@ -7,7 +7,7 @@ $username = "root";
 $password = "";
 $dbname = "recruitment";
 //$store_url = "http://localhost/php-inventory-management-system/";
-$store_url = "/";
+$store_url = "/argon-dashboard/";
 // db connection
 $connect = new mysqli($localhost, $username, $password, $dbname);
 // check connection

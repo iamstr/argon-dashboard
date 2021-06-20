@@ -1,3 +1,6 @@
+
+<?php require_once 'php_action/core.php'; ?>
+
 <!DOCTYPE html>
 <html>
 
