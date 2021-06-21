@@ -4,7 +4,7 @@
 require_once 'php_action/db_connect.php';
 
 session_start();
-echo $_SESSION['user'];
+
 if(isset($_SESSION['user'])) {
 	header('location:'.$store_url.'dashboard.php');		
 }
@@ -57,7 +57,7 @@ if($_POST) {
 
 else{
   
-  $errors[] = "Something went wrong";	
+//  $errors[] = "Something went wrong";	
 }
 ?>
 

@@ -12,7 +12,7 @@ $conduct=mysqli_real_escape_string($connect,$_POST['conduct']);
 $wakala=mysqli_real_escape_string($connect,$_POST['wakala']);
 $enjaz=mysqli_real_escape_string($connect,$_POST['enjaz']);
 $visa=mysqli_real_escape_string($connect,$_POST['visa']);
-$user=1;
+$user=$_SESSION["user"];
 $date=date("Y-m-d");
 
 foreach ($girls as $girl) {

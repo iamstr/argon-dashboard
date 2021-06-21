@@ -11,7 +11,7 @@ $ID=mysqli_real_escape_string($connect,$_POST['ID']);
 $address=mysqli_real_escape_string($connect,$_POST['address']);
 $contract_number=mysqli_real_escape_string($connect,$_POST['contract_number']);
 $visa_number=mysqli_real_escape_string($connect,$_POST['visa_number']);
-$user=1;
+$user=$_SESSION["user"];
 $date=date("Y-m-d");
 echo print_r($girls);
 foreach ($girls as $girl) {

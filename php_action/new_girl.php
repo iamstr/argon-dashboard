@@ -27,15 +27,17 @@ if($_POST) {
   $kin_id2= $_POST['kin_id2'];
   $agent_name= $_POST['agent_name'];
   $agent_number= $_POST['agent_number'];
-  $_SESSION['user']=1;
+  $passport_date_issue= date("Y-m-d", strtotime($_POST['passport_date_issue']));
+  $passport_date_expiry= date("Y-m-d", strtotime($_POST['passport_date_expiry']));
   $user=$_SESSION['user']||1;
   $date=date("Y-m-d H:m:s");
   
   
 
 	
-				$sql = "INSERT INTO `girls`(`girl_fullname`, `girl_IDnumber`, `girl_phone`, `girl_dob`, `girl_religion`, `girl_county`, `girl_passport`, `girl_goodConduct`, `girl_passport_place`, `girl_birth`, `girl_firstMedical`, `user_id`,date_created)  
-				VALUES ('$fullname', '$id' , '$phone','$dob','$religion','$county','$passport','$conduct','$place_issue','$birth_cert','$firstMedical','$user','$date')";
+				$sql = "INSERT INTO `girls`(`girl_fullname`, `girl_IDnumber`, `girl_phone`, `girl_dob`, `girl_religion`, `girl_county`, `girl_passport`,   `passport_date_issue`, `passport_date_expiry` `girl_goodConduct`, `girl_passport_place`, `girl_birth`, `girl_firstMedical`, `user_id`,dateCreated, `updatedBy`)  
+				VALUES ('$fullname', '$id' , '$phone','$dob','$religion','$county','$passport',$passport_date_issue,
+$passport_date_expiry,'$conduct','$place_issue','$birth_cert','$firstMedical','$user','$date',$user)";
 				if($connect->query($sql) === TRUE) {
 					$valid['success'] = true;
                     $girl_id = $connect->insert_id;

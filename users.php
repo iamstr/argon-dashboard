@@ -20,7 +20,7 @@
               <h3 class="mb-0">Add New User</h3>
             </div>
             <div class="card-body">
-              <a class="btn btn-primary" href="expenses">Create New User </a>
+              <a class="btn btn-primary" href="register">Create New User </a>
             </div>
           </div>
         </div>

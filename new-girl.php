@@ -197,6 +197,20 @@
                     </select>
                   </div>
                 </div>
+                
+                
+                <div class="col-5">
+                  <div class="form-group">
+                    <label for="dob">Girl Date Of Birth</label>
+                    <div class="input-group">
+
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
+                      </div>
+                      <input class="form-control datepicker" placeholder="Select date" type="text" name="passport_date_issue" id="pdi">
+                    </div>
+                  </div>
+                </div>
 
               </div>
             </div>
@@ -420,7 +434,7 @@
         const stepForm = $(".steps-form")
 
 
-        $('.datepicker').datepicker({
+        $('#dob').datepicker({
           autoclose: true,
            changeMonth: true,
       changeYear: true,
@@ -428,6 +442,16 @@
          defaultViewDate :new Date(),
           startDate:"-38y",
           endDate: '-21y'
+        }); 
+        
+        $('#pdi').datepicker({
+          autoclose: true,
+           changeMonth: true,
+      changeYear: true,
+          format: 'yyyy-mm-dd',
+         defaultViewDate :new Date(),
+          startDate:"-10y",
+          endDate: '0d'
         });
 
 

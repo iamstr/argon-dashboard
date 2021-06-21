@@ -21,7 +21,7 @@ $tshirt=mysqli_real_escape_string($connect,$_POST['tshirt']);
 $travel=date("Y-m-d H:m:s",strtotime($travel));
 $arrival=date("Y-m-d H:m:s",strtotime($arrival));
 $pcr=date("Y-m-d H:m:s",strtotime($pcr));
-$user=1;
+$user=$_SESSION["user"];
 foreach ($girls as $girl) {
   
   if(!empty($girl)):

@@ -13,7 +13,7 @@ $medical=mysqli_real_escape_string($connect,$_POST['medical']);
 $wakala=mysqli_real_escape_string($connect,$_POST['wakala']);
 $hospital=mysqli_real_escape_string($connect,$_POST['hospital']);
 
-$user=1;
+$user=$_SESSION["user"];
 $date=date("Y-m-d H:m:s");
 
 foreach ($girls as $girl) {

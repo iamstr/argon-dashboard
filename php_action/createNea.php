@@ -12,7 +12,7 @@ $girls=$_POST['girls'];
 //$wakala=mysqli_real_escape_string($connect,$_POST['wakala']);
 $status=mysqli_real_escape_string($connect,$_POST['status']);
 
-$user=1;
+$user=$_SESSION["user"];
 $date=date("Y-m-d");
 
 foreach ($girls as $girl) {

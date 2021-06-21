@@ -21,7 +21,7 @@ $end=mysqli_real_escape_string($connect,$_POST['end']);
 $start=date("Y-m-d",strtotime($start));
 $end=date("Y-m-d",strtotime($end));
 
-$user=1;
+$user=$_SESSION["user"];
 foreach ($girls as $girl) {
   
   if(!empty($girl)):
