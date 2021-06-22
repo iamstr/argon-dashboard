@@ -45,7 +45,7 @@
     <div class="container-fluid mt-6">
       <div class="row">
 
-        <div class="col">
+        <form class="col" action="php_action/newUploads" method="post" >
 
           <div class="card steps-form">
             <div class="card-header">
@@ -65,7 +65,7 @@
               <p class="h3 my-4">Select Girl Whom Files You wanna Upload</p>
 
               <div class="form-group position-relative">
-                <input type="search" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" />
+                <input type="search" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" id="search" name="search" />
                 <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
               </div>
 
@@ -106,7 +106,189 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0">Girl's Passport Photo </h3>
+                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Passport Photo  </h3>
+                </div>
+                <div class="col-4 text-right">
+                  <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+
+
+              <div class="form-group position-relative">
+                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="passport_photo[]" />
+                <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
+              </div>
+              <div class="display-image">
+
+
+
+
+
+
+
+
+
+              </div>
+
+            </div>
+            <div class="card-footer">
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-icon btn-outline-secondary w-25 btn-lg steps-form-button-back" type="button">
+                  <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
+                  <span class="btn-inner--text">Back</span>
+                </button>
+                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" type="button">
+                  <span class="btn-inner--text">Next</span>
+                  <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card steps-form">
+            <div class="card-header">
+              <div class="row align-items-center">
+                <div class="col-8">
+                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Full Photo </h3>
+                </div>
+                <div class="col-4 text-right">
+                  <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+
+
+              <div class="form-group position-relative">
+                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="full_photo[]" />
+                <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
+              </div>
+              <div class="display-image">
+
+
+
+
+
+
+
+
+
+              </div>
+
+            </div>
+            <div class="card-footer">
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-icon btn-outline-secondary w-25 btn-lg steps-form-button-back" type="button">
+                  <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
+                  <span class="btn-inner--text">Back</span>
+                </button>
+                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" type="button">
+                  <span class="btn-inner--text">Next</span>
+                  <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card steps-form">
+            <div class="card-header">
+              <div class="row align-items-center">
+                <div class="col-8">
+                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Birth Certificate </h3>
+                </div>
+                <div class="col-4 text-right">
+
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+
+
+              <div class="form-group position-relative">
+                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="birth[]" />
+                <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
+              </div>
+              <div class="display-image">
+
+
+
+
+
+
+
+
+
+              </div>
+
+            </div>
+            <div class="card-footer">
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-icon btn-outline-secondary w-25 btn-lg steps-form-button-back" type="button">
+                  <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
+                  <span class="btn-inner--text">Back</span>
+                </button>
+                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" type="button">
+                  <span class="btn-inner--text">Next</span>
+                  <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card steps-form">
+            <div class="card-header">
+              <div class="row align-items-center">
+                <div class="col-8">
+                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> ID Copy </h3>
+                </div>
+                <div class="col-4 text-right">
+                  <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+
+
+              <div class="form-group position-relative">
+                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="id[]" />
+                <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
+              </div>
+              <div class="display-image">
+
+
+
+
+
+
+
+
+
+              </div>
+
+            </div>
+            <div class="card-footer">
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-icon btn-outline-secondary w-25 btn-lg steps-form-button-back" type="button">
+                  <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
+                  <span class="btn-inner--text">Back</span>
+                </button>
+                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" type="button">
+                  <span class="btn-inner--text">Next</span>
+                  <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card steps-form">
+            <div class="card-header">
+              <div class="row align-items-center">
+                <div class="col-8">
+                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Passport Copy</h3>
                 </div>
                 <div class="col-4 text-right">
                   <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
@@ -147,12 +329,11 @@
             </div>
           </div>
 
-
           <div class="card steps-form">
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0">Girl's Full Photo </h3>
+                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Next Of Kin </h3>
                 </div>
                 <div class="col-4 text-right">
                   <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
@@ -163,7 +344,7 @@
 
 
               <div class="form-group position-relative">
-                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="files[]" />
+                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="kin1[]" />
                 <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
               </div>
               <div class="display-image">
@@ -198,52 +379,7 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0">Girl's Birth Certificate </h3>
-                </div>
-                <div class="col-4 text-right">
-
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-
-
-              <div class="form-group position-relative">
-                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="files[]" />
-                <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
-              </div>
-              <div class="display-image">
-
-
-
-
-
-
-
-
-
-              </div>
-
-            </div>
-            <div class="card-footer">
-              <div class="d-flex justify-content-end">
-                <button class="btn btn-icon btn-outline-secondary w-25 btn-lg steps-form-button-back" type="button">
-                  <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
-                  <span class="btn-inner--text">Back</span>
-                </button>
-                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" type="button">
-                  <span class="btn-inner--text">Next</span>
-                  <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="card steps-form">
-            <div class="card-header">
-              <div class="row align-items-center">
-                <div class="col-8">
-                  <h3 class="mb-0">Girl's ID Copy </h3>
+                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Next Of Kin 2 </h3>
                 </div>
                 <div class="col-4 text-right">
                   <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
@@ -254,143 +390,7 @@
 
 
               <div class="form-group position-relative">
-                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="files[]" />
-                <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
-              </div>
-              <div class="display-image">
-
-
-
-
-
-
-
-
-
-              </div>
-
-            </div>
-            <div class="card-footer">
-              <div class="d-flex justify-content-end">
-                <button class="btn btn-icon btn-outline-secondary w-25 btn-lg steps-form-button-back" type="button">
-                  <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
-                  <span class="btn-inner--text">Back</span>
-                </button>
-                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" type="button">
-                  <span class="btn-inner--text">Next</span>
-                  <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="card steps-form">
-            <div class="card-header">
-              <div class="row align-items-center">
-                <div class="col-8">
-                  <h3 class="mb-0">Girl's Passport Copy</h3>
-                </div>
-                <div class="col-4 text-right">
-                  <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-
-
-              <div class="form-group position-relative">
-                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="files[]" />
-                <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
-              </div>
-              <div class="display-image">
-
-
-
-
-
-
-
-
-
-              </div>
-
-            </div>
-            <div class="card-footer">
-              <div class="d-flex justify-content-end">
-                <button class="btn btn-icon btn-outline-secondary w-25 btn-lg steps-form-button-back" type="button">
-                  <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
-                  <span class="btn-inner--text">Back</span>
-                </button>
-                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" type="button">
-                  <span class="btn-inner--text">Next</span>
-                  <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="card steps-form">
-            <div class="card-header">
-              <div class="row align-items-center">
-                <div class="col-8">
-                  <h3 class="mb-0">Girl's Next Of Kin </h3>
-                </div>
-                <div class="col-4 text-right">
-                  <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-
-
-              <div class="form-group position-relative">
-                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="files[]" />
-                <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
-              </div>
-              <div class="display-image">
-
-
-
-
-
-
-
-
-
-              </div>
-
-            </div>
-            <div class="card-footer">
-              <div class="d-flex justify-content-end">
-                <button class="btn btn-icon btn-outline-secondary w-25 btn-lg steps-form-button-back" type="button">
-                  <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
-                  <span class="btn-inner--text">Back</span>
-                </button>
-                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" type="button">
-                  <span class="btn-inner--text">Next</span>
-                  <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card steps-form">
-            <div class="card-header">
-              <div class="row align-items-center">
-                <div class="col-8">
-                  <h3 class="mb-0">Girl's Next Of Kin 2 </h3>
-                </div>
-                <div class="col-4 text-right">
-                  <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-
-
-              <div class="form-group position-relative">
-                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="files[]" />
+                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="kin2[]" />
                 <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
               </div>
               <div class="display-image">
@@ -425,7 +425,7 @@
             <div class="card-header border-0">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <!--                  <h3 class="mb-0">Girl's Next Of Kin 2 </h3>-->
+                  <!--                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Next Of Kin 2 </h3>-->
                 </div>
                 <div class="col-4 text-right">
                   <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
@@ -440,7 +440,7 @@
                 <?php include("includes/vectors/success.php");?></a>
 
 
-              <a href="uploaded.php" class="btn btn-success btn-lg btn-block mx-auto w-50">Check The Uploaded files</a>
+              <button type="submit" class="btn btn-success btn-lg btn-block mx-auto w-50">Check The Uploaded files</button>
 
 
 
@@ -456,7 +456,7 @@
                   <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
                   <span class="btn-inner--text">Back</span>
                 </button>
-                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" type="button">
+                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" >
                   <span class="btn-inner--text">Next</span>
                   <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
                 </button>
@@ -467,54 +467,139 @@
 
 
 
-        </div>
+        </form>
       </div>
     </div>
   </div>
 
   <?php include("includes/footer.php");?>
+  
   <script>
-    $(document).ready(function() {
-      $(".form-control.form-control-muted.search-input").focus();
-      $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
-      $(".list-group-item span").css({
-        height: "100%",
-        width: "100%",
-        display: "block"
-      });
-      $(".list-group-item ").css({
-        cursor: "pointer"
-      });
-      $(".list-group-item").removeClass("d-flex");
-      $("body ").on("click", ".list-group-item span", function(e) {
-        console.log(e.currentTarget.textContent);
-        $(this).addClass("text-muted");
-        $(this).parent().css({
-          cursor: "no-drop",
-          "pointer-events": "none"
-        });
-        $(this).css({
-          cursor: "no-drop",
-          "pointer-events": "none"
-        });
-        $(".list-group.custom-list-group.rounded-3").addClass("d-none");
-      });
-      $(".form-control.form-control-muted.search-input").focus(function() {
-        $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
-      });
-
+    
+$(".form-control.form-control-muted.search-input").focus();
+    $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
+    $(".list-group-item span").css({
+      height: "100%",
+      width: "100%",
+      display: "block"
     });
+    $("th[scope='col']").css({
+      cursor: "pointer",
+      position: "sticky",
+      left: 0,
+      top: 0
+    });
+    $("th .dropdown-menu").css({
+      "min-width": "20rem",
+      padding: "1rem"
+    });
+    $(".list-group-item ").css({
+      cursor: "pointer"
+    });
+    $(".list-group-item").removeClass("d-flex");
+    
+//    onkeyup attach the response to span
+    
+    $(".form-control.form-control-muted.search-input").keyup(function(){
+      
+ 
+      
+      
+      $.get("php_action/searchGirl?term="+$(this).val(), function(data, status){
+        
+        if(status){
+          
+          $(".custom-list-group").html(data)
+        }
+    console.log("Data: " + data + "\nStatus: " + status);
+  });
+});
+    $("body ").on("click", ".list-group-item span", function(e) {
+
+      $(this).addClass("text-muted");
+
+      //      this is the clicked item text
+      const listText = $(this).text().trim();
+      const ID = $(this).attr("id").trim();
+
+      //      checks if the selected text is part of the selected label 
+      const returned = [...$(".selected  .str-toggle-button")].some(e =>
+
+        {
+          let buttonText = e.children[0].innerText.replace(/\s/g, "").replace(/([A-Z])/g, ' $1').trim();
+
+
+          return buttonText === listText
+
+        }
+
+      );
+
+
+
+
+      if (!returned) {
+        //creates a clone from the first toggle button in the selected div
+//        const button = $(".selected  .str-toggle-button:first-child").clone()
+        //        HTMLButtonElement>HTMLLabelElement>HTMLInputElement[radio]
+//        button.children()[0].children[0].checked
+//        button.children()[0].children[0].value = listText
+//        button.children()[0].innerText = listText
+//        button.clone().appendTo(".selected ")
+        const button=document.createElement("div"),
+              radio=document.createElement("input"),
+              label=document.createElement("label")
+        
+      
+        $(button).addClass("btn-group-toggle m-1 str-toggle-button")
+        $(label).addClass("btn btn-outline-secondary active")
+        $(button).attr("data-toggle","buttons")
+        $(radio).attr("checked","buttons")
+        $(radio).attr("autocomplete","off")
+        $(radio).attr("type","checkbox")
+        $(radio).attr("value",ID)
+        $(radio).attr("name","girls[]")
+        $(label).attr("data-ID",ID)
+        label.innerText = listText
+        label.appendChild(radio)
+        button.appendChild(label)
+        $("#search").val(ID)
+        
+        $(".selected ").append(button)
+        $(".girl-name ").text(listText)
+      }
+
+      //disabled after onclick
+
+      $(this).parent().css({
+        cursor: "no-drop",
+        "pointer-events": "none"
+      });
+      $(this).css({
+        cursor: "no-drop",
+        "pointer-events": "none"
+      });
+      $(".list-group.custom-list-group.rounded-3").addClass("d-none");
+    });
+
+    //    onfocus show the HTMLUListElement
+    $(".form-control.form-control-muted.search-input").focus(function() {
+      $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
+    });
+    
+    
     $(".retry").click(function(e) {
       $("input[type=file]").click()
 
     })
 
-    $("input[type=file]").change(function() {
+    $("input[type=file]").change(function(e) {
 
       const display = $(".display-image"),
         img = document.createElement("IMG"),
         input = this,
         url = $(this).val(),
+            element=e;
         ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
       img.height = "200"
       img.width = "200"
@@ -524,9 +609,8 @@
 
         reader.onload = function(e) {
           $(img).attr('src', e.target.result);
-          //          $(img).appendTo(display)
-          console.log(e)
-          display.html(img)
+         
+          $(element.target.parentElement.nextElementSibling).html(img)
         }
         reader.readAsDataURL(input.files[0]);
       } else {
