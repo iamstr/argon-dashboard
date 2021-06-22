@@ -29,7 +29,7 @@ if($_POST) {
     
    
 
-				if($result=$connect->query($sql) === TRUE) {
+				$result=$connect->query($sql);
 					$valid['success'] = true;
 					$valid['messages'] = "Successfully Added";	
                   
@@ -389,10 +389,7 @@ if($_POST) {
                   
                   
                   
-				} else {
-					$valid['success'] = false;
-					$valid['messages'] = "Error while uploading the images ". $sql." ".$search.$connect->error;
-				}
+				} 
     
     
     

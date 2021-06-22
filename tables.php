@@ -20,19 +20,12 @@
   <!-- Main content -->
   <div class="main-content" id="panel">
     <!-- Topnav -->
- <?php include("includes/top-nav.php");?>
+    <?php include("includes/top-nav.php");?>
     <!-- Page content -->
     <div class="container-fluid mt-5">
       <div class="card p-4">
         <p>
-          <button
-            class="btn btn-icon btn-secondary btn-sm"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapseExample"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-          >
+          <button class="btn btn-icon btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             <span class="btn-inner--icon"><i class="ni ni-ui-04"></i></span>
             <span class="btn-inner--text">Filter</span>
           </button>
@@ -41,191 +34,132 @@
           <div class="card-body str-view">
             <h3 class="str-view-header text-muted">Change View</h3>
             <div class="str-view-row d-flex flex-wrap">
+             
+<!--
+             
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" autocomplete="off"checked /> fullname
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
+                  <input type="checkbox" autocomplete="off" checked /> fullname
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" autocomplete="off"checked /> ID
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
+                  <input type="checkbox" autocomplete="off" checked /> ID
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" autocomplete="off"checked /> Phone Number
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
+                  <input type="checkbox" autocomplete="off" checked /> Phone Number
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" autocomplete="off"checked /> County
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
+                  <input type="checkbox" autocomplete="off" checked /> County
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" autocomplete="off" checked/> Religion
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
+                  <input type="checkbox" autocomplete="off" checked /> Religion
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" checked/> birth
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
+                  <input type="checkbox" checked autocomplete="off" checked /> birth
                   certificate
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> first
                   medical
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> photos
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> passport
                   number
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> passport
                   issue place
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> good
                   conduct
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> next of
                   kin names
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> next of
                   kin relation
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> next of
                   kin id
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> next of
                   kin number
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> agent
                   name
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> agent
                   number
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> school
                   start date
                 </label>
               </div>
 
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> school
                   name
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> school
                   end date
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> school
                   certificate
                 </label>
               </div>
-<!--        this is would be introducted in the next release      
+-->
+              <!--        this is would be introducted in the next release      
               <div class="btn-group-toggle m-1" data-toggle="buttons">
                 <label
                   class="btn btn-outline-str-secondary active"
@@ -245,128 +179,94 @@
               </div>
               
               -->
+              
+<!--
+              
+              
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> saudia
                   agency
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> musaned
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> sponspor
                   name
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" />
                   Enjaz
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" />
                   destination
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" />
                   Full Medical
                 </label>
               </div>
 
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> yellow
                   fever
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> pcr check
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> t-shirts
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> pregancy
                   test
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> ticket
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> travel
                   date
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> arrival
                   date
                 </label>
               </div>
               <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
+                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
                   <input type="checkbox" checked autocomplete="off" /> duration
                 </label>
               </div>
+              
+-->
+              <?php require_once("php_action/fetchColumnNames.php");?>
+              
             </div>
           </div>
         </div>
@@ -385,7 +285,7 @@
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr class="table-agent position-relative">
-<!--
+                    <!--
                     <th scope="col" class="sort" data-sort="name">Fullname</th>
                    
 -->
@@ -397,24 +297,19 @@
                     <th scope="row">
                       <div class="media align-items-center">
                         <a href="#" class="avatar rounded-circle mr-3">
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/bootstrap.jpg"
-                          />
+                          <img alt="Image placeholder" src="assets/img/theme/bootstrap.jpg" />
                         </a>
                         <div class="media-body">
-                          <span class="name mb-0 text-sm"
-                            >Susan Bitengo</span
-                          >
+                          <span class="name mb-0 text-sm">Susan Bitengo</span>
                         </div>
                       </div>
                     </th>
-                   
 
-                   
+
+
                     <td class="budget">21234500</td>
-                   
-                    
+
+
                     <td class="budget">0700321456</td>
                     <td class="budget">KISII</td>
                     <td class="budget">NON MUSLIM</td>
@@ -444,7 +339,7 @@
                     <td class="budget">Okay</td>
                     <td class="budget">Yellow Fever</td>
                     <td class="budget">25 <sup>th</sup> March 2021</td>
-                   
+
                     <td class="budget">25 <sup>th</sup> March 2021</td>
                     <td class="budget">01 <sup>th</sup> April 2021</td>
                     <td class="budget">03 <sup>th</sup> April 2021</td>
@@ -452,30 +347,19 @@
 
                     <td class="text-center">
                       <div class="dropdown">
-                        <a
-                          class="btn btn-sm btn-icon-only text-light"
-                          href="#"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
-                        <div
-                          class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
-                        >
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="#">Action</a>
                           <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
+                          <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                       </div>
                     </td>
                   </tr>
-                  
-                  
+
+
                 </tbody>
               </table>
             </div>
@@ -493,9 +377,7 @@
                     <a class="page-link" href="#">1</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#"
-                      >2 <span class="sr-only">(current)</span></a
-                    >
+                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
                   <li class="page-item">
@@ -536,15 +418,10 @@
                     <th scope="row">
                       <div class="media align-items-center">
                         <a href="#" class="avatar rounded-circle mr-3">
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/bootstrap.jpg"
-                          />
+                          <img alt="Image placeholder" src="assets/img/theme/bootstrap.jpg" />
                         </a>
                         <div class="media-body">
-                          <span class="name mb-0 text-sm"
-                            >Argon Design System</span
-                          >
+                          <span class="name mb-0 text-sm">Argon Design System</span>
                         </div>
                       </div>
                     </th>
@@ -557,49 +434,17 @@
                     </td>
                     <td>
                       <div class="avatar-group">
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Ryan Tompson"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-1.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                          <img alt="Image placeholder" src="assets/img/theme/team-1.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Romina Hadid"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-2.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Romina Hadid">
+                          <img alt="Image placeholder" src="assets/img/theme/team-2.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Alexander Smith"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-3.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Alexander Smith">
+                          <img alt="Image placeholder" src="assets/img/theme/team-3.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Jessica Doe"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-4.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Jessica Doe">
+                          <img alt="Image placeholder" src="assets/img/theme/team-4.jpg" />
                         </a>
                       </div>
                     </td>
@@ -608,38 +453,20 @@
                         <span class="completion mr-2">60%</span>
                         <div>
                           <div class="progress">
-                            <div
-                              class="progress-bar bg-warning"
-                              role="progressbar"
-                              aria-valuenow="60"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="width: 60%"
-                            ></div>
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
                           </div>
                         </div>
                       </div>
                     </td>
                     <td class="text-right">
                       <div class="dropdown">
-                        <a
-                          class="btn btn-sm btn-icon-only text-light"
-                          href="#"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
-                        <div
-                          class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
-                        >
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="#">Action</a>
                           <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
+                          <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                       </div>
                     </td>
@@ -648,15 +475,10 @@
                     <th scope="row">
                       <div class="media align-items-center">
                         <a href="#" class="avatar rounded-circle mr-3">
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/angular.jpg"
-                          />
+                          <img alt="Image placeholder" src="assets/img/theme/angular.jpg" />
                         </a>
                         <div class="media-body">
-                          <span class="name mb-0 text-sm"
-                            >Angular Now UI Kit PRO</span
-                          >
+                          <span class="name mb-0 text-sm">Angular Now UI Kit PRO</span>
                         </div>
                       </div>
                     </th>
@@ -669,49 +491,17 @@
                     </td>
                     <td>
                       <div class="avatar-group">
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Ryan Tompson"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-1.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                          <img alt="Image placeholder" src="assets/img/theme/team-1.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Romina Hadid"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-2.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Romina Hadid">
+                          <img alt="Image placeholder" src="assets/img/theme/team-2.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Alexander Smith"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-3.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Alexander Smith">
+                          <img alt="Image placeholder" src="assets/img/theme/team-3.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Jessica Doe"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-4.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Jessica Doe">
+                          <img alt="Image placeholder" src="assets/img/theme/team-4.jpg" />
                         </a>
                       </div>
                     </td>
@@ -720,38 +510,20 @@
                         <span class="completion mr-2">100%</span>
                         <div>
                           <div class="progress">
-                            <div
-                              class="progress-bar bg-success"
-                              role="progressbar"
-                              aria-valuenow="100"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="width: 100%"
-                            ></div>
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
                           </div>
                         </div>
                       </div>
                     </td>
                     <td class="text-right">
                       <div class="dropdown">
-                        <a
-                          class="btn btn-sm btn-icon-only text-light"
-                          href="#"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
-                        <div
-                          class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
-                        >
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="#">Action</a>
                           <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
+                          <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                       </div>
                     </td>
@@ -760,10 +532,7 @@
                     <th scope="row">
                       <div class="media align-items-center">
                         <a href="#" class="avatar rounded-circle mr-3">
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/sketch.jpg"
-                          />
+                          <img alt="Image placeholder" src="assets/img/theme/sketch.jpg" />
                         </a>
                         <div class="media-body">
                           <span class="name mb-0 text-sm">Black Dashboard</span>
@@ -779,49 +548,17 @@
                     </td>
                     <td>
                       <div class="avatar-group">
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Ryan Tompson"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-1.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                          <img alt="Image placeholder" src="assets/img/theme/team-1.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Romina Hadid"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-2.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Romina Hadid">
+                          <img alt="Image placeholder" src="assets/img/theme/team-2.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Alexander Smith"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-3.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Alexander Smith">
+                          <img alt="Image placeholder" src="assets/img/theme/team-3.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Jessica Doe"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-4.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Jessica Doe">
+                          <img alt="Image placeholder" src="assets/img/theme/team-4.jpg" />
                         </a>
                       </div>
                     </td>
@@ -830,38 +567,20 @@
                         <span class="completion mr-2">72%</span>
                         <div>
                           <div class="progress">
-                            <div
-                              class="progress-bar bg-danger"
-                              role="progressbar"
-                              aria-valuenow="72"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="width: 72%"
-                            ></div>
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%"></div>
                           </div>
                         </div>
                       </div>
                     </td>
                     <td class="text-right">
                       <div class="dropdown">
-                        <a
-                          class="btn btn-sm btn-icon-only text-light"
-                          href="#"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
-                        <div
-                          class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
-                        >
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="#">Action</a>
                           <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
+                          <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                       </div>
                     </td>
@@ -870,15 +589,10 @@
                     <th scope="row">
                       <div class="media align-items-center">
                         <a href="#" class="avatar rounded-circle mr-3">
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/react.jpg"
-                          />
+                          <img alt="Image placeholder" src="assets/img/theme/react.jpg" />
                         </a>
                         <div class="media-body">
-                          <span class="name mb-0 text-sm"
-                            >React Material Dashboard</span
-                          >
+                          <span class="name mb-0 text-sm">React Material Dashboard</span>
                         </div>
                       </div>
                     </th>
@@ -891,49 +605,17 @@
                     </td>
                     <td>
                       <div class="avatar-group">
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Ryan Tompson"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-1.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                          <img alt="Image placeholder" src="assets/img/theme/team-1.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Romina Hadid"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-2.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Romina Hadid">
+                          <img alt="Image placeholder" src="assets/img/theme/team-2.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Alexander Smith"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-3.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Alexander Smith">
+                          <img alt="Image placeholder" src="assets/img/theme/team-3.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Jessica Doe"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-4.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Jessica Doe">
+                          <img alt="Image placeholder" src="assets/img/theme/team-4.jpg" />
                         </a>
                       </div>
                     </td>
@@ -942,38 +624,20 @@
                         <span class="completion mr-2">90%</span>
                         <div>
                           <div class="progress">
-                            <div
-                              class="progress-bar bg-info"
-                              role="progressbar"
-                              aria-valuenow="90"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="width: 90%"
-                            ></div>
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
                           </div>
                         </div>
                       </div>
                     </td>
                     <td class="text-right">
                       <div class="dropdown">
-                        <a
-                          class="btn btn-sm btn-icon-only text-light"
-                          href="#"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
-                        <div
-                          class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
-                        >
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="#">Action</a>
                           <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
+                          <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                       </div>
                     </td>
@@ -982,15 +646,10 @@
                     <th scope="row">
                       <div class="media align-items-center">
                         <a href="#" class="avatar rounded-circle mr-3">
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/vue.jpg"
-                          />
+                          <img alt="Image placeholder" src="assets/img/theme/vue.jpg" />
                         </a>
                         <div class="media-body">
-                          <span class="name mb-0 text-sm"
-                            >Vue Paper UI Kit PRO</span
-                          >
+                          <span class="name mb-0 text-sm">Vue Paper UI Kit PRO</span>
                         </div>
                       </div>
                     </th>
@@ -1003,49 +662,17 @@
                     </td>
                     <td>
                       <div class="avatar-group">
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Ryan Tompson"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-1.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                          <img alt="Image placeholder" src="assets/img/theme/team-1.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Romina Hadid"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-2.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Romina Hadid">
+                          <img alt="Image placeholder" src="assets/img/theme/team-2.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Alexander Smith"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-3.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Alexander Smith">
+                          <img alt="Image placeholder" src="assets/img/theme/team-3.jpg" />
                         </a>
-                        <a
-                          href="#"
-                          class="avatar avatar-sm rounded-circle"
-                          data-toggle="tooltip"
-                          data-original-title="Jessica Doe"
-                        >
-                          <img
-                            alt="Image placeholder"
-                            src="assets/img/theme/team-4.jpg"
-                          />
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Jessica Doe">
+                          <img alt="Image placeholder" src="assets/img/theme/team-4.jpg" />
                         </a>
                       </div>
                     </td>
@@ -1054,14 +681,7 @@
                         <span class="completion mr-2">100%</span>
                         <div>
                           <div class="progress">
-                            <div
-                              class="progress-bar bg-success"
-                              role="progressbar"
-                              aria-valuenow="100"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="width: 100%"
-                            ></div>
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
                           </div>
                         </div>
                       </div>
@@ -1069,24 +689,13 @@
 
                     <td class="text-center">
                       <div class="dropdown">
-                        <a
-                          class="btn btn-sm btn-icon-only text-light"
-                          href="#"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
-                        <div
-                          class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
-                        >
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="#">Action</a>
                           <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
+                          <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                       </div>
                     </td>
@@ -1101,13 +710,13 @@
       <?php include("includes/footer.php");?>
       <script src="bower_components/bootstrap-table/dist/bootstrap-table.min.js"></script>
       <script>
-        $(document).ready(function (e) {
+        $(document).ready(function(e) {
           const row = $(".table-agent");
 
           const selectColumnActive = $(".btn.btn-outline-str-secondary.active"),
             selectColumn = $(".btn.btn-outline-str-secondary");
 
-          selectColumn.each(function () {
+          selectColumn.each(function() {
             let th = document.createElement("th"),
               text = $(this).text().trim();
 
@@ -1120,7 +729,7 @@
             // row.append(th);
             $(th).insertBefore("th:last-child");
           });
-          selectColumn.click(function (e) {
+          selectColumn.click(function(e) {
             // console.log(
             //   $(`[data-toggle-table='${$(this).text().trim()}']`).index()
             // );
@@ -1130,19 +739,20 @@
 
             if ($(this).hasClass("active")) {
               $(`[data-toggle-table='${$(this).text().trim()}']`).hide();
-              $(".table-agent-row").each(function () {
+              $(".table-agent-row").each(function() {
                 // console.log();
                 $(this).children().eq(INDEX).hide();
               });
             } else {
               $(`[data-toggle-table='${$(this).text().trim()}']`).show();
-              $(".table-agent-row").each(function () {
+              $(".table-agent-row").each(function() {
                 // console.log();
                 $(this).children().eq(INDEX).show();
               });
             }
           });
         });
+
       </script>
     </div>
   </div>

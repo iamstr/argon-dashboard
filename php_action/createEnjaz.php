@@ -20,7 +20,7 @@ foreach ($girls as $girl) {
   
   if(!empty($girl)):
   
-  $sql = "INSERT INTO `enjaz`( `enjaz_status`, `enjaz_date`, `enjaz_medical`, `medical_id`,  `enjaz_wakala`, `user_id`, `updatedBy`)   VALUES ('$enjaz', '$date' ,'$medical', '$hospital','$girl','$user','$user')";
+  $sql = "INSERT INTO `enjaz`( `enjaz_status`, `enjaz_date`, `enjaz_medical`, `medical_id`,  `enjaz_wakala`, `girl_id`, `user_id`, `updatedBy`)   VALUES ('$enjaz', '$date' ,'$medical', '$hospital', '$wakala','$girl','$user','$user')";
 				if($connect->query($sql) === TRUE) {
 					$valid['success'] = true;
                     $girl_id = $connect->insert_id;
