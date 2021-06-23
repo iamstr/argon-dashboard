@@ -45,7 +45,7 @@
     <div class="container-fluid mt-6">
       <div class="row">
 
-        <form class="col" action="php_action/newUploads" method="post" >
+        <form class="col" action="php_action/newUploads" method="post" enctype="multipart/form-data" >
 
           <div class="card steps-form">
             <div class="card-header">
@@ -117,7 +117,7 @@
 
 
               <div class="form-group position-relative">
-                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="passport_photo[]" />
+                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="passport_photo" />
                 <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
               </div>
               <div class="display-image">
@@ -163,7 +163,7 @@
 
 
               <div class="form-group position-relative">
-                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="full_photo[]" />
+                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="full_photo" />
                 <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
               </div>
               <div class="display-image">
@@ -209,7 +209,7 @@
 
 
               <div class="form-group position-relative">
-                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="birth[]" />
+                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="birth" />
                 <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
               </div>
               <div class="display-image">
@@ -254,7 +254,7 @@
 
 
               <div class="form-group position-relative">
-                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="id[]" />
+                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="id" />
                 <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
               </div>
               <div class="display-image">
@@ -299,7 +299,7 @@
 
 
               <div class="form-group position-relative">
-                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="files[]" />
+                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="files" />
                 <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
               </div>
               <div class="display-image">
@@ -344,7 +344,7 @@
 
 
               <div class="form-group position-relative">
-                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="kin1[]" />
+                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="kin1" />
                 <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
               </div>
               <div class="display-image">
@@ -390,7 +390,7 @@
 
 
               <div class="form-group position-relative">
-                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="kin2[]" />
+                <input type="file" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" accept="image/jpeg,image/x-png" name="kin2" />
                 <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
               </div>
               <div class="display-image">
