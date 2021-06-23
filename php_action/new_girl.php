@@ -42,7 +42,7 @@ $passport_date_expiry,'$conduct','$place_issue','$birth_cert','$firstMedical','$
 				if($connect->query($sql) === TRUE) {
 					$valid['success'] = true;
                     $girl_id = $connect->insert_id;
-                  if (!file_exists('../uploads/'.$fullname."-".$id."/")) {
+                  if (!file_exists('../uploads/'.$girl_id."-".$fullname."-".$id."/")) {
     mkdir('../uploads/'.$girl_id."-".$fullname."-".$id."/", 0777, true);
 }
                   
