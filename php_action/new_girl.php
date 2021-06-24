@@ -47,7 +47,7 @@ $passport_date_expiry,'$conduct','$place_issue','$birth_cert','$firstMedical','$
 }
                   
                   
-                  $sqlKin=" INSERT INTO `next_of_kin`( `next_of_kin_fullname`, `next_of_kin_IDnumber`, `next_of_kin_relationship`, `next_of_kin_phone`, `next_of_kin_fullname2`, `next_of_kin_IDnumber2`, `next_of_kin_phone2`, ` next_of_kin_relationship2`, `girl_id`) VALUES( '$kin_names',$kin_id,'$kinship',$kin_number,'$kin_names2','$kin_id2',$kin_number2,'$kinship2',$girl_id)";
+                  $sqlKin=" INSERT INTO `next_of_kin`( `next_of_kin_fullname`, `next_of_kin_IDnumber`, `next_of_kin_relationship`, `next_of_kin_phone`, `next_of_kin_fullname2`, `next_of_kin_IDnumber2`, `next_of_kin_phone2`, `next_of_kin_relationship2`, `girl_id`) VALUES( '$kin_names',$kin_id,'$kinship',$kin_number,'$kin_names2','$kin_id2',$kin_number2,'$kinship2',$girl_id)";
                  
                   $sqlAgent="INSERT INTO `agents`( `agent_fullname`, `agent_phone`,girl_id) VALUES ( '$agent_name','$agent_number',$girl_id)";
                   if($connect->query($sqlKin) === TRUE) {

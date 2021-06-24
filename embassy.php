@@ -148,7 +148,7 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <form action="php_action/createEmbassy.php" method="post" id="#embassyForm">
+                  <form action="php_action/createEmbassy.php" method="post" id="embassyForm">
                   <div class="modal-body">
                    
                     <div class="selection-modal d-flex flex-wrap mb-3"></div>

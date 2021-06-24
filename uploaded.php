@@ -65,7 +65,7 @@
               <p class="h3 my-4">Find Girl Whom Files You wanna View</p>
 
               <div class="form-group position-relative">
-                <input type="search" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" />
+                <input type="search" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" id="search" />
                 <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
               </div>
 
@@ -93,109 +93,14 @@
               </ul>
 
 
-              <h2 class="my-5 text-center">You haven't selected any girl yet 😫 </h2>
-              <a href="https://storyset.com/people" class=" d-flex justify-content-center">
+              <h2 class="my-5 text-center display-text font-weight-bold">You haven't selected any girl yet 😫 </h2>
+              
 
-                <?php include("includes/vectors/waiting.php");?></a>
-
-              <form action="" class="form">
-                <div class="d-flex justify-content-between my-5">
-
-                  <div class="media-uploaded d-flex flex-column rounded shadow-lg mr-3 ">
-
-
-                    <img src="assets/img/girls/carol_enjaz.jpg" alt="" class="rounded-top girl_img" style="height: 200px; min-width:200px;max-width:100%" />
-                    <div class="p-4">
-                      <h4 class="my-1">Passport Photo</h4>
-                      <input type="file" class="form-control" name="pic[]">
-                    </div>
-
-                  </div>
-
-
-
-                  <div class="media-uploaded d-flex flex-column rounded shadow-lg mx-3 ">
-                    <img src="assets/img/girls/daizy.jpg" alt="" class="rounded-top girl_img" style="height: 200px; min-width:200px;max-width:100%">
-                    <div class="p-4">
-                      <h4 class="my-1">Full Photo</h4>
-                      <input type="file" class="form-control" name="full[]">
-                    </div>
-
-                  </div>
-
-
-
-                  <div class="media-uploaded d-flex flex-column rounded shadow-lg mx-3 ">
-
-                    <img src="assets/img/girls/TEBLA%20KIHAVI_enjaz.jpg" alt="" class="rounded-top girl_img" style="height: 200px; min-width:200px;max-width:100%">
-                    <div class="p-4">
-                      <h4 class="my-1">birth certificate</h4>
-                      <input type="file" class="form-control" name="birth[]">
-                    </div>
-
-
-                  </div>
-
-                  <div class="media-uploaded d-flex flex-column rounded shadow-lg mx-3 ">
-                    <img src="assets/img/girls/guto.jpg" alt="" class="rounded-top girl_img" style="height: 200px; min-width:200px;max-width:100%">
-                    <div class="p-4">
-                      <h4 class="my-1">ID </h4>
-                      <input type="file" class="form-control" name="id[]">
-                    </div>
-
-                  </div>
-
-                </div>
-
-
-                <div class="d-flex justify-content-between my-5">
-
-                  <div class="media-uploaded d-flex flex-column rounded shadow-lg mr-3 ">
-
-
-                    <img src="assets/img/girls/carol_enjaz.jpg" alt="" class="rounded-top girl_img" style="height: 200px; min-width:200px;max-width:100%" />
-                    <div class="p-4">
-                      <h4 class="my-1">Passport Copy </h4>
-                      <input type="file" class="form-control" name="passport[]">
-                    </div>
-
-                  </div>
-
-
-
-                  <div class="media-uploaded d-flex flex-column rounded shadow-lg mx-3 ">
-                    <img src="assets/img/girls/daizy.jpg" alt="" class="rounded-top girl_img" style="height: 200px; min-width:200px;max-width:100%">
-                    <div class="p-4">
-                      <h4 class="my-1">Next Of Kin ID</h4>
-                      <input type="file" class="form-control" name="kin1[]">
-                    </div>
-
-                  </div>
-
-
-
-                  <div class="media-uploaded d-flex flex-column rounded shadow-lg mx-3 ">
-
-                    <img src="assets/img/girls/TEBLA%20KIHAVI_enjaz.jpg" alt="" class="rounded-top girl_img" style="height: 200px; min-width:200px;max-width:100%">
-                    <div class="p-4">
-                      <h4 class="my-1">Next of Kin ID 2</h4>
-                      <input type="file" class="form-control" name="kin2[]">
-                    </div>
-
-
-                  </div>
-
-                  <div class="media-uploaded d-flex flex-column bg-transparent mx-3 w-100 d-none ">
-                    <img src="assets/img/girls/guto.jpg" alt="" class="rounded-top girl_img d-none" style="height: 200px; min-width:200px;max-width:100%">
-                    <div class="p-4 d-none">
-                      <h4 class="my-1">ID </h4>
-                      <input type="file" class="form-control">
-                    </div>
-
-                  </div>
-
-                </div>
-                
+              <form  action="" class="form" >
+               <article class="get-images">
+                 
+                 
+               </article>
                 <button class="btn btn-warning btn-lg w-50 mx-auto btn-block" type="submit">Save Changes</button>
               </form>
 
@@ -223,62 +128,171 @@
   </div>
 
   <?php include("includes/footer.php");?>
+  
   <script>
-    $(document).ready(function() {
-      $(".form-control.form-control-muted.search-input").focus();
-      $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
-      $(".list-group-item span").css({
-        height: "100%",
-        width: "100%",
-        display: "block"
-      });
-      $(".list-group-item ").css({
-        cursor: "pointer"
-      });
-      $(".list-group-item").removeClass("d-flex");
-      $("body ").on("click", ".list-group-item span", function(e) {
-        console.log(e.currentTarget.textContent);
-        $(this).addClass("text-muted");
-        $(this).parent().css({
-          cursor: "no-drop",
-          "pointer-events": "none"
-        });
-        $(this).css({
-          cursor: "no-drop",
-          "pointer-events": "none"
-        });
-        $(".list-group.custom-list-group.rounded-3").addClass("d-none");
-      });
-      $(".form-control.form-control-muted.search-input").focus(function() {
-        $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
-      });
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+$(".form-control.form-control-muted.search-input").focus();
+    $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
+    $(".list-group-item span").css({
+      height: "100%",
+      width: "100%",
+      display: "block"
     });
+    $("th[scope='col']").css({
+      cursor: "pointer",
+      position: "sticky",
+      left: 0,
+      top: 0
+    });
+    $("th .dropdown-menu").css({
+      "min-width": "20rem",
+      padding: "1rem"
+    });
+    $(".list-group-item ").css({
+      cursor: "pointer"
+    });
+    $(".list-group-item").removeClass("d-flex");
+    
+//    onkeyup attach the response to span
+    
+    $(".form-control.form-control-muted.search-input").keyup(function(){
+      
+ 
+      
+      
+      $.get("php_action/searchGirl?term="+$(this).val(), function(data, status){
+        
+        if(status){
+          
+          $(".custom-list-group").html(data)
+        }
+//    console.log("Data: " + data + "\nStatus: " + status);
+  });
+});
+    $("body ").on("click", ".list-group-item span", function(e) {
+
+      $(this).addClass("text-muted");
+
+      //      this is the clicked item text
+      const listText = $(this).text().trim();
+      const ID = $(this).attr("id").trim();
+
+      //      checks if the selected text is part of the selected label 
+      const returned = [...$(".selected  .str-toggle-button")].some(e =>
+
+        {
+          let buttonText = e.children[0].innerText.replace(/\s/g, "").replace(/([A-Z])/g, ' $1').trim();
+
+
+          return buttonText === listText
+
+        }
+
+      );
+
+
+
+
+      if (!returned) {
+        //creates a clone from the first toggle button in the selected div
+//        const button = $(".selected  .str-toggle-button:first-child").clone()
+        //        HTMLButtonElement>HTMLLabelElement>HTMLInputElement[radio]
+//        button.children()[0].children[0].checked
+//        button.children()[0].children[0].value = listText
+//        button.children()[0].innerText = listText
+//        button.clone().appendTo(".selected ")
+        const button=document.createElement("div"),
+              radio=document.createElement("input"),
+              label=document.createElement("label")
+        
+      
+        $(button).addClass("btn-group-toggle m-1 str-toggle-button")
+        $(label).addClass("btn btn-outline-secondary active")
+        $(button).attr("data-toggle","buttons")
+        $(radio).attr("checked","buttons")
+        $(radio).attr("autocomplete","off")
+        $(radio).attr("type","checkbox")
+        $(radio).attr("value",ID)
+        $(radio).attr("name","girls[]")
+        $(label).attr("data-ID",ID)
+        label.innerText = listText
+        label.appendChild(radio)
+        button.appendChild(label)
+        $("#search").val(listText)
+        
+        $(".selected ").append(button)
+        $(".display-text ").text("You have selected      "+listText)
+        
+        
+        
+        
+//         get all images for the girl 
+        
+        
+        $.get("php_action/fetchImages?images="+ID, function(data, status){
+        
+        if(status){
+          
+          $(".get-images").html(data)
+        }
+//    console.log("Data: " + data + "\nStatus: " + status);
+  });
+        
+      }
+
+      //disabled after onclick
+
+      $(this).parent().css({
+        cursor: "no-drop",
+        "pointer-events": "none"
+      });
+      $(this).css({
+        cursor: "no-drop",
+        "pointer-events": "none"
+      });
+      $(".list-group.custom-list-group.rounded-3").addClass("d-none");
+    });
+
+    //    onfocus show the HTMLUListElement
+    $(".form-control.form-control-muted.search-input").focus(function() {
+      $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
+    });
+    
+    
     $(".retry").click(function(e) {
       $("input[type=file]").click()
 
     })
 
-    $("input[type=file]").change(function() {
+    $("input[type=file]").change(function(e) {
 
       const display = $(".display-image"),
-        img = $(".girl_img"),
+        img = document.createElement("IMG"),
         input = this,
-        inputChild = $(this)[0]
-      url = $(this).val(),
+        url = $(this).val(),
+            element=e;
         ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
-      //      img.height = "200"
-      //      img.width = "200"
-      //      $(img).addClass("mx-auto d-block rounded shadow-lg my-5")
+      img.height = "200"
+      img.width = "200"
+      $(img).addClass("mx-auto d-block rounded shadow-lg my-5")
       if (input.files && input.files[0] && (ext == "png" || ext == "jpeg" || ext == "jpg")) {
         var reader = new FileReader();
 
         reader.onload = function(e) {
-          console.log($(inputChild))
-          inputChild.parentElement.previousElementSibling.setAttribute('src', e.target.result);
-          //          $(img).appendTo(display)
-
-          display.html(img)
+          $(img).attr('src', e.target.result);
+         
+          $(element.target.parentElement.nextElementSibling).html(img)
         }
         reader.readAsDataURL(input.files[0]);
       } else {
@@ -375,4 +389,5 @@
     })
 
   </script>
+
 </body>

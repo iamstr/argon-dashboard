@@ -8,7 +8,7 @@
 <?php
 
 //girls table
-$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment' &&  TABLE_NAME='girls'  and column_name not like'%_id' ";
+$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment' &&  TABLE_NAME='girls'  and column_name not like'%_id'&& column_name not like '%update%' ";
 
 $result=$connect->query($sql) ;
   
@@ -106,7 +106,7 @@ $result=$connect->query($sql) ;
 
 <?php
 //musaned table
-$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and  TABLE_NAME='schools' and column_name not like'%_id' ";
+$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and  TABLE_NAME='schools' and column_name not like'%_id' && column_name not like '%update%'";
 
 $result=$connect->query($sql) ;
   
@@ -131,7 +131,7 @@ $result=$connect->query($sql) ;
 
 <?php
 
-$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment' and TABLE_NAME='musaned'  and column_name not like'%_id'  ";
+$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment' and TABLE_NAME='musaned'  and column_name not like'%_id' && column_name not like '%update%' ";
 
 $result=$connect->query($sql) ;
   
@@ -155,7 +155,7 @@ while($row=$result->fetch_array()){
 
 //nea table 
 
-$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='nea' and column_name not like '%id%' ";
+$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='nea' and column_name not like '%id%'  && column_name not like '%update%'";
 
 $result=$connect->query($sql) ;
   
@@ -179,7 +179,7 @@ $result=$connect->query($sql) ;
 
 //enjaz table 
 
-$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='enjaz' and column_name not like '%id%' ";
+$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='enjaz' and column_name not like '%id%' && column_name not like '%update%' ";
 
 $result=$connect->query($sql) ;
   
@@ -203,7 +203,7 @@ $result=$connect->query($sql) ;
 
 //embassy table 
 
-$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='embassy' and column_name not like '%id%' ";
+$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='embassy' and column_name not like '%id%'&& column_name not like '%update%' ";
 
 $result=$connect->query($sql) ;
   
@@ -227,7 +227,7 @@ $result=$connect->query($sql) ;
 
 //clearance table 
 
-$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='clearance' and column_name not like '%id%' ";
+$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='clearance' and column_name not like '%id%' && column_name not like '%update%'";
 
 $result=$connect->query($sql) ;
   
@@ -251,7 +251,7 @@ $result=$connect->query($sql) ;
 
 //travel table 
 
-$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='travel' and column_name not like '%id%' ";
+$sql="SELECT DISTINCT column_name FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='travel' and column_name not like '%id%' && column_name not like '%update%' ";
 
 $result=$connect->query($sql) ;
   
@@ -264,9 +264,5 @@ $result=$connect->query($sql) ;
   ?>
 
 
-<div class="row w-100">
-  
-  <h3 class="font-weight-bold m-4">NEA</h3>
-</div>
 
 

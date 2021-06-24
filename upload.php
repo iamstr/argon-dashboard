@@ -45,7 +45,7 @@
     <div class="container-fluid mt-6">
       <div class="row">
 
-        <form class="col" action="php_action/newUploads" method="post" enctype="multipart/form-data" >
+        <form class="col" action="php_action/newUploads" method="post" enctype="multipart/form-data" id="uploadSubmit" >
 
           <div class="card steps-form">
             <div class="card-header">
@@ -440,7 +440,7 @@
                 <?php include("includes/vectors/success.php");?></a>
 
 
-              <button type="submit" class="btn btn-success btn-lg btn-block mx-auto w-50">Check The Uploaded files</button>
+              <button type="submit" class="btn btn-success btn-lg btn-block mx-auto w-50" id="uploadSubmit">Save Uploaded files</button>
 
 
 
@@ -475,6 +475,17 @@
   <?php include("includes/footer.php");?>
   
   <script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 $(".form-control.form-control-muted.search-input").focus();
     $(".list-group.custom-list-group.rounded-3").removeClass("d-none");

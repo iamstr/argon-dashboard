@@ -817,10 +817,10 @@
     
     
         
-        	$("#embassySubmit").unbind('click').bind('click', function() {
+        	$("#enjazSubmit").unbind('click').bind('click', function() {
              
               	
-              	$("#embassyForm").unbind('submit').bind('submit', function(e){
+              	$("#enjazForm").unbind('submit').bind('submit', function(e){
                   e.preventDefault();
               	 var form = $(this);
 				var formData = new FormData(this);

@@ -44,113 +44,25 @@
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr class="table-agent position-relative">
-                    <th scope="col" class="sort" data-sort="name">Employer ID</th>
-                    <th scope="col" class="sort" data-sort="name">Employer Name</th>
-                    <th scope="col" class="sort" data-sort="budget">Employer Phone</th>
+                    <th scope="col" class="sort" data-sort="name">Employee ID</th>
+                    <th scope="col" class="sort" data-sort="name">Employee Name</th>
+                    <th scope="col" class="sort" data-sort="budget">Employee Phone</th>
                     <th scope="col" class="sort" data-sort="budget">Date Started</th>
-                    <th scope="col" class="sort" data-sort="status">Expense Status</th>
+                    <th scope="col" class="sort" data-sort="status">Employee Status</th>
+                    <th scope="col" class="sort" data-sort="status">Branch</th>
 
                     <th scope="col" class="position-sticky">Actions</th>
                   </tr>
                 </thead>
                 <tbody class="list">
-                  <tr class="table-agent-row">
-
-                    <td class="budget">E123</td>
-                    <td class="budget">John Kamau</td>
-                    <td class="budget">0742 254 254</td>
-                    <td class="budget">25th June 2021</td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">Working</span>
-                      </span>
-                    </td>
-
-
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Approve</a>
-                          <a class="dropdown-item" href="#">Fire</a>
-
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-agent-row">
-
-                    <td class="budget">E123</td>
-                    <td class="budget">John Kamau</td>
-                    <td class="budget">0742 254 254</td>
-                    <td class="budget">25th June 2021</td>
-
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-danger"></i>
-                        <span class="status">Fired</span>
-                      </span>
-                    </td>
-
-
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Approve</a>
-                          <a class="dropdown-item" href="#">Fire</a>
-
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-agent-row">
-
-                    <td class="budget">E123</td>
-                    <td class="budget">John Kamau</td>
-                    <td class="budget">0742 254 254</td>
-                    <td class="budget">25th June 2021</td>
-
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-primary"></i>
-                        <span class="status">Pending</span>
-                      </span>
-                    </td>
-
-
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Approve</a>
-                          <a class="dropdown-item" href="#">Fire</a>
-
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-
-
+              
+<?php require_once("php_action/fetchUser.php");?>
 
                 </tbody>
               </table>
             </div>
             <!-- Card footer -->
-            <div class="card-footer py-4">
+            <div class="card-footer py-4 d-none">
               <nav aria-label="...">
                 <ul class="pagination justify-content-end mb-0">
                   <li class="page-item disabled">
