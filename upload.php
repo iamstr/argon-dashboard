@@ -45,7 +45,7 @@
     <div class="container-fluid mt-6">
       <div class="row">
 
-        <form class="col" action="php_action/newUploads" method="post" enctype="multipart/form-data" id="uploadSubmit" >
+        <form  action="php_action/newUploads" method="post" enctype="multipart/form-data"  class="col"  id="uploadForm">
 
           <div class="card steps-form">
             <div class="card-header">
@@ -106,7 +106,7 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Passport Photo  </h3>
+                  <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Passport Photo </h3>
                 </div>
                 <div class="col-4 text-right">
                   <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
@@ -152,7 +152,7 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Full Photo </h3>
+                  <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Full Photo </h3>
                 </div>
                 <div class="col-4 text-right">
                   <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
@@ -198,7 +198,7 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Birth Certificate </h3>
+                  <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Birth Certificate </h3>
                 </div>
                 <div class="col-4 text-right">
 
@@ -243,7 +243,7 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> ID Copy </h3>
+                  <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> ID Copy </h3>
                 </div>
                 <div class="col-4 text-right">
                   <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
@@ -288,7 +288,7 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Passport Copy</h3>
+                  <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Passport Copy</h3>
                 </div>
                 <div class="col-4 text-right">
                   <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
@@ -333,7 +333,7 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Next Of Kin </h3>
+                  <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Next Of Kin </h3>
                 </div>
                 <div class="col-4 text-right">
                   <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
@@ -379,7 +379,7 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                 <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Next Of Kin 2 </h3>
+                  <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Girl's</span> Next Of Kin 2 </h3>
                 </div>
                 <div class="col-4 text-right">
                   <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
@@ -444,7 +444,29 @@
 
 
 
-
+              <button type="button" class="btn btn-primary d-none" data-toggle="modal" data-target="#messageModal" id="modalButton">
+                Launch demo modal
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="modal-message"></div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 
 
@@ -456,7 +478,7 @@
                   <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
                   <span class="btn-inner--text">Back</span>
                 </button>
-                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" >
+                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next">
                   <span class="btn-inner--text">Next</span>
                   <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
                 </button>
@@ -473,171 +495,173 @@
   </div>
 
   <?php include("includes/footer.php");?>
-  
+
   <script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-$(".form-control.form-control-muted.search-input").focus();
-    $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
-    $(".list-group-item span").css({
-      height: "100%",
-      width: "100%",
-      display: "block"
-    });
-    $("th[scope='col']").css({
-      cursor: "pointer",
-      position: "sticky",
-      left: 0,
-      top: 0
-    });
-    $("th .dropdown-menu").css({
-      "min-width": "20rem",
-      padding: "1rem"
-    });
-    $(".list-group-item ").css({
-      cursor: "pointer"
-    });
-    $(".list-group-item").removeClass("d-flex");
-    
-//    onkeyup attach the response to span
-    
-    $(".form-control.form-control-muted.search-input").keyup(function(){
-      
- 
-      
-      
-      $.get("php_action/searchGirl?term="+$(this).val(), function(data, status){
-        
-        if(status){
-          
-          $(".custom-list-group").html(data)
-        }
-    console.log("Data: " + data + "\nStatus: " + status);
-  });
-});
-    $("body ").on("click", ".list-group-item span", function(e) {
-
-      $(this).addClass("text-muted");
-
-      //      this is the clicked item text
-      const listText = $(this).text().trim();
-      const ID = $(this).attr("id").trim();
-
-      //      checks if the selected text is part of the selected label 
-      const returned = [...$(".selected  .str-toggle-button")].some(e =>
-
-        {
-          let buttonText = e.children[0].innerText.replace(/\s/g, "").replace(/([A-Z])/g, ' $1').trim();
-
-
-          return buttonText === listText
-
-        }
-
-      );
-
-
-
-
-      if (!returned) {
-        //creates a clone from the first toggle button in the selected div
-//        const button = $(".selected  .str-toggle-button:first-child").clone()
-        //        HTMLButtonElement>HTMLLabelElement>HTMLInputElement[radio]
-//        button.children()[0].children[0].checked
-//        button.children()[0].children[0].value = listText
-//        button.children()[0].innerText = listText
-//        button.clone().appendTo(".selected ")
-        const button=document.createElement("div"),
-              radio=document.createElement("input"),
-              label=document.createElement("label")
-        
-      
-        $(button).addClass("btn-group-toggle m-1 str-toggle-button")
-        $(label).addClass("btn btn-outline-secondary active")
-        $(button).attr("data-toggle","buttons")
-        $(radio).attr("checked","buttons")
-        $(radio).attr("autocomplete","off")
-        $(radio).attr("type","checkbox")
-        $(radio).attr("value",ID)
-        $(radio).attr("name","girls[]")
-        $(label).attr("data-ID",ID)
-        label.innerText = listText
-        label.appendChild(radio)
-        button.appendChild(label)
-        $("#search").val(ID)
-        
-        $(".selected ").append(button)
-        $(".girl-name ").text(listText)
-      }
-
-      //disabled after onclick
-
-      $(this).parent().css({
-        cursor: "no-drop",
-        "pointer-events": "none"
-      });
-      $(this).css({
-        cursor: "no-drop",
-        "pointer-events": "none"
-      });
-      $(".list-group.custom-list-group.rounded-3").addClass("d-none");
-    });
-
-    //    onfocus show the HTMLUListElement
-    $(".form-control.form-control-muted.search-input").focus(function() {
-      $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
-    });
-    
-    
-    $(".retry").click(function(e) {
-      $("input[type=file]").click()
-
-    })
-
-    $("input[type=file]").change(function(e) {
-
-      const display = $(".display-image"),
-        img = document.createElement("IMG"),
-        input = this,
-        url = $(this).val(),
-            element=e;
-        ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
-      img.height = "200"
-      img.width = "200"
-      $(img).addClass("mx-auto d-block rounded shadow-lg my-5")
-      if (input.files && input.files[0] && (ext == "png" || ext == "jpeg" || ext == "jpg")) {
-        var reader = new FileReader();
-
-        reader.onload = function(e) {
-          $(img).attr('src', e.target.result);
-         
-          $(element.target.parentElement.nextElementSibling).html(img)
-        }
-        reader.readAsDataURL(input.files[0]);
-      } else {
-
-        document.querySelector(".notified").click()
-        console.log("stop")
-      }
-
-
-    })
-
-
-
-
-
     $(document).ready(function() {
+
+
+let inputElement,notAllowed=false;
+
+      $(".form-control.form-control-muted.search-input").focus();
+      $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
+      $(".list-group-item span").css({
+        height: "100%",
+        width: "100%",
+        display: "block"
+      });
+      $("th[scope='col']").css({
+        cursor: "pointer",
+        position: "sticky",
+        left: 0,
+        top: 0
+      });
+      $("th .dropdown-menu").css({
+        "min-width": "20rem",
+        padding: "1rem"
+      });
+      $(".list-group-item ").css({
+        cursor: "pointer"
+      });
+      $(".list-group-item").removeClass("d-flex");
+
+      //    onkeyup attach the response to span
+
+      $(".form-control.form-control-muted.search-input").keyup(function() {
+
+
+
+
+        $.get("php_action/searchGirl?term=" + $(this).val(), function(data, status) {
+
+          if (status) {
+
+            $(".custom-list-group").html(data)
+          }
+          
+        });
+      });
+      $("body ").on("click", ".list-group-item span", function(e) {
+
+        $(this).addClass("text-muted");
+
+        //      this is the clicked item text
+        const listText = $(this).text().trim();
+        const ID = $(this).attr("id").trim();
+
+        //      checks if the selected text is part of the selected label 
+        const returned = [...$(".selected  .str-toggle-button")].some(e =>
+
+          {
+            let buttonText = e.children[0].innerText.replace(/\s/g, "").replace(/([A-Z])/g, ' $1').trim();
+
+
+            return buttonText === listText
+
+          }
+
+        );
+
+
+
+
+        if (!returned) {
+          //creates a clone from the first toggle button in the selected div
+          //        const button = $(".selected  .str-toggle-button:first-child").clone()
+          //        HTMLButtonElement>HTMLLabelElement>HTMLInputElement[radio]
+          //        button.children()[0].children[0].checked
+          //        button.children()[0].children[0].value = listText
+          //        button.children()[0].innerText = listText
+          //        button.clone().appendTo(".selected ")
+          const button = document.createElement("div"),
+            radio = document.createElement("input"),
+            label = document.createElement("label")
+
+
+          $(button).addClass("btn-group-toggle m-1 str-toggle-button")
+          $(label).addClass("btn btn-outline-secondary active")
+          $(button).attr("data-toggle", "buttons")
+          $(radio).attr("checked", "buttons")
+          $(radio).attr("autocomplete", "off")
+          $(radio).attr("type", "checkbox")
+          $(radio).attr("value", ID)
+          $(radio).attr("name", "girls[]")
+          $(label).attr("data-ID", ID)
+          label.innerText = listText
+          label.appendChild(radio)
+          button.appendChild(label)
+          $("#search").val(ID)
+
+          $(".selected ").append(button)
+          $(".girl-name ").text(listText)
+        }
+
+        //disabled after onclick
+
+        $(this).parent().css({
+          cursor: "no-drop",
+          "pointer-events": "none"
+        });
+        $(this).css({
+          cursor: "no-drop",
+          "pointer-events": "none"
+        });
+        $(".list-group.custom-list-group.rounded-3").addClass("d-none");
+      });
+
+      //    onfocus show the HTMLUListElement
+      $(".form-control.form-control-muted.search-input").focus(function() {
+        $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
+      });
+
+
+      
+
+      $("input[type=file]").change(function(e) {
+
+        const display = $(".display-image"),
+          img = document.createElement("IMG"),
+          input = this,
+          url = $(this).val(),
+          element = e;
+        ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+        img.height = "200"
+        img.width = "200"
+        $(img).addClass("mx-auto d-block rounded shadow-lg my-5")
+        if (input.files && input.files[0] && (ext == "png" || ext == "jpeg" || ext == "jpg")) {
+          var reader = new FileReader();
+          notAllowed=false;
+          reader.onload = function(e) {
+            $(img).attr('src', e.target.result);
+
+            $(element.target.parentElement.nextElementSibling).html(img)
+          }
+          reader.readAsDataURL(input.files[0]);
+        } else {
+        notAllowed=true;
+        document.querySelector(".notified").click()
+        inputElement=$(element.target)[$(element.target).index($(element.target))]
+        
+       if(notAllowed){
+         
+       $(".retry").click(function(e) {
+        
+         
+         $(inputElement).click()
+          notAllowed=false;
+
+        })
+      
+        }
+        
+      }
+
+      })
+
+
+
+
+
+
       const stepForm = $(".steps-form")
 
 
@@ -714,6 +738,96 @@ $(".form-control.form-control-muted.search-input").focus();
         }
 
       })
+
+
+
+      //      ajax call
+
+
+
+
+      $("#uploadSubmit").unbind('click').bind('click', function(e) {
+        //        e.preventDefault()
+        console.log("pressed")
+        //
+        $("#uploadForm").unbind('submit').bind('submit', function(e) {
+          e.preventDefault();
+          var form = $(this);
+          var formData = new FormData(this);
+          console.log(formData)
+          $.ajax({
+            url: form.attr('action'),
+            type: form.attr('method'),
+            data: formData,
+            dataType: 'json',
+            //					cache: false,
+            contentType: false,
+            processData: false,
+            success: function(response) {
+              console.log(response)
+              if (response.success == true) {
+
+
+                $("html, body, div.modal, .modal-content, div.modal-body").animate({
+                  scrollTop: '0'
+                }, 100);
+                $('#modalButton').click()
+                // shows a successful message after operation
+                $('.modal-message').append('<div class="alert alert-success">' +
+                  '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                  '<strong><i class="ni ni-like-2"></i></strong> ' + response.messages +
+                  '</div>');
+
+                // remove the mesages
+                $(".alert-success").delay(1000).show(10, function() {
+                  $(this).delay(3000).hide(10, function() {
+                    $(this).remove();
+                    $('[data-dismiss="modal"]').click()
+                  });
+                }); // /.alert
+
+
+              } // /if response.success
+              else {
+
+
+
+
+                $("html, body, div.modal, .modal-content, div.modal-body").animate({
+                  scrollTop: '0'
+                }, 100);
+                $('#modalButton').click()
+                // shows a successful message after operation
+                $('.modal-message').append('<div class="alert alert-warning shaking-2">' +
+                  '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                  '<strong><i class="ni ni-like-2"></i></strong> ' + response.messages +
+                  '</div>');
+
+                // remove the mesages
+                $(".alert-warning").delay(500).show(10, function() {
+                  $(this).delay(5000).hide(10, function() {
+                    $(this).remove();
+                    $('[data-dismiss="modal"]').click()
+                  });
+                }); // /.alert
+
+
+
+
+
+
+              }
+
+            } // /success function
+          }); // /ajax function
+
+          return false;
+
+        })
+
+      })
+
+
 
     })
 

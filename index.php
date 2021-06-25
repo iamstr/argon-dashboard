@@ -31,7 +31,7 @@ if($_POST) {
 		if($result->num_rows == 1) {
 			$password = md5($password);
 			// exists
-			$mainSql = "SELECT * FROM users WHERE username = '$username'|| email='$username' AND password = '$password'";
+			$mainSql = "SELECT * FROM users WHERE (username = '$username'|| email='$username') AND password = '$password'";
 			$mainResult = $connect->query($mainSql);
 
 			if($mainResult->num_rows == 1) {

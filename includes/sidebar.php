@@ -149,6 +149,8 @@
              </a>
            </li>
          </ul><!-- Divider -->
+         
+         <?php if($_SESSION['role']==="admin"):?>
          <hr class="my-3">
          <!-- Heading -->
          <h6 class="navbar-heading p-0 text-muted">
@@ -170,12 +172,9 @@
              </a>
            </li>
          </ul>
-         <!-- Divider -->
-         <hr class="my-3">
-         <!-- Heading -->
-         <h6 class="navbar-heading p-0 text-muted">
-           <span class="docs-normal">Miscellaneous </span>
-         </h6>
+         
+         <?php endif;?>
+         
          <?php include("nav.php");?>
        </div>
      </div>

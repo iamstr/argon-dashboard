@@ -8,7 +8,36 @@
     <?php include("includes/top-nav.php");?>
     <!-- Page content -->
 
-
+   <?php 
+    if($_SESSION['role']==="admin"):
+    if(isset($_GET['approve'])):
+    $status=$_GET['approve'];
+    $sql="update expenses set expense_status='approved' where expense_id='$status'";
+    $result=$connect->query($sql);
+//    else:echo "failed...".$connect->error;
+//    endif;
+    
+    endif;
+    
+    if(isset($_GET['reject'])):
+    
+    $status=$_GET['reject'];
+    $sql="update expenses set expense_status='rejected' where expense_id='$status'";
+    $result=$connect->query($sql);
+//    else:echo "failed...".$connect->error;
+//    endif;
+    
+    endif;
+    endif;
+    
+    
+    
+    
+    
+    
+    
+    
+    ?>
 
 
     <div class="container-fluid mt-5">
@@ -49,106 +78,22 @@
                     <th scope="col" class="sort" data-sort="budget">Expense Amount</th>
                     <th scope="col" class="sort" data-sort="budget">Date Requested</th>
                     <th scope="col" class="sort" data-sort="status">Expense Status</th>
+                    <?php if($_SESSION['role']==="admin"):?>
+                    <th scope="col" class="sort" data-sort="status">Expense Requester</th>
 
                     <th scope="col" class="position-sticky">Actions</th>
+                    <?php endif;?>
                   </tr>
                 </thead>
                 <tbody class="list">
-                  <tr class="table-agent-row">
-
-                    <td class="budget">Mary Moraa</td>
-                    <td class="budget">Mary's Acommodations and Ticket</td>
-                    <td class="budget">KES 2,000</td>
-                    <td class="budget">25th June 2021</td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">Approved</span>
-                      </span>
-                    </td>
-
-
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Approve</a>
-                          <a class="dropdown-item" href="#">Reject</a>
-                         
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-agent-row">
-
-                    <td class="budget">Mary Moraa</td>
-                    <td class="budget">Mary's Acommodations and Ticket</td>
-                    <td class="budget">KES 2,000</td>
-                    <td class="budget">25th June 2021</td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-danger"></i>
-                        <span class="status">Rejected</span>
-                      </span>
-                    </td>
-
-
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Approve</a>
-                          <a class="dropdown-item" href="#">Reject</a>
-                         
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-agent-row">
-
-                    <td class="budget">Mary Moraa</td>
-                    <td class="budget">Mary's Acommodations and Ticket</td>
-                    <td class="budget">KES 2,000</td>
-                    <td class="budget">25th June 2021</td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-primary"></i>
-                        <span class="status">Pending</span>
-                      </span>
-                    </td>
-
-
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Approve</a>
-                          <a class="dropdown-item" href="#">Reject</a>
-                         
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-
-
+                 
+                                  <?php require_once("php_action/fetchExpenses.php");?>
 
                 </tbody>
               </table>
             </div>
             <!-- Card footer -->
-            <div class="card-footer py-4">
+            <div class="card-footer py-4 d-none">
               <nav aria-label="...">
                 <ul class="pagination justify-content-end mb-0">
                   <li class="page-item disabled">

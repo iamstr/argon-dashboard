@@ -142,4 +142,58 @@ endif;
   </div>
 
 </div>
+<script>
+  
+  $(document).ready(function($){
+let inputElement,notAllowed=false;
+    
+    
+     $("input[type=file]").change(function(e) {
+
+       
+       const input = this,
+        url = $(this).val(),
+        element=e;
+        ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+      
+//      $(".rounded-top.girl_img").addClass("mx-auto d-block rounded shadow-lg my-5")
+      if (input.files && input.files[0] && (ext == "png" || ext == "jpeg" || ext == "jpg")) {
+        var reader = new FileReader();
+        notAllowed=false;
+        reader.onload = function(e) {
+          $(".rounded-top.girl_img").attr('width', "200");
+//         console.log(element.target)
+          $(element.target.parentElement.previousElementSibling).attr('src', e.target.result)
+        }
+        reader.readAsDataURL(input.files[0]);
+      } else {
+        notAllowed=true;
+        document.querySelector(".notified").click()
+        inputElement=$(element.target)[$(element.target).index($(element.target))]
+        
+       if(notAllowed){
+         
+       $(".retry").click(function(e) {
+        
+         
+         $(inputElement).click()
+          notAllowed=false;
+
+        })
+      
+        }
+        
+      }
+
+
+    })
+    
+    
+    
+    
+    
+    
+    
+        });
+</script>
 <?php endif;?>

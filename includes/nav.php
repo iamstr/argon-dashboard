@@ -1,4 +1,13 @@
  <!-- Navigation -->
+         
+          <?php if($_SESSION['role']==="admin"):?>
+          
+          <!-- Divider -->
+         <hr class="my-3">
+         <!-- Heading -->
+         <h6 class="navbar-heading p-0 text-muted">
+           <span class="docs-normal">Miscellaneous </span>
+         </h6>
           <ul class="navbar-nav mb-md-3"> 
           
              <li class="nav-item">
@@ -18,4 +27,4 @@
             
             
           </ul>
-          
+          <?php endif;?>
