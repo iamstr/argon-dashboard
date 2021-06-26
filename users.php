@@ -8,7 +8,29 @@
     <?php include("includes/top-nav.php");?>
     <!-- Page content -->
 
-
+ <?php 
+    
+     if(isset($_GET['approve'])):
+    $status=$_GET['approve'];
+    $sql="update  users set status='working' where user_id='$status'";
+    $result=$connect->query($sql);
+//    else:echo "failed...".$connect->error;
+//    endif;
+    
+    endif;
+    
+    if(isset($_GET['reject'])):
+    
+    $status=$_GET['reject'];
+    $sql="update users set status='fired' where user_id='$status'";
+    $result=$connect->query($sql);
+//    else:echo "failed...".$connect->error;
+//    endif;
+    
+    endif;
+    
+    ?>
+    
 
 
     <div class="container-fluid mt-5">

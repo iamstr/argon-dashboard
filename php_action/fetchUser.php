@@ -27,6 +27,16 @@ if($result->num_rows > 0) {
  	$branch = $row["branch_name"];
 // 	$username = $row[1];
 
+   
+   if($status==="fired"): $badge="bg-danger";
+
+else: $badge="bg-success";
+endif;
+
+
+
+   
+   
  	$button = '<tr class="table-agent-row">
 
                     <td class="budget">'.$userid.'</td>
@@ -36,7 +46,7 @@ if($result->num_rows > 0) {
 
                     <td>
                       <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
+                        <i class="'.$badge.'"></i>
                         <span class="status">'.$status.'</span>
                       </span>
                     </td>
@@ -49,9 +59,9 @@ if($result->num_rows > 0) {
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" style="">
-                          <a class="dropdown-item" href="javascript:void(0)">Working</a>
-                          <a class="dropdown-item" href="javascript:void(0)">Fire</a>
-                          <a class="dropdown-item" href="javascript:void(0)">Suspend</a>
+                          <a class="dropdown-item" href="?approve='.$userid.'">Working</a>
+                          <a class="dropdown-item" href="?reject='.$userid.'">Fire</a>
+                          
 
                         </div>
                       </div>

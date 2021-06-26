@@ -293,78 +293,14 @@
                   </tr>
                 </thead>
                 <tbody class="list">
-                  <tr class="table-agent-row">
-                    <th scope="row">
-                      <div class="media align-items-center">
-                        <a href="#" class="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="assets/img/theme/bootstrap.jpg" />
-                        </a>
-                        <div class="media-body">
-                          <span class="name mb-0 text-sm">Susan Bitengo</span>
-                        </div>
-                      </div>
-                    </th>
-
-
-
-                    <td class="budget">21234500</td>
-
-
-                    <td class="budget">0700321456</td>
-                    <td class="budget">KISII</td>
-                    <td class="budget">NON MUSLIM</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">YES</td>
-                    <td class="budget">AK0123456</td>
-                    <td class="budget">NAIROBI</td>
-                    <td class="budget">QUEUED</td>
-                    <td class="budget">JOSEPH NYAMAO</td>
-                    <td class="budget">FATHER</td>
-                    <td class="budget">00000000</td>
-                    <td class="budget">0745612308</td>
-                    <td class="budget">DAVID JACK</td>
-                    <td class="budget">0700000111</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">Argon School Of Homecare</td>
-                    <td class="budget">25 <sup>th</sup> April 2021</td>
-                    <td class="budget">Cert1000</td>
-                    <td class="budget">NO CV</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">AL Argon</td>
-                    <td class="budget">Available</td>
-                    <td class="budget">SAEED AL GHIRIAMA</td>
-                    <td class="budget">Riyadh</td>
-                    <td class="budget">Paid</td>
-                    <td class="budget">Okay</td>
-                    <td class="budget">Yellow Fever</td>
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-
-                    <td class="budget">25 <sup>th</sup> March 2021</td>
-                    <td class="budget">01 <sup>th</sup> April 2021</td>
-                    <td class="budget">03 <sup>th</sup> April 2021</td>
-                    <td class="budget">3 Days</td>
-
-                    <td class="text-center">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-
+                 
+                 <?php require_once("php_action/fetchGirls.php");?>
 
                 </tbody>
               </table>
             </div>
             <!-- Card footer -->
-            <div class="card-footer py-4">
+            <div class="card-footer py-4 d-none">
               <nav aria-label="...">
                 <ul class="pagination justify-content-end mb-0">
                   <li class="page-item disabled">
@@ -393,6 +329,8 @@
         </div>
       </div>
       <!-- Dark table -->
+<!--
+      
       <div class="row">
         <div class="col">
           <div class="card bg-default shadow">
@@ -706,6 +644,9 @@
           </div>
         </div>
       </div>
+      
+-->
+      
       <!-- Footer -->
       <?php include("includes/footer.php");?>
       <script src="bower_components/bootstrap-table/dist/bootstrap-table.min.js"></script>

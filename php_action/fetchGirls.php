@@ -1,102 +1,297 @@
 <?php 
+require_once("core.php");
+
+//
+//$sql="select
+//girls.girl_id,
+//girl_fullname,
+//girl_IDnumber,
+//girl_phone,
+//girl_dob,
+//girl_religion,
+//girl_county,
+//girl_passport,
+//passport_date_issue,
+//passport_date_expiry,
+//girl_passport_place,
+//girl_goodConduct,
+//girl_birth,
+//girl_firstMedical,
+//dateCreated,
+//next_of_kin_fullname,
+//next_of_kin_IDnumber,
+//next_of_kin_relationship,
+//next_of_kin_phone,
+//next_of_kin_fullname2,
+//next_of_kin_IDnumber2,
+//next_of_kin_relationship2,
+//next_of_kin_phone2,
+//school_name,
+//school_start,
+//school_end,
+//school_cert,
+//musaned_status,
+//musaned_sponsporName,
+//musaned_sponsporNumber,
+//musaned_sponsporID,
+//musaned_sponsporAddress,
+//musaned_contractNumber,
+//musaned_visaNumber,
+//agency_id,
+//nea_date,
+//nea_status,
+//enjaz_status,
+//enjaz_date,
+//enjaz_medical,
+//medical_id,
+//enjaz_medicalDate,
+//enjaz_wakala,
+//embassy_status,
+//embassy_date,
+//embassy_visaForm,
+//embassy_medical,
+//enjaz_number,
+//clearance_attestationList,
+//clearance_CertificateOfIncorporation,
+//clearance_status,
+//clearance_FullMedical,
+//clearance_GoodConduct,
+//clearance_PassportCopy,
+//clearance_GirlContract,
+//clearance_NextOfKinIDCopy,
+//clearance_VisaForm,
+//travel_date,
+//travel_arrival,
+//travel_pregnancy,
+//travel_pcrStatus,
+//travel_pcrCode,
+//travel_pcrDate,
+//travel_tshirt,
+//travel_stampedClearanceForm,
+//travel_ticket,
+//travel_yellowFever
+//
+//
+//from girls 
+// 
+//
+//
+//
+//left join next_of_kin on girls.girl_id=next_of_kin.girl_id
+//left join on (schools inner join school_names on ) on girls.girl_id=schools.girl_id
+//
+//
+//left join ( musaned inner join agencies on musaned.agency_id=agencies.agency_id)on girls.girl_id=musaned.girl_id
+//
+//left join nea on girls.girl_id=nea.girl_id
+//
+//
+//left join enjaz on girls.girl_id=enjaz.girl_id
+//
+//left join  embassy on girls.girl_id=embassy.girl_id
+//
+//left join clearance on girls.girl_id=clearance.girl_id
+//
+//left join travel on girls.girl_id=travel.girl_id
+//
+//
+//  ";
 
 
 
-$sql="select
-girls.girl_id
-girl_fullname,
-girl_IDnumber,
-girl_phone,
-girl_dob,
-girl_religion,
-girl_county,
-girl_passport,
-passport_date_issue,
-passport_date_expiry,
-girl_passport_place,
-girl_goodConduct,
-girl_birth,
-girl_firstMedical,
-dateCreated,
-next_of_kin_fullname,
-next_of_kin_IDnumber,
-next_of_kin_relationship,
-next_of_kin_phone,
-next_of_kin_fullname2,
-next_of_kin_IDnumber2,
-next_of_kin_relationship2,
-next_of_kin_phone2,
-school_name,
-school_start,
-school_end,
-school_cert,
-musaned_status,
-musaned_sponsporName,
-musaned_sponsporNumber,
-musaned_sponsporID,
-musaned_sponsporAddress,
-musaned_contractNumber,
-musaned_visaNumber,
-agency_id,
-nea_date,
-nea_status,
-enjaz_status,
-enjaz_date,
-enjaz_medical,
-medical_id,
-enjaz_medicalDate,
-enjaz_wakala,
-embassy_status,
-embassy_date,
-embassy_visaForm,
-embassy_medical,
-enjaz_number,
-clearance_attestationList,
-clearance_CertificateOfIncorporation,
-clearance_status,
-clearance_FullMedical,
-clearance_GoodConduct,
-clearance_PassportCopy,
-clearance_GirlContract,
-clearance_NextOfKinIDCopy,
-clearance_VisaForm,
-travel_date,
-travel_arrival,
-travel_pregnancy,
-travel_pcrStatus,
-travel_pcrCode,
-travel_pcrDate,
-travel_tshirt,
-travel_stampedClearanceForm,
-travel_ticket,
-travel_yellowFever
 
 
-from girls ,
-next_of_kin,
-uploads, schools,school_names, musaned,nea, enjaz, embassy, clearance, travel 
-WHERE 
-girls.girl_id=schools.girl_id
-and
-girls.girl_id=next_of_kin.girl_id
-and
-girls.girl_id=uploads.girl_id
-and
-girls.girl_id=musaned.girl_id
-and
-girls.girl_id=nea.girl_id
-and
-girls.girl_id=musaned.girl_id
-and
-girls.girl_id=enjaz.girl_id
-and
-girls.girl_id=embassy.girl_id
-and
-girls.girl_id=clearance.girl_id
-and
-girls.girl_id=travel.girl_id
-AND
-branches.branch_id=users.branch_id
-AND
-users.user_id=girls.user_id
-  ";
+$sql="select * from info";
+$result=$connect->query($sql);
+
+$rows=66;
+while($row=$result->fetch_array()):
+$girl_id=$row["girl_id"];
+$girl_fullname=$row["girl_fullname"];
+$girl_IDnumber=$row["girl_IDnumber"];
+$girl_phone=$row["girl_phone"];
+$girl_dob=$row["girl_dob"];
+$girl_religion=$row["girl_religion"];
+$girl_county=$row["girl_county"];
+$girl_passport=$row["girl_passport"];
+$passport_date_issue=$row["passport_date_issue"];
+$passport_date_expiry=$row["passport_date_expiry"];
+$girl_passport_place=$row["girl_passport_place"];
+$girl_goodConduct=$row["girl_goodConduct"];
+$girl_birth=$row["girl_birth"];
+$girl_firstMedical=$row["girl_firstMedical"];
+$dateCreated=$row["dateCreated"];
+$next_of_kin_fullname=$row["next_of_kin_fullname"];
+$next_of_kin_IDnumber=$row["next_of_kin_IDnumber"];
+$next_of_kin_relationship=$row["next_of_kin_relationship"];
+$next_of_kin_phone=$row["next_of_kin_phone"];
+$next_of_kin_fullname2=$row["next_of_kin_fullname2"];
+$next_of_kin_IDnumber2=$row["next_of_kin_IDnumber2"];
+$next_of_kin_relationship2=$row["next_of_kin_relationship2"];
+$next_of_kin_phone2=$row["next_of_kin_phone2"];
+$school_name=$row["school_name"];
+$school_start=$row["school_start"];
+$school_end=$row["school_end"];
+$school_cert=$row["school_cert"];
+$musaned_status=$row["musaned_status"];
+$musaned_sponsporName=$row["musaned_sponsporName"];
+$musaned_sponsporNumber=$row["musaned_sponsporNumber"];
+$musaned_sponsporID=$row["musaned_sponsporID"];
+$musaned_sponsporAddress=$row["musaned_sponsporAddress"];
+$musaned_contractNumber=$row["musaned_contractNumber"];
+$musaned_visaNumber=$row["musaned_visaNumber"];
+$agency_name=$row["agency_name"];
+$nea_date=$row["nea_date"];
+$nea_status=$row["nea_status"];
+$enjaz_status=$row["enjaz_status"];
+$enjaz_date=$row["enjaz_date"];
+$enjaz_medical=$row["enjaz_medical"];
+$medical_name=$row["medical_name"];
+$enjaz_medicalDate=$row["enjaz_medicalDate"];
+$enjaz_wakala=$row["enjaz_wakala"];
+$embassy_status=$row["embassy_status"];
+$embassy_date=$row["embassy_date"];
+$embassy_visaForm=$row["embassy_visaForm"];
+$embassy_medical=$row["embassy_medical"];
+$enjaz_number=$row["enjaz_number"];
+$clearance_attestationList=$row["clearance_attestationList"];
+$clearance_CertificateOfIncorporation=$row["clearance_CertificateOfIncorporation"];
+$clearance_status=$row["clearance_status"];
+$clearance_FullMedical=$row["clearance_FullMedical"];
+$clearance_GoodConduct=$row["clearance_GoodConduct"];
+$clearance_PassportCopy=$row["clearance_PassportCopy"];
+$clearance_GirlContract=$row["clearance_GirlContract"];
+$clearance_NextOfKinIDCopy=$row["clearance_NextOfKinIDCopy"];
+$clearance_VisaForm=$row["clearance_VisaForm"];
+$travel_date=$row["travel_date"];
+$travel_arrival=$row["travel_arrival"];
+$travel_pregnancy=$row["travel_pregnancy"];
+$travel_pcrStatus=$row["travel_pcrStatus"];
+$travel_pcrCode=$row["travel_pcrCode"];
+$travel_pcrDate=$row["travel_pcrDate"];
+$travel_tshirt=$row["travel_tshirt"];
+$travel_stampedClearanceForm=$row["travel_stampedClearanceForm"];
+$travel_ticket=$row["travel_ticket"];
+$travel_yellowFever=$row["travel_yellowFever"];
+
+$count=1;
+
+
+
+
+
+?>
+
+
+
+
+
+
+
+
+<tr class="table-agent-row">
+  <th scope="row">
+    <div class="media align-items-center">
+      <!--
+                        <a href="#" class="avatar rounded-circle mr-3">
+                          <img alt="Image placeholder" src="" />
+                        </a>
+-->
+      <div class="media-body">
+        <span class="name mb-0 text-sm"><?php echo $girl_fullname;?>
+          <?php //echo $row[$count]; ?>
+        </span>
+      </div>
+    </div>
+  </th>
+
+<?php while($count<$rows):
+              
+    $count++;
+    
+    ?>
+  
+  <td class="budget">
+   <?php echo $row[$count]?$row[$count]:"N/A";
+              
+    
+    
+    ?></td>
+<?php endwhile;
+              
+    
+    
+    ?>
+
+  <td class="text-center">
+    <div class="dropdown">
+      <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-ellipsis-v"></i>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+        <a class="dropdown-item" href="?girl=<?php echo $girl_id;?>">Girl Details</a>
+        <a class="dropdown-item" href="?kin=<?php echo $girl_id;?>">Next Of Kin</a>
+        <a class="dropdown-item" href="?musaned=<?php echo $girl_id;?>">Musaned</a>
+        <a class="dropdown-item" href="?nea=<?php echo $girl_id;?>">Nea</a>
+        <a class="dropdown-item" href="?enjaz=<?php echo $girl_id;?>">Enjaz</a>
+        <a class="dropdown-item" href="?embassy=<?php echo $girl_id;?>">Embassy</a>
+        <a class="dropdown-item" href="?clearance=<?php echo $girl_id;?>">Clearance</a>
+        <a class="dropdown-item" href="?travel=<?php echo $girl_id;?>">Travel</a>
+      </div>
+    </div>
+  </td>
+</tr>
+
+
+
+
+<?php  endwhile;?>
+
+
+
+
+<script>
+        $(document).ready(function(e) {
+          const row = $(".table-agent");
+
+          const selectColumnActive = $(".btn.btn-outline-str-secondary.active"),
+            selectColumn = $(".btn.btn-outline-str-secondary");
+
+          selectColumn.each(function() {
+            let th = document.createElement("th"),
+              text = $(this).text().trim();
+
+            th.setAttribute("scope", "col");
+            th.setAttribute("class", "sort ");
+            th.setAttribute("data-sort", $(this).text().trim());
+            th.setAttribute("data-toggle-table", $(this).text().trim());
+            th.innerText = text.replace(/\s\s+/g, " ");
+
+            // row.append(th);
+            $(th).insertBefore("th:last-child");
+          });
+          selectColumn.click(function(e) {
+            // console.log(
+            //   $(`[data-toggle-table='${$(this).text().trim()}']`).index()
+            // );
+            const INDEX = $(
+              `[data-toggle-table='${$(this).text().trim()}']`
+            ).index();
+
+            if ($(this).hasClass("active")) {
+              $(`[data-toggle-table='${$(this).text().trim()}']`).hide();
+              $(".table-agent-row").each(function() {
+                // console.log();
+                $(this).children().eq(INDEX).hide();
+              });
+            } else {
+              $(`[data-toggle-table='${$(this).text().trim()}']`).show();
+              $(".table-agent-row").each(function() {
+                // console.log();
+                $(this).children().eq(INDEX).show();
+              });
+            }
+          });
+        });
+
+      </script>

@@ -6,6 +6,32 @@
   <div class="main-content" id="panel">
     <!-- Topnav -->
     <?php include("includes/top-nav.php");?>
+    
+    <?php 
+    
+     if(isset($_GET['approve'])):
+    $status=$_GET['approve'];
+    $sql="update  branches set branch_status='active' where branch_id='$status'";
+    $result=$connect->query($sql);
+//    else:echo "failed...".$connect->error;
+//    endif;
+    
+    endif;
+    
+    if(isset($_GET['reject'])):
+    
+    $status=$_GET['reject'];
+    $sql="update branches set branch_status='inactive' where branch_id='$status'";
+    $result=$connect->query($sql);
+//    else:echo "failed...".$connect->error;
+//    endif;
+    
+    endif;
+    
+    ?>
+    
+    
+    
     <!-- Page content -->
 
 
@@ -108,9 +134,10 @@
                   <tr class="table-agent position-relative">
 
                     <th scope="col" class="sort" data-sort="name">Branch Name</th>
+                    <th scope="col" class="sort" data-sort="budget">Branch Address </th>
                     <th scope="col" class="sort" data-sort="budget">Total Number of Employees </th>
-                    <th scope="col" class="sort" data-sort="budget">Total Number of Girls</th>
-                    <th scope="col" class="sort" data-sort="budget">Total Expenses</th>
+                    
+                   
 
                     <th scope="col" class="sort" data-sort="status">Status</th>
 
@@ -118,102 +145,16 @@
                   </tr>
                 </thead>
                 <tbody class="list">
-                  <tr class="table-agent-row">
-
-                    <td class="budget">Nairobi Branch</td>
-                    <td class="budget">30</td>
-                    <td class="budget">40,000</td>
-                    <td class="budget">80,000</td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">Working</span>
-                      </span>
-                    </td>
-
-
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Active</a>
-                          <a class="dropdown-item" href="#">Inactive</a>
-
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-agent-row">
-
-                    <td class="budget">Nairobi Branch</td>
-                    <td class="budget">30</td>
-                    <td class="budget">40,000</td>
-                    <td class="budget">80,000</td>
-
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-danger"></i>
-                        <span class="status">Inactive</span>
-                      </span>
-                    </td>
-
-
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Active</a>
-                          <a class="dropdown-item" href="#">Inactive</a>
-
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-agent-row">
-
-                    <td class="budget">Nairobi Branch</td>
-                    <td class="budget">30</td>
-                    <td class="budget">40,000</td>
-                    <td class="budget">80,000</td>
-
-                    <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-primary"></i>
-                        <span class="status">Pending</span>
-                      </span>
-                    </td>
-
-
-
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Active</a>
-                          <a class="dropdown-item" href="#">Inactive</a>
-
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-
+                
+                
+                    <?php require_once("php_action/fetchBranches.php");?>
 
 
                 </tbody>
               </table>
             </div>
             <!-- Card footer -->
-            <div class="card-footer py-4">
+            <div class="card-footer py-4 d-none">
               <nav aria-label="...">
                 <ul class="pagination justify-content-end mb-0">
                   <li class="page-item disabled">
