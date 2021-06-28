@@ -201,7 +201,7 @@
                 
                 <div class="col-5">
                   <div class="form-group">
-                    <label for="dob">Girl Date Of Birth</label>
+                    <label for="dob">Passport Issue Date</label>
                     <div class="input-group">
 
                       <div class="input-group-prepend">
@@ -356,24 +356,38 @@
             </div>
             <div class="container ml-3 mt-5 slideLeft">
 
+                
+              <div class="row">
+                <div class="col-6">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1"> Agent Name</label>
+                  <select class="form-control" id="agent" name="agent">
+                      <option value="-1">Select the agent</option>
+                      <option value="0">Create New Agent</option>
+                      <?php require_once("php_action/fetchAgent.php");?>
+                    </select>
+                </div>
+                </div>
+              </div>
               
               <div class="row">
 
 
                 <div class="col-5">
-                  <div class="form-group">
+                  <div class="form-group d-none">
                     <label for="exampleFormControlInput1"> Agent Name</label>
-                    <input type="text" class="form-control form-control-muted" id="exampleFormControlInput1" name="agent_name" placeholder="John Doe">
+                    <input type="text" class="form-control form-control-muted" id="exampleFormControlInput1" name="agent_name" placeholder="John Doe" hidden>
                   </div>
                 </div>
                 <div class="col-5">
-                  <div class="form-group">
+                  <div class="form-group d-none">
                     <label for="exampleFormControlInput1"> Agent Number</label>
-                    <input type="tel" class="form-control form-control-muted" id="exampleFormControlInput1" name="agent_number" placeholder="1234567">
+                    <input type="tel" class="form-control form-control-muted" id="exampleFormControlInput1" name="agent_number" placeholder="1234567" hidden>
                   </div>
                 </div>
 
               </div>
+            
             </div>
             <!-- Card footer -->
             <div class="card-footer py-4">
@@ -525,7 +539,29 @@
         
         
         
+        //agent select
         
+        $("#agent").on("change",function(e){
+          
+          
+          
+          if($(this).val()===$('#agent option:eq(1)').val()){
+            
+            console.log($(this).val())
+            $("[name=agent_number]").removeAttr("hidden")
+            $("[name=agent_number]").parent().removeClass("d-none")
+            $("[name=agent_name]").parent().removeClass("d-none")
+            $("[name=agent_name]").removeAttr("hidden")
+          }else{
+            
+            $("[name=agent_number]").attr("hidden",true)
+             $("[name=agent_name]").attr("hidden",true)
+            $("[name=agent_number]").parent().addClass("d-none")
+            $("[name=agent_name]").parent().addClass("d-none")
+            
+          }
+          
+        })
         
         
         

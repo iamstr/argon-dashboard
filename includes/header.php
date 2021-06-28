@@ -22,4 +22,5 @@
   <!-- Page plugins -->
   <!-- Argon CSS -->
   <link rel="stylesheet" href="assets/css/argon.css?v=1.3.1" type="text/css">
+  <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
 </head>

@@ -33,6 +33,13 @@
         <div class="collapse show" id="collapseExample">
           <div class="card-body str-view">
             <h3 class="str-view-header text-muted">Change View</h3>
+            <?php include("includes/modals/school.php");?>
+            <?php include("includes/modals/musaned.php");?>
+            <?php include("includes/modals/nea.php");?>
+            <?php include("includes/modals/enjaz.php");?>
+            <?php include("includes/modals/embassy.php");?>
+            <?php include("includes/modals/clearance.php");?>
+            <?php include("includes/modals/travel.php");?>
             <div class="str-view-row d-flex flex-wrap">
              
 <!--
@@ -649,7 +656,7 @@
       
       <!-- Footer -->
       <?php include("includes/footer.php");?>
-      <script src="bower_components/bootstrap-table/dist/bootstrap-table.min.js"></script>
+      
       <script>
         $(document).ready(function(e) {
           const row = $(".table-agent");

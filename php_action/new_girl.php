@@ -25,11 +25,11 @@ if($_POST) {
   $kin_number2= $_POST['kin_number2'];
   $kin_id= $_POST['kin_id'];
   $kin_id2= $_POST['kin_id2'];
-  $agent_name= $_POST['agent_name'];
-  $agent_number= $_POST['agent_number'];
-  $passport_date_issue= date("Y-m-d", strtotime($_POST['passport_date_issue']));
   
-  $passport_date_expiry= date("Y-m-d", strtotime("+10 years",$_POST['passport_date_issue']));
+  
+  $passport_date_issue= $_POST['passport_date_issue'];
+  
+  $passport_date_expiry= date("Y-m-d", strtotime('+3651 day', strtotime($_POST['passport_date_issue'])) );
   $user=$_SESSION['user']||1;
   $date=date("Y-m-d H:m:s");
   
@@ -37,8 +37,8 @@ if($_POST) {
 
 	
 				$sql = "INSERT INTO `girls`(`girl_fullname`, `girl_IDnumber`, `girl_phone`, `girl_dob`, `girl_religion`, `girl_county`, `girl_passport`,   `passport_date_issue`, `passport_date_expiry`, `girl_goodConduct`, `girl_passport_place`, `girl_birth`, `girl_firstMedical`, `user_id`,dateCreated, `updatedBy`)  
-				VALUES ('$fullname', '$id' , '$phone','$dob','$religion','$county','$passport',$passport_date_issue,
-$passport_date_expiry,'$conduct','$place_issue','$birth_cert','$firstMedical','$user','$date',$user)";
+				VALUES ('$fullname', '$id' , '$phone','$dob','$religion','$county','$passport','$passport_date_issue',
+'$passport_date_expiry','$conduct','$place_issue','$birth_cert','$firstMedical','$user','$date',$user)";
 				if($connect->query($sql) === TRUE) {
 					$valid['success'] = true;
                     $girl_id = $connect->insert_id;
@@ -49,7 +49,28 @@ $passport_date_expiry,'$conduct','$place_issue','$birth_cert','$firstMedical','$
                   
                   $sqlKin=" INSERT INTO `next_of_kin`( `next_of_kin_fullname`, `next_of_kin_IDnumber`, `next_of_kin_relationship`, `next_of_kin_phone`, `next_of_kin_fullname2`, `next_of_kin_IDnumber2`, `next_of_kin_phone2`, `next_of_kin_relationship2`, `girl_id`) VALUES( '$kin_names',$kin_id,'$kinship',$kin_number,'$kin_names2','$kin_id2',$kin_number2,'$kinship2',$girl_id)";
                  
-                  $sqlAgent="INSERT INTO `agents`( `agent_fullname`, `agent_phone`,girl_id) VALUES ( '$agent_name','$agent_number',$girl_id)";
+                  
+                  if(isset($_POST['agent_name'])&&isset($_POST['agent_number'])){
+                    
+                    $agent_name= $_POST['agent_name'];
+                    $agent_number= $_POST['agent_number'];
+                    $sqlAgent="INSERT INTO `agents`( `agent_fullname`, `agent_phone`,girl_id) VALUES ( '$agent_name','$agent_number',$girl_id)";
+                  }else{
+                    
+                     $agent= $_POST['agent'];
+                      $sqlAgent="select * from agents where agent_id='$agent'";
+                    
+                    $resultAgent=$connect->query($sqlAgent);
+                    $rowAgent=$resultAgent->fetch_array();
+                    $agent_name= $rowAgent['agent_name'];
+                    $agent_number= $rowAgent['agent_number'];
+                    $sqlAgent="INSERT INTO `agents`( `agent_fullname`, `agent_phone`,girl_id) VALUES ( '$agent_name','$agent_number',$girl_id)";
+                  }
+                            
+                             
+                  
+                  
+                 
                   if($connect->query($sqlKin) === TRUE) {
                     
                     
@@ -61,7 +82,7 @@ $passport_date_expiry,'$conduct','$place_issue','$birth_cert','$firstMedical','$
                     
                   }else{
                     $valid['success'] = false;
-					$valid['messages'] = "Error while adding the girl agent ".$connect->error;
+					$valid['messages'] = "Error while adding the girl  Try updating instead ". $_POST['passport_date_issue']." ".$connect->error;
                        
                   }
                     
@@ -69,14 +90,14 @@ $passport_date_expiry,'$conduct','$place_issue','$birth_cert','$firstMedical','$
                   }else{
                     
                     $valid['success'] = false;
-					$valid['messages'] = "Error while adding the girl  ".$connect->error;
+					$valid['messages'] = "Error while adding the girl  Try updating instead". $passport_date_issue." ".$connect->error;
                   }
                  
 					
                   
 				} else {
 					$valid['success'] = false;
-					$valid['messages'] = "Error while adding the kins  ".$connect->error;
+					$valid['messages'] = "Error while adding the girl  Try updating instead ". $passport_date_issue." ".$connect->error;
 				}
 
 				// /else	
