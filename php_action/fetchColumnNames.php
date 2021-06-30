@@ -17,7 +17,7 @@ $result=$connect->query($sql) ;
     
     echo '<div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-    <input type="checkbox" autocomplete="off" checked /> '.$row[0].'</label></div>';
+    <input type="checkbox" autocomplete="off" checked /> '.str_replace("_"," ",$row[0]).'</label></div>';
   }
   ?>
 
@@ -42,7 +42,7 @@ $result=$connect->query($sql) ;
 //    
 //    echo '<div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
 //  <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-//    <input type="checkbox" autocomplete="off" checked /> '.$row[0].'</label></div>';
+//    <input type="checkbox" autocomplete="off" checked /> '.str_replace("_"," ",$row[0]).'</label></div>';
 //  }
   ?>
 
@@ -72,7 +72,7 @@ $result=$connect->query($sql) ;
     
     echo '<div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-    <input type="checkbox" autocomplete="off" checked /> '.$row[0].'</label></div>';
+    <input type="checkbox" autocomplete="off" checked /> '.str_replace("_"," ",$row[0]).'</label></div>';
   }
   ?>
 
@@ -117,7 +117,7 @@ $result=$connect->query($sql) ;
     
       echo '<div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-    <input type="checkbox" autocomplete="off" checked /> '.$row[0].'</label></div>';
+    <input type="checkbox" autocomplete="off" checked /> '.str_replace("_"," ",$row[0]).'</label></div>';
   }
   ?>
 
@@ -142,7 +142,7 @@ while($row=$result->fetch_array()){
     
       echo '<div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-    <input type="checkbox" autocomplete="off" checked /> '.$row[0].'</label></div>';
+    <input type="checkbox" autocomplete="off" checked /> '.str_replace("_"," ",$row[0]).'</label></div>';
   }
   ?>
 
@@ -165,7 +165,7 @@ $result=$connect->query($sql) ;
     
       echo '<div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-    <input type="checkbox" autocomplete="off" checked /> '.$row[0].'</label></div>';
+    <input type="checkbox" autocomplete="off" checked /> '.str_replace("_"," ",$row[0]).'</label></div>';
   }
   ?>
 
@@ -189,7 +189,7 @@ $result=$connect->query($sql) ;
     
       echo '<div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-    <input type="checkbox" autocomplete="off" checked /> '.$row[0].'</label></div>';
+    <input type="checkbox" autocomplete="off" checked /> '.str_replace("_"," ",$row[0]).'</label></div>';
   }
   ?>
 
@@ -213,7 +213,7 @@ $result=$connect->query($sql) ;
     
       echo '<div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-    <input type="checkbox" autocomplete="off" checked /> '.$row[0].'</label></div>';
+    <input type="checkbox" autocomplete="off" checked /> '.str_replace("_"," ",$row[0]).'</label></div>';
   }
   ?>
 
@@ -237,7 +237,7 @@ $result=$connect->query($sql) ;
     
       echo '<div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-    <input type="checkbox" autocomplete="off" checked /> '.$row[0].'</label></div>';
+    <input type="checkbox" autocomplete="off" checked /> '.str_replace("_"," ",$row[0]).'</label></div>';
   }
   ?>
 
@@ -261,7 +261,7 @@ $result=$connect->query($sql) ;
     
       echo '<div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-    <input type="checkbox" autocomplete="off" checked /> '.$row[0].'</label></div>';
+    <input type="checkbox" autocomplete="off" checked /> '.str_replace("_"," ",$row[0]).'</label></div>';
   }
   ?>
 

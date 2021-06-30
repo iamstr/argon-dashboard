@@ -33,6 +33,7 @@
         <div class="collapse show" id="collapseExample">
           <div class="card-body str-view">
             <h3 class="str-view-header text-muted">Change View</h3>
+          
             <?php include("includes/modals/school.php");?>
             <?php include("includes/modals/musaned.php");?>
             <?php include("includes/modals/nea.php");?>
@@ -653,7 +654,7 @@
       </div>
       
 -->
-      
+        <?php include("includes/modals/girl.php");?>
       <!-- Footer -->
       <?php include("includes/footer.php");?>
       
