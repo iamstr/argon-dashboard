@@ -6,67 +6,67 @@ $valid['success'] = array('success' => false, 'messages' => array());
 
 if($_POST) {	
 
-  $fullname		= $_POST['fullname'];
-  $id			= $_POST['id'];
-  $phone			= $_POST['phone'];
-  $dob			= date("Y-m-d", strtotime($_POST['dob']));
-  $religion			= $_POST['religion'];
-  $county		= $_POST['county'];
-  $firstMedical		= $_POST['firstMedical'];
-  $birth_cert	= $_POST['birth_cert'];
-  $passport	= $_POST['passport'];
-  $conduct	= $_POST['conduct'];
-  $place_issue	= $_POST['issue'];
-  $kin_names	= $_POST['kin_names'];
-  $kin_names2	= $_POST['kin_names2'];
-  $kinship	= $_POST['kinship'];
-  $kinship2	= $_POST['kinship2'];
-  $kin_number= $_POST['kin_number'];
-  $kin_number2= $_POST['kin_number2'];
-  $kin_id= $_POST['kin_id'];
-  $kin_id2= $_POST['kin_id2'];
+  $fullname		= mysqli_real_escape_string($connect,$_POST['fullname']);
+  $id			= mysqli_real_escape_string($connect,$_POST['id']);
+  $phone			= mysqli_real_escape_string($connect,$_POST['phone']);
+  $dob			= mysqli_real_escape_string($connect,$_POST['dob']);
   
-  
-  $passport_date_issue= $_POST['passport_date_issue'];
-  
-  $passport_date_expiry= date("Y-m-d", strtotime('+3651 day', strtotime($_POST['passport_date_issue'])) );
-  $user=$_SESSION['user']||1;
-  $date=date("Y-m-d H:m:s");
-  
-  
+  $county		= mysqli_real_escape_string($connect,$_POST['county']);
+ 
+  $passport	= mysqli_real_escape_string($connect,$_POST['passport']);
 
-	
-				$sql = "INSERT INTO `girls`(`girl_fullname`, `girl_IDnumber`, `girl_phone`, `girl_dob`, `girl_religion`, `girl_county`, `girl_passport`,   `passport_date_issue`, `passport_date_expiry`, `girl_goodConduct`, `girl_passport_place`, `girl_birth`, `girl_firstMedical`, `user_id`,dateCreated, `updatedBy`)  
-				VALUES ('$fullname', '$id' , '$phone','$dob','$religion','$county','$passport','$passport_date_issue',
-'$passport_date_expiry','$conduct','$place_issue','$birth_cert','$firstMedical','$user','$date',$user)";
-				if($connect->query($sql) === TRUE) {
-					$valid['success'] = true;
-                    $girl_id = $connect->insert_id;
-                  if (!file_exists('../uploads/'.$girl_id."-".$fullname."-".$id."/")) {
-    mkdir('../uploads/'.$girl_id."-".$fullname."-".$id."/", 0777, true);
-}
-                  
-                  
-                  $sqlKin=" INSERT INTO `next_of_kin`( `next_of_kin_fullname`, `next_of_kin_IDnumber`, `next_of_kin_relationship`, `next_of_kin_phone`, `next_of_kin_fullname2`, `next_of_kin_IDnumber2`, `next_of_kin_phone2`, `next_of_kin_relationship2`, `girl_id`) VALUES( '$kin_names',$kin_id,'$kinship',$kin_number,'$kin_names2','$kin_id2',$kin_number2,'$kinship2',$girl_id)";
-                 
-                  
-                  if(isset($_POST['agent_name'])&&isset($_POST['agent_number'])){
+  $kin_names	= mysqli_real_escape_string($connect,$_POST['kin_names']);
+  
+  $kin_number= mysqli_real_escape_string($connect,$_POST['kin_number']);
+  
+  
+  
+  $user=$_SESSION['user'];
+  $date=date("Y-m-d");
+  
+          if(!empty($_POST['agency_name'])){
                     
-                    $agent_name= $_POST['agent_name'];
-                    $agent_number= $_POST['agent_number'];
-                    $sqlAgent="INSERT INTO `agents`( `agent_fullname`, `agent_phone`,girl_id) VALUES ( '$agent_name','$agent_number',$girl_id)";
+                    $agent_name= mysqli_real_escape_string($connect,$_POST['agency_name']);
+                  
+                    $sqlAgent="INSERT INTO `agencies`( `agency_name`) VALUES ( '$agent_name')";
+            
+                    if($result=$connect->query($sqlAgent)){
+                      $agency=$connect->insert_id;
+                      
+                    }else{
+                      
+                      $valid["messages"]=" ooops name already exists";
+                      $valid["success"]=false;
+//                      return $valid;
+                    }
                   }else{
                     
-                     $agent= $_POST['agent'];
-                      $sqlAgent="select * from agents where agent_id='$agent'";
+                     $agent= mysqli_real_escape_string($connect,$_POST['agency']);
+           
+                      $sqlAgent="select * from agencies where agency_id='$agent'";
                     
                     $resultAgent=$connect->query($sqlAgent);
                     $rowAgent=$resultAgent->fetch_array();
-                    $agent_name= $rowAgent['agent_name'];
-                    $agent_number= $rowAgent['agent_number'];
-                    $sqlAgent="INSERT INTO `agents`( `agent_fullname`, `agent_phone`,girl_id) VALUES ( '$agent_name','$agent_number',$girl_id)";
+                    $agent_name= $rowAgent['agency_name'];
+                    $agency= mysqli_real_escape_string($connect,$rowAgent['agency_id']);
+
                   }
-                            
+                     
+
+	
+				$sql = "INSERT INTO `girls`( `girl_name`, `girl_IDNumber`, `girl_phone`, `passport`, `county`, `agency_id`, `age`, `kin_name`, `kin_phone`, `admission_date`, `updated_by`) 
+				VALUES ('$fullname', '$id' , '$phone','$passport','$county','$agency','$dob',
+                '$kin_names','$kin_number','$date',$user)";
+				if($connect->query($sql) === TRUE) {
+					$valid['success'] = true;
+                    $girl_id = $connect->insert_id;
+                  
+                  
+                  
+                  $sqlKin=" INSERT INTO `reports`( `report_paid`, `report_due`, `girl_id`, `report_date`, `report_update_by`) VALUES( 0,25000,$girl_id,'$date',$user)";
+                 
+                  
+                         
                              
                   
                   
@@ -75,29 +75,20 @@ if($_POST) {
                     
                     
                     
-                     if($connect->query($sqlAgent) === TRUE) {
-                    
-                    
-                    $valid['messages'] = "Successfully Added  ".$fullname;	
-                    
-                  }else{
-                    $valid['success'] = false;
-					$valid['messages'] = "Error while adding the girl  Try updating instead ". $_POST['passport_date_issue']." ".$connect->error;
-                       
-                  }
+                     $valid['messages'] = "SuccessFully Added"; 
                     
                     
                   }else{
                     
                     $valid['success'] = false;
-					$valid['messages'] = "Error while adding the girl  Try updating instead". $passport_date_issue." ".$connect->error;
+					$valid['messages'] = "Error while adding the reports  Try updating instead";
                   }
                  
 					
                   
 				} else {
 					$valid['success'] = false;
-					$valid['messages'] = "Error while adding the girl  Try updating instead ". $passport_date_issue." ".$connect->error;
+					$valid['messages'] = "Error while adding the girl  Try updating instead ";
 				}
 
 				// /else	

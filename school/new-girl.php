@@ -41,27 +41,17 @@
                 </div>
                 <div class="col-5">
                   <div class="form-group">
-                    <label for="dob">Girl Date Of Birth</label>
-                    <div class="input-group">
+                    <label for="dob">Age of Girl</label>
+                    <div class="form-group">
 
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
-                      </div>
-                      <input class="form-control datepicker" placeholder="Select date" type="text" name="dob" id="dob">
+                      
+                      <input class="form-control  form-control-muted" placeholder="21" type="number" name="dob"  min="21" max="50">
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-5">
-                  <div class="form-group">
-                    <label for="religion">Girl Religion</label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="religion" id="religion" >
-                      <option>Muslim</option>
-                      <option>Non Muslim</option>
-                    </select>
-                  </div>
-                </div>
+                
                 <div class="col-5">
                   <div class="form-group">
                     <label for="county">Girl County</label>
@@ -72,6 +62,14 @@
                       <option>4</option>
                       <option>5</option>
                     </select>
+                  </div>
+                </div>
+                
+                
+                <div class="col-5">
+                  <div class="form-group">
+                    <label for="passport"> Passport Number</label>
+                    <input type="text" class="form-control form-control-muted" id="passport"  name="passport" placeholder="AK078341">
                   </div>
                 </div>
               </div>
@@ -90,154 +88,13 @@
           </div>
           <!--end of first step  -->
 
-          <!-- second step -->
-          <div class="card steps-form  ">
-            <!-- Card header -->
-            <div class="card-header border-0">
-              <h3 class="mb-0">Second Stage</h3>
-            </div>
-            <div class="container ml-3 slideLeft">
-
-              <div class="row">
-                <div class="col-5">
-                  <div class="form-group">
-                    <h3 class="mb-0">First Medical</h3>
-                  </div>
-                </div>
-                <div class="col-5">
-                  <div class="form-group">
-
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="firstMedical" name="firstMedical" class="custom-control-input">
-                      <label class="custom-control-label" for="firstMedical">YES</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="firstMedical2" name="firstMedical" class="custom-control-input">
-                      <label class="custom-control-label" for="firstMedical2">NO</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-5">
-                  <div class="form-group">
-                    <h3 class="mb-0">Birth Certificate</h3>
-                  </div>
-                </div>
-                <div class="col-5">
-                  <div class="form-group">
-
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="customRadioInline1" name="birth_cert" class="custom-control-input">
-                      <label class="custom-control-label" for="customRadioInline1">YES</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="customRadioInline2" name="birth_cert" class="custom-control-input">
-                      <label class="custom-control-label" for="customRadioInline2">NO</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card footer -->
-            <div class="card-footer py-4">
-              <div class="d-flex justify-content-end">
-                <button class="btn btn-icon btn-outline-secondary w-25 btn-lg steps-form-button-back" type="button">
-                  <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
-                  <span class="btn-inner--text">Back</span>
-                </button>
-                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" type="button">
-                  <span class="btn-inner--text">Next</span>
-                  <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
-                </button>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- end of second step -->
-          <!-- third step -->
-          <div class="card steps-form  ">
-            <!-- Card header -->
-            <div class="card-header border-0">
-              <h3 class="mb-0">Third Stage</h3>
-            </div>
-            <div class="container ml-3 mt-5 slideLeft">
-
-              <div class="row">
-
-                <div class="col-5">
-                  <div class="form-group">
-                    <label for="passport"> Passport Number</label>
-                    <input type="text" class="form-control form-control-muted" id="passport"  name="passport" placeholder="AK078341">
-                  </div>
-                </div>
-                <div class="col-5">
-                  <div class="form-group">
-                    <label for="conduct"> Good Conduct Number</label>
-                    <input type="text" class="form-control form-control-muted" id="conduct"  name="conduct"placeholder="PHSH-1234">
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="row">
-
-
-                <div class="col-5">
-                  <div class="form-group">
-                    <label for="issue">Passport Place Of Issue</label>
-                    <select class="form-control" id="issue" name="issue">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </div>
-                
-                
-                <div class="col-5">
-                  <div class="form-group">
-                    <label for="dob">Passport Issue Date</label>
-                    <div class="input-group">
-
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
-                      </div>
-                      <input class="form-control datepicker" placeholder="Select date" type="text" name="passport_date_issue" id="pdi">
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <!-- Card footer -->
-            <div class="card-footer py-4">
-              <div class="d-flex justify-content-end">
-                <button class="btn btn-icon btn-outline-secondary w-25 btn-lg steps-form-button-back" type="button">
-                  <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
-                  <span class="btn-inner--text">Back</span>
-                </button>
-                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" type="button">
-                  <span class="btn-inner--text">Next</span>
-                  <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
-                </button>
-              </div>
-
-            </div>
-
-
-
-          </div>
-          <!-- end of third step -->
+         
+          
           <!-- fourth step -->
           <div class="card steps-form ">
             <!-- Card header -->
             <div class="card-header border-0">
-              <h3 class="mb-0">Fourth Stage</h3>
+              <h3 class="mb-0">Second Stage</h3>
             </div>
             <div class="container ml-3 mt-5 slideLeft">
 
@@ -250,121 +107,25 @@
                   </div>
                 </div>
 
-                <div class="col-5">
-                  <div class="form-group">
-                    <label for="kinship">Next Of Kin Relationship</label>
-                    <select class="form-control" id="kinship"name="kinship" >
-                      <option>Father</option>
-                      <option>Mother</option>
-                      <option>Sister</option>
-                      <option>Brother</option>
-                      <option>Spouse</option>
-                    </select>
-                  </div>
-                </div>
-
-              </div>
-                
-            
-
-              <div class="row">
-
-
-                <div class="col-5">
+                 <div class="col-5">
                   <div class="form-group">
                     <label for="kin_number"> Next Of Kin Number</label>
                     <input type="tel" class="form-control form-control-muted" id="kin_number" name="kin_number" placeholder="07xx xxx xxx">
                   </div>
                 </div>
-                <div class="col-5">
-                  <div class="form-group">
-                    <label for="kin_id"> Next Of Kin ID Number</label>
-                    <input type="text" class="form-control form-control-muted" id="kin_id" name="kin_id" placeholder="1234567">
-                  </div>
-                </div>
-
-              </div> 
-              
-                      <div class="row">
-
-                <div class="col-5">
-                  <div class="form-group">
-                    <label for="kin_names2"> Next Of Kin  2 Names</label>
-                    <input type="text" class="form-control form-control-muted" id="kin_names2" name="kin_names2" placeholder="John Kabuga Salim">
-                  </div>
-                </div>
-
-                <div class="col-5">
-                  <div class="form-group">
-                    <label for="kinship2">Next Of Kin 2 Relationship</label>
-                    <select class="form-control" id="kinship2"name="kinship2" >
-                      <option>Father</option>
-                      <option>Mother</option>
-                      <option>Sister</option>
-                      <option>Brother</option>
-                      <option>Spouse</option>
-                    </select>
-                  </div>
-                </div>
 
               </div>
-              
-              <div class="row">
-
-
-                <div class="col-5">
-                  <div class="form-group">
-                    <label for="kin_number2"> Next Of Kin 2 Number</label>
-                    <input type="tel" class="form-control form-control-muted" id="kin_number2" name="kin_number2" placeholder="07xx xxx xxx">
-                  </div>
-                </div>
-                <div class="col-5">
-                  <div class="form-group">
-                    <label for="kin_id2"> Next Of Kin 2 ID Number</label>
-                    <input type="text" class="form-control form-control-muted" id="kin_id2" name="kin_id2" placeholder="1234567">
-                  </div>
-                </div>
-
-              </div>
-            
-            </div>
-            <!-- Card footer -->
-            <div class="card-footer py-4">
-              <div class="d-flex justify-content-end">
-                <button class="btn btn-icon btn-outline-secondary w-25 btn-lg steps-form-button-back" type="button">
-                  <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
-                  <span class="btn-inner--text">Back</span>
-                </button>
-                <button class="btn btn-icon btn-primary w-25 btn-lg steps-form-button-next  " type="button" >
-                  <span class="btn-inner--text">Next</span>
-                  <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
-                </button>
-              </div>
-
-            </div>
-
-           
-
-          </div>
-          <!-- end of fourth step -->
-          
-          <!-- fiveth step -->
-          <div class="card steps-form ">
-            <!-- Card header -->
-            <div class="card-header border-0">
-              <h3 class="mb-0">Fiveth Stage</h3>
-            </div>
-            <div class="container ml-3 mt-5 slideLeft">
-
-                
-              <div class="row">
+               
+               
+               
+                   <div class="row">
                 <div class="col-6">
                 <div class="form-group">
-                  <label for="exampleFormControlInput1"> Agent Name</label>
-                  <select class="form-control" id="agent" name="agent">
-                      <option value="-1">Select the agent</option>
-                      <option value="0">Create New Agent</option>
-                      <?php require_once("php_action/fetchAgent.php");?>
+                  <label for="exampleFormControlInput1"> Agency Name</label>
+                  <select class="form-control" id="agency" name="agency">
+                      <option value="-1">Select the agency</option>
+                      <option value="0">Create New agency</option>
+                      <?php require_once("php_action/fetchAgency.php");?>
                     </select>
                 </div>
                 </div>
@@ -373,23 +134,25 @@
               <div class="row">
 
 
-                <div class="col-5">
+                <div class="col-6">
                   <div class="form-group d-none">
-                    <label for="exampleFormControlInput1"> Agent Name</label>
-                    <input type="text" class="form-control form-control-muted" id="exampleFormControlInput1" name="agent_name" placeholder="John Doe" hidden>
+                    <label for="exampleFormControlInput1"> Agency Name</label>
+                    <input type="text" class="form-control form-control-muted" id="exampleFormControlInput1" name="agency_name" placeholder="WAJIB AGENCY" hidden autocomplete="off">
                   </div>
                 </div>
-                <div class="col-5">
+                <div class="col-5 d-none">
                   <div class="form-group d-none">
-                    <label for="exampleFormControlInput1"> Agent Number</label>
-                    <input type="tel" class="form-control form-control-muted" id="exampleFormControlInput1" name="agent_number" placeholder="1234567" hidden>
+                    <label for="exampleFormControlInput1"> Agency Number</label>
+                    <input type="tel" class="form-control form-control-muted" id="exampleFormControlInput1" name="agency_number" placeholder="1234567" hidden>
                   </div>
                 </div>
 
               </div>
+                
             
+
             </div>
-            <!-- Card footer -->
+             <!-- Card footer -->
             <div class="card-footer py-4">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-icon btn-outline-secondary w-25 btn-lg steps-form-button-back" type="button">
@@ -409,11 +172,12 @@
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Save </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
+                  <div id="modal-message"></div>
                   <div class="modal-body">
                   <div class="display" style="width:300px">
                     
@@ -432,8 +196,11 @@
               </div>
             </div>
 
+
           </div>
-          <!-- end of fiveth step -->
+          <!-- end of fourth step -->
+          
+          
         </div>
 
       </div>
@@ -539,25 +306,25 @@
         
         
         
-        //agent select
+        //agency select
         
-        $("#agent").on("change",function(e){
+        $("#agency").on("change",function(e){
           
           
           
-          if($(this).val()===$('#agent option:eq(1)').val()){
+          if($(this).val()===$('#agency option:eq(1)').val()){
             
             console.log($(this).val())
-            $("[name=agent_number]").removeAttr("hidden")
-            $("[name=agent_number]").parent().removeClass("d-none")
-            $("[name=agent_name]").parent().removeClass("d-none")
-            $("[name=agent_name]").removeAttr("hidden")
+            $("[name=agency_number]").removeAttr("hidden")
+            $("[name=agency_number]").parent().removeClass("d-none")
+            $("[name=agency_name]").parent().removeClass("d-none")
+            $("[name=agency_name]").removeAttr("hidden")
           }else{
             
-            $("[name=agent_number]").attr("hidden",true)
-             $("[name=agent_name]").attr("hidden",true)
-            $("[name=agent_number]").parent().addClass("d-none")
-            $("[name=agent_name]").parent().addClass("d-none")
+            $("[name=agency_number]").attr("hidden",true)
+             $("[name=agency_name]").attr("hidden",true)
+            $("[name=agency_number]").parent().addClass("d-none")
+            $("[name=agency_name]").parent().addClass("d-none")
             
           }
           
@@ -587,9 +354,9 @@
 							
 
 							$("html, body, div.modal, .modal-content, div.modal-body").animate({scrollTop: '0'}, 100);
-								$('.modal-body div').hide()									
+								$('.modal-body ').hide()									
 							// shows a successful message after operation
-							$('.modal-body').append('<div class="alert alert-success">'+
+							$('#modal-message').append('<div class="alert alert-success">'+
 		            '<button type="button" class="close" data-dismiss="alert">&times;</button>'+
 		            '<strong><i class="ni ni-like-2"></i></strong> '+ response.messages +
 		          '</div>');
@@ -598,7 +365,7 @@
 		          $(".alert-success").delay(1000).show(10, function() {
 								$(this).delay(3000).hide(10, function() {
 									$(this).remove();
-                                  $('.modal-body div').show()
+                                  $('.modal-body ').show()
 								});
 							}); // /.alert
 
@@ -612,9 +379,9 @@
                         
                         
 							$("html, body, div.modal, .modal-content, div.modal-body").animate({scrollTop: '0'}, 100);
-									$('.modal-body div').hide()								
+									$('.modal-body').hide()								
 							// shows a successful message after operation
-							$('.modal-body').append('<div class="alert alert-warning shaking-2">'+
+							$('#modal-message').append('<div class="alert alert-warning shaking-2">'+
 		            '<button type="button" class="close" data-dismiss="alert">&times;</button>'+
 		            '<strong><i class="ni ni-like-2"></i></strong> '+ response.messages +
 		          '</div>');
@@ -623,7 +390,7 @@
 		          $(".alert-warning").delay(500).show(10, function() {
 								$(this).delay(3000).hide(10, function() {
 									$(this).remove();
-                                  $('.modal-body div').show()
+                                  $('.modal-body ').show()
 								});
 							}); // /.alert
 

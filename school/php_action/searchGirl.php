@@ -74,7 +74,7 @@ require_once 'core.php';
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$mysqli = new mysqli("localhost", "root", "", "recruitment");
+$mysqli = new mysqli("localhost", "root", "", "schools");
  
 // Check connection
 if($mysqli === false){
@@ -83,7 +83,7 @@ if($mysqli === false){
  
 if(isset($_REQUEST["term"])){
     // Prepare a select statement
-    $sql = "select girl_id,girl_fullname,girl_IDnumber,girl_passport from girls where  LOWER(girl_fullname) LIKE ? OR LOWER(girl_IDnumber)  LIKE ? OR  LOWER(girl_passport) LIKE ?";
+    $sql = "select girl_id,girl_name,girl_IDnumber,passport from girls where  LOWER(girl_name) LIKE ? OR LOWER(girl_IDnumber)  LIKE ? OR  LOWER(passport) LIKE ?";
     
     if($stmt = $mysqli->prepare($sql)){
         // Bind variables to the prepared statement as parameters
@@ -102,7 +102,7 @@ if(isset($_REQUEST["term"])){
                 while($row = $result->fetch_array(MYSQLI_ASSOC)){
                     ?>
                       <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
-                <span class="maid-name" id="<?php echo $row["girl_id"];?>"><?php echo $row["girl_fullname"]. str_repeat('&nbsp;', 5).$row["girl_IDnumber"];?></span>
+                <span class="maid-name" id="<?php echo $row["girl_id"];?>"><?php echo $row["girl_name"]. str_repeat('&nbsp;', 5).$row["girl_IDnumber"];?></span>
                
 
               </li>
@@ -113,7 +113,7 @@ if(isset($_REQUEST["term"])){
                 echo "<p>No matches found</p>";
             }
         } else{
-            echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+            echo "ERROR: Could not able to execute  ";
         }
     }
      

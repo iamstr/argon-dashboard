@@ -78,9 +78,9 @@
              </a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="request">
+             <a class="nav-link" href="recieve">
                <i class="ni ni-collection text-success"></i>
-               <span class="nav-link-text">Make Payment</span>
+               <span class="nav-link-text">Recieve Payment</span>
              </a>
            </li>
          </ul><!-- Divider -->
