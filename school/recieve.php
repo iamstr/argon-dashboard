@@ -67,30 +67,31 @@
                       </button>
                     </div>
                     <div class="modal-message mx-auto w-75"></div>
-                    <form id="branchForm" action="php_action/createRecieve.php" method="post">
+                    <form id="recieveForm" action="php_action/createRecieve.php" method="post">
+                     
                       <div class="modal-body">
 
                         <h6 class="heading-small text-muted mb-4">Payment Recieved</h6>
                         <div class="pl-lg-1">
-                         
-<!--                         <div class="row">-->
-                           
-                           
-                            <div class="form-group position-relative">
-                <input type="search" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" id="search" name="search" />
-                <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
-              </div>
 
-              <ul class="list-group custom-list-group rounded-3 d-none">
+                          <!--                         <div class="row">-->
 
-                <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
-                  <span class="maid-name text-muted">Starting typing....</span>
-                  <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
-                </li>
-              </ul>
-                           
-<!--                         </div>-->
-                         
+
+                          <div class="form-group position-relative">
+                            <input type="search" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" id="search" name="girl" />
+                            <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
+                          </div>
+
+                          <ul class="list-group custom-list-group rounded-3 d-none">
+
+                            <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
+                              <span class="maid-name text-muted">Starting typing....</span>
+                              <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
+                            </li>
+                          </ul>
+
+                          <!--                         </div>-->
+
                           <div class="row">
                             <div class="col-lg-6">
                               <div class="form-group position-relative">
@@ -98,14 +99,14 @@
                                 <input type="number" class="form-control form-control-muted" name="paid" min="1000">
                               </div>
 
-                             
+
                             </div>
-                            </div>
-                            <div class="row">
-                               <div class="col-lg-6">
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-6">
                               <div class="form-group">
                                 <label for="exampleFormControlSelect1"> Select Payment Type</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
+                                <select class="form-control" id="exampleFormControlSelect1" name="payment">
                                   <option>Cash</option>
                                   <option>Credit</option>
                                   <option>mpesa</option>
@@ -115,16 +116,16 @@
 
 
                             </div>
-                            </div>
-                           
-                          
-                          
+                          </div>
+
+
+
                         </div>
 
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-warning" id="branchSubmit">I have Recieved</button>
+                        <button type="submit" class="btn btn-warning" id="recieveSubmit">I have Recieved</button>
                       </div>
                     </form>
                   </div>
@@ -154,7 +155,7 @@
                 <div class="col-8">
                   <h3 class="mb-0">Check Reciepts </h3>
                 </div>
-               
+
               </div>
             </div>
             <div class="card-body">
@@ -464,11 +465,11 @@
 
 
 
-      $("#uploadSubmit").unbind('click').bind('click', function(e) {
+      $("#recieveSubmit").unbind('click').bind('click', function(e) {
         //        e.preventDefault()
         console.log("pressed")
         //
-        $("#uploadForm").unbind('submit').bind('submit', function(e) {
+        $("#recieveForm").unbind('submit').bind('submit', function(e) {
           e.preventDefault();
           var form = $(this);
           var formData = new FormData(this);
