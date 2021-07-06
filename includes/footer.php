@@ -38,7 +38,7 @@
   <script src="assets/vendor/chart.js/dist/Chart.min.js"></script>
   <script src="assets/vendor/chart.js/dist/Chart.extension.js"></script>
   <!-- Argon JS -->
-  <script src="assets/js/argon.js?v=1.2.1"></script>
+  <script src="assets/js/argon.js?v=1.2.2"></script>
 
 
    

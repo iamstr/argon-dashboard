@@ -8,6 +8,7 @@ var SalesChart = (function () {
   // Variables
 
   var $chart = $("#chart-sales-dark");
+  var datasets=$('[data-girl]').data("girl");
 
   // Methods
 
@@ -55,7 +56,7 @@ var SalesChart = (function () {
         }
       },
       data: {
-        labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        labels: ["Jan","Feb","Mar","April","May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         datasets: [
           {
             label: "Performance",

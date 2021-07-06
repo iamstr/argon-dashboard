@@ -53,7 +53,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">Total Girls</h5>
-                      <span class="h2 font-weight-bold mb-0">350,897</span>
+                      <span class="h2 font-weight-bold mb-0"><?php echo totalGirls();?></span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
@@ -75,7 +75,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">New Girls</h5>
-                      <span class="h2 font-weight-bold mb-0">2,356</span>
+                      <span class="h2 font-weight-bold mb-0"><?php echo newGirls();?></span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
@@ -97,7 +97,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">Travel Girls</h5>
-                      <span class="h2 font-weight-bold mb-0">924</span>
+                      <span class="h2 font-weight-bold mb-0"><?php echo travelledGirls();?></span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
@@ -151,13 +151,13 @@
                 </div>
                 <div class="col">
                   <ul class="nav nav-pills justify-content-end">
-                    <li class="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 10, 30, 15, 40, 20, 60, 60]}]}}' data-prefix="$" data-suffix="k">
+                    <li class="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[<?php echo countGirlsByMonth();?>]}]}}' data-prefix="$" data-suffix="k">
                       <a href="#" class="nav-link py-2 px-3 active" data-toggle="tab" style="display:none">
                         <span class="d-none d-md-block">Month</span>
                         <span class="d-md-none">M</span>
                       </a>
                     </li>
-                    <li class="nav-item" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="$" data-suffix="k">
+                    <li class="nav-item" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[<?php echo countGirlsByMonth();?>]}]}}' data-girl="[<?php echo countGirlsByMonth();?>]" data-prefix="$" data-suffix="k">
                       <a href="#" class="nav-link py-2 px-3" data-toggle="tab" style="display:none">
                         <span class="d-none d-md-block">Week</span>
                         <span class="d-md-none">W</span>

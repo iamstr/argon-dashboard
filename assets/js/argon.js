@@ -808,6 +808,9 @@ if ($map.length) {
 //
 // Bars chart
 //
+//
+// Bars chart
+//
 
 var BarsChart = (function () {
   //
@@ -815,6 +818,7 @@ var BarsChart = (function () {
   //
 
   var $chart = $("#chart-bars");
+  var datasets=$('[data-girl]').data("girl");
 
   //
   // Methods
@@ -826,11 +830,11 @@ var BarsChart = (function () {
     var ordersChart = new Chart($chart, {
       type: "bar",
       data: {
-        labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        labels: ["Jan","Feb","Mar","April","May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         datasets: [
           {
-            label: "Girls",
-            data: [25, 20, 30, 22, 17, 29]
+            label: "Total Girls",
+            data: [...datasets]
           }
         ]
       }
@@ -846,7 +850,7 @@ var BarsChart = (function () {
   }
 })();
 
-("use strict");
+"use strict";
 
 //
 // Sales chart
@@ -856,6 +860,7 @@ var SalesChart = (function () {
   // Variables
 
   var $chart = $("#chart-sales-dark");
+  var datasets=$('[data-girl]').data("girl");
 
   // Methods
 
@@ -889,21 +894,25 @@ var SalesChart = (function () {
               var content = "";
 
               if (data.datasets.length > 1) {
+                // content +=
+                //   '<span class="popover-body-label mr-auto">' +
+                //   label +
+                //   "</span>";
                 content += label;
               }
 
-              content += yLabel + "k";
+              content += yLabel + "";
               return content;
             }
           }
         }
       },
       data: {
-        labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        labels: ["Jan","Feb","Mar","April","May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         datasets: [
           {
             label: "Performance",
-            data: [0, 20, 10, 30, 15, 40, 20, 60, 60]
+            data: [...datasets]
           }
         ]
       }

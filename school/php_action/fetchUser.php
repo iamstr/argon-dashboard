@@ -4,7 +4,7 @@
 
 require_once 'core.php';
 
-$sql = "SELECT * FROM users inner join branches on branches.branch_id=users.branch_id";
+$sql = "SELECT * FROM users ";
 
 $result = $connect->query($sql);
 
@@ -20,11 +20,11 @@ if($result->num_rows > 0) {
  	$fullname = $row[1];
  	$username = $row[2];
  	$email = $row[4];
- 	$role = $row[5];
- 	$status = $row[6];
- 	$phone = $row[7];
+ 	$role = $row[6];
+ 	$status = $row[7];
+ 	$phone = $row[5];
  	$date = $row[8];
- 	$branch = $row["branch_name"];
+ 	
 // 	$username = $row[1];
 
    
@@ -51,7 +51,7 @@ endif;
                       </span>
                     </td>
 
-                    <td class="budget">'.$branch.'</td>
+                 
 
                     <td class="text-right">
                       <div class="dropdown">

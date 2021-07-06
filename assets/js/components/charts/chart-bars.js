@@ -8,6 +8,7 @@ var BarsChart = (function () {
   //
 
   var $chart = $("#chart-bars");
+  var datasets=$('[data-girl]');
 
   //
   // Methods
@@ -19,11 +20,11 @@ var BarsChart = (function () {
     var ordersChart = new Chart($chart, {
       type: "bar",
       data: {
-        labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        labels: ["Jan","Feb","Mar","April","May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         datasets: [
           {
             label: "Total Girls",
-            data: [25, 20, 30, 22, 17, 29]
+            data: [...datasets]
           }
         ]
       }
