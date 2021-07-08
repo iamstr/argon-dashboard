@@ -94,21 +94,10 @@
 
             <ul class="list-group custom-list-group rounded-3 d-none">
               <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
-                <span>Eminem</span>
+                <span class="text-muted">Start Typing...</span>
                 <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
               </li>
-              <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
-                <span>Big Sean</span>
-                <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
-              </li>
-              <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
-                <span>Joe Cole</span>
-                <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
-              </li>
-              <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
-                <span>Kendrik Lamar</span>
-                <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
-              </li>
+              
             </ul>
             <div class="my-5 py-3"></div>
             <p class="h3 mt-5 mb-4">Your Selection</p>
@@ -656,7 +645,7 @@
       //      this is the clicked item text
       const listText = $(this).text().trim();
       const ID = $(this).attr("id").trim();
-
+      $(".selection-button.fade").addClass("show")
       //      checks if the selected text is part of the selected label 
       const returned = [...$(".selected  .str-toggle-button")].some(e =>
 
