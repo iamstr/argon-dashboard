@@ -74,19 +74,8 @@ require_once 'core.php';
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-//$mysqli = new mysqli("localhost", "root", "", "recruitment");
+$mysqli = new mysqli("localhost", "root", "", "recruitment");
  
-
-
-// $username = "root";
-$username = "zakeirag_recruitment";
-// $password = "";
-$password = "FVqJtab809]6@F";
-// $dbname = "recruitment";
-$dbname = "zakeirag_recruitment";
-$mysqli = new mysqli($localhost, $username, $password, $dbname);
- 
-
 // Check connection
 if($mysqli === false){
     die("ERROR: Could not connect. " . $mysqli->connect_error);
