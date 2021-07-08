@@ -109,7 +109,7 @@
                 </div>
 
               </form>
- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal fade" id="changeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <div class="modal-dialog modal-dialog-centered" role="document">
      <div class="modal-content">
        <div class="modal-header">
@@ -174,9 +174,9 @@
                     console.log(response)
 						if(response.success == true) {
 							
-
+                            $("#changeModal").modal("show")
 							$("html, body, div.modal, .modal-content, div.modal-body").animate({scrollTop: '0'}, 100);
-								$('.modal-body form').hide()									
+																	
 							// shows a successful message after operation
 							$('.modal-message').html('<div class="alert alert-success">'+
 		            '<button type="button" class="close" data-dismiss="alert">&times;</button>'+
@@ -187,6 +187,7 @@
 		          $(".alert-success").delay(1000).show(10, function() {
 								$(this).delay(3000).hide(10, function() {
 									$(this).remove();
+									$("#changeModal").modal("hide");
 //                                  $('.modal-body form').show()
 								});
 							}); // /.alert
@@ -198,12 +199,12 @@
                       else{
                         
                         
-                        
+                        $("#changeModal").modal("show")
                         
 							$("html, body, div.modal, .modal-content, div.modal-body").animate({scrollTop: '0'}, 100);
-									$('.modal-body div').hide()								
+																	
 							// shows a successful message after operation
-							$('.modal-body').append('<div class="alert alert-warning shaking-2">'+
+							$('.modal-message').append('<div class="alert alert-warning shaking-2">'+
 		            '<button type="button" class="close" data-dismiss="alert">&times;</button>'+
 		            '<strong><i class="ni ni-like-2"></i></strong> '+ response.messages +
 		          '</div>');
@@ -212,7 +213,8 @@
 		          $(".alert-warning").delay(500).show(10, function() {
 								$(this).delay(3000).hide(10, function() {
 									$(this).remove();
-                                  $('.modal-body div').show()
+									$("#changeModal").modal("hide");
+                                 
 								});
 							}); // /.alert
 
