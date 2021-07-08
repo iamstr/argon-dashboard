@@ -68,7 +68,7 @@
          <ul class="navbar-nav">
 
            <li class="nav-item">
-             <a class="nav-link" href="school">
+             <a class="nav-link" href="schools">
                <i class="ni ni-books text-primary"></i>
                <span class="nav-link-text">School</span>
              </a>

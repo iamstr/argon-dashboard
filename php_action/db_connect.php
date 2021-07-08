@@ -3,11 +3,15 @@
 //password ---- 1nY+0O*lZwYk35
 //database ---- emitekcl_inventory
 $localhost = "localhost";
-$username = "root";
-$password = "";
-$dbname = "recruitment";
+
+// $username = "root";
+$username = "zakeirag_recruitment";
+// $password = "";
+$password = "FVqJtab809]6@F";
+// $dbname = "recruitment";
+$dbname = "zakeirag_recruitment";
 //$store_url = "http://localhost/php-inventory-management-system/";
-$store_url = "/argon-dashboard/";
+$store_url = "/";
 // db connection
 $connect = new mysqli($localhost, $username, $password, $dbname);
 // check connection

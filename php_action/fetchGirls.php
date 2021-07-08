@@ -205,19 +205,19 @@ $count=1;
     </div>
   </th>
 
-<?php while($count<$rows):
+  <?php while($count<$rows):
               
     $count++;
     
     ?>
-  
+
   <td class="budget">
-   <?php echo $row[$count]?$row[$count]:"N/A";
+    <?php echo $row[$count]?$row[$count]:"N/A";
               
     
     
     ?></td>
-<?php endwhile;
+  <?php endwhile;
               
     
     
@@ -230,7 +230,6 @@ $count=1;
       </a>
       <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
         <a class="dropdown-item" href="?girl=<?php echo $girl_id;?>">Girl Details</a>
-        <a class="dropdown-item" href="?kin=<?php echo $girl_id;?>">Next Of Kin</a>
         <a class="dropdown-item" href="?school=<?php echo $girl_id;?>">School</a>
         <a class="dropdown-item" href="?musaned=<?php echo $girl_id;?>">Musaned</a>
         <a class="dropdown-item" href="?nea=<?php echo $girl_id;?>">Nea</a>
@@ -252,47 +251,47 @@ $count=1;
 
 
 <script>
-//        $(document).ready(function(e) {
-//          const row = $(".table-agent");
-//
-//          const selectColumnActive = $(".btn.btn-outline-str-secondary.active"),
-//            selectColumn = $(".btn.btn-outline-str-secondary");
-//
-//          selectColumn.each(function() {
-//            let th = document.createElement("th"),
-//              text = $(this).text().trim();
-//
-//            th.setAttribute("scope", "col");
-//            th.setAttribute("class", "sort ");
-//            th.setAttribute("data-sort", $(this).text().trim());
-//            th.setAttribute("data-toggle-table", $(this).text().trim());
-//            th.innerText = text.replace(/\s\s+/g, " ");
-//
-//            // row.append(th);
-//            $(th).insertBefore("th:last-child");
-//          });
-//          selectColumn.click(function(e) {
-//            // console.log(
-//            //   $(`[data-toggle-table='${$(this).text().trim()}']`).index()
-//            // );
-//            const INDEX = $(
-//              `[data-toggle-table='${$(this).text().trim()}']`
-//            ).index();
-//
-//            if ($(this).hasClass("active")) {
-//              $(`[data-toggle-table='${$(this).text().trim()}']`).hide();
-//              $(".table-agent-row").each(function() {
-//                // console.log();
-//                $(this).children().eq(INDEX).hide();
-//              });
-//            } else {
-//              $(`[data-toggle-table='${$(this).text().trim()}']`).show();
-//              $(".table-agent-row").each(function() {
-//                // console.log();
-//                $(this).children().eq(INDEX).show();
-//              });
-//            }
-//          });
-//        });
+  //        $(document).ready(function(e) {
+  //          const row = $(".table-agent");
+  //
+  //          const selectColumnActive = $(".btn.btn-outline-str-secondary.active"),
+  //            selectColumn = $(".btn.btn-outline-str-secondary");
+  //
+  //          selectColumn.each(function() {
+  //            let th = document.createElement("th"),
+  //              text = $(this).text().trim();
+  //
+  //            th.setAttribute("scope", "col");
+  //            th.setAttribute("class", "sort ");
+  //            th.setAttribute("data-sort", $(this).text().trim());
+  //            th.setAttribute("data-toggle-table", $(this).text().trim());
+  //            th.innerText = text.replace(/\s\s+/g, " ");
+  //
+  //            // row.append(th);
+  //            $(th).insertBefore("th:last-child");
+  //          });
+  //          selectColumn.click(function(e) {
+  //            // console.log(
+  //            //   $(`[data-toggle-table='${$(this).text().trim()}']`).index()
+  //            // );
+  //            const INDEX = $(
+  //              `[data-toggle-table='${$(this).text().trim()}']`
+  //            ).index();
+  //
+  //            if ($(this).hasClass("active")) {
+  //              $(`[data-toggle-table='${$(this).text().trim()}']`).hide();
+  //              $(".table-agent-row").each(function() {
+  //                // console.log();
+  //                $(this).children().eq(INDEX).hide();
+  //              });
+  //            } else {
+  //              $(`[data-toggle-table='${$(this).text().trim()}']`).show();
+  //              $(".table-agent-row").each(function() {
+  //                // console.log();
+  //                $(this).children().eq(INDEX).show();
+  //              });
+  //            }
+  //          });
+  //        });
 
-      </script>
+</script>

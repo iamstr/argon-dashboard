@@ -364,7 +364,7 @@
                   <select class="form-control" id="agent" name="agent">
                       <option value="-1">Select the agent</option>
                       <option value="0">Create New Agent</option>
-                      <?php require_once("php_action/fetchAgent.php");?>
+                      <?php require_once("php_action/fetchAgent.php"); agents($agent_phone);?>
                     </select>
                 </div>
                 </div>

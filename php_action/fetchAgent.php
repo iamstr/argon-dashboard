@@ -4,6 +4,10 @@
 
 require_once 'core.php';
 
+function agents($agent=false)
+
+{
+global $connect;
 $sql = "SELECT * FROM agents";
 
 $result = $connect->query($sql);
@@ -22,7 +26,7 @@ if($result->num_rows > 0) {
 
  	$button = '<!-- Single option -->
 	
-	    <option value="'.$userid.'">'.$username.'   '.$phone.'</option>';
+	    <option value="'.$userid.'" '.  ($agent==$phone? "selected":null). '>'.$username.'   '.$phone.'</option>';
 
 	
 
@@ -33,4 +37,4 @@ if($result->num_rows > 0) {
 
 $connect->close();
 
-echo json_encode($output);
+}

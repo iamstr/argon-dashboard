@@ -8,8 +8,9 @@
 <?php
 
 //girls table
-$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment' &&  TABLE_NAME='girls'  and column_name not like'%_id'&& column_name not like '%update%'";
+// $sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment' &&  TABLE_NAME='girls'  and column_name not like'%_id'&& column_name not like '%update%'";
 
+$sql="SELECT   UPPER(`COLUMN_NAME`) FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA`='zakeirag_recruitment' AND `TABLE_NAME`='girls' and column_name not like'%_id'&& column_name not like '%update%' ";
 $result=$connect->query($sql) ;
   
   
@@ -63,7 +64,9 @@ $result=$connect->query($sql) ;
 <?php
 
 //next of kin table
-$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment' &&  TABLE_NAME='next_of_kin'  and column_name not like'%_id' ";
+// $sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment' &&  TABLE_NAME='next_of_kin'  and column_name not like'%_id' ";
+
+$sql="SELECT   UPPER(`COLUMN_NAME`) FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA`='zakeirag_recruitment' AND `TABLE_NAME`='next_of_kin' and column_name not like'%_id'&& column_name not like '%update%' ";
 
 $result=$connect->query($sql) ;
   
@@ -108,7 +111,9 @@ $result=$connect->query($sql) ;
 
 <?php
 //musaned table
-$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and  TABLE_NAME='schools' and column_name not like '%girl%' &&  column_name not like '%school_id' && column_name not like '%user_id' && column_name not like '%update%'";
+// $sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and  TABLE_NAME='schools' and column_name not like '%girl%' &&  column_name not like '%school_id' && column_name not like '%user_id' && column_name not like '%update%'";
+$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='zakeirag_recruitment'  and  TABLE_NAME='schools' and column_name not like '%girl%' &&  column_name not like '%school_id' && column_name not like '%user_id' && column_name not like '%update%'";
+
 
 $result=$connect->query($sql) ;
   
@@ -133,7 +138,8 @@ $result=$connect->query($sql) ;
 
 <?php
 
-$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment' and TABLE_NAME='musaned'  && column_name not like '%update%' && column_name not like'%l_%' && column_name not like'%user_id%' && column_name not like'%musaned_id%' ";
+// $sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment' and TABLE_NAME='musaned'  && column_name not like '%update%' && column_name not like'%l_%' && column_name not like'%user_id%' && column_name not like'%musaned_id%' ";
+$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='zakeirag_recruitment' and TABLE_NAME='musaned'  && column_name not like '%update%' && column_name not like'%l_%' && column_name not like'%user_id%' && column_name not like'%musaned_id%' ";
 
 $result=$connect->query($sql) ;
   
@@ -157,7 +163,8 @@ while($row=$result->fetch_array()){
 
 //nea table 
 
-$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='nea' and column_name not like '%id%'  && column_name not like '%update%'";
+// $sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='nea' and column_name not like '%id%'  && column_name not like '%update%'";
+$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='zakeirag_recruitment'  and TABLE_NAME='nea' and column_name not like '%id%'  && column_name not like '%update%'";
 
 $result=$connect->query($sql) ;
   
@@ -181,7 +188,8 @@ $result=$connect->query($sql) ;
 
 //enjaz table 
 
-$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='enjaz' and column_name not like '%girl_id%' && column_name not like '%update%'  &&  column_name not like '%user_id%' &&  column_name not like '%enjaz_id%'  ";
+// $sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='enjaz' and column_name not like '%girl_id%' && column_name not like '%update%'  &&  column_name not like '%user_id%' &&  column_name not like '%enjaz_id%'  ";
+$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='zakeirag_recruitment'  and TABLE_NAME='enjaz' and column_name not like '%girl_id%' && column_name not like '%update%'  &&  column_name not like '%user_id%' &&  column_name not like '%enjaz_id%'  ";
 
 $result=$connect->query($sql) ;
   
@@ -205,7 +213,8 @@ $result=$connect->query($sql) ;
 
 //embassy table 
 
-$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='embassy' and column_name not like '%id%'&& column_name not like '%update%' ";
+// $sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='embassy' and column_name not like '%id%'&& column_name not like '%update%' ";
+$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='zakeirag_recruitment'  and TABLE_NAME='embassy' and column_name not like '%id%'&& column_name not like '%update%' ";
 
 $result=$connect->query($sql) ;
   
@@ -229,7 +238,8 @@ $result=$connect->query($sql) ;
 
 //clearance table 
 
-$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='clearance' and column_name not like '%user_id%' && column_name not like '%girl_id%' && column_name not like '%clearance_id%'   && column_name not like '%update%'";
+// $sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='clearance' and column_name not like '%user_id%' && column_name not like '%girl_id%' && column_name not like '%clearance_id%'   && column_name not like '%update%'";
+$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='zakeirag_recruitment'  and TABLE_NAME='clearance' and column_name not like '%user_id%' && column_name not like '%girl_id%' && column_name not like '%clearance_id%'   && column_name not like '%update%'";
 
 $result=$connect->query($sql) ;
   
@@ -253,7 +263,9 @@ $result=$connect->query($sql) ;
 
 //travel table 
 
-$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='travel' and column_name not like '%id%' && column_name not like '%update%' ";
+// $sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='recruitment'  and TABLE_NAME='travel' and column_name not like '%id%' && column_name not like '%update%' ";
+
+$sql="SELECT DISTINCT UPPER( column_name) FROM INFORMATION_SCHEMA.COLUMNS where TABLE_SCHEMA='zakeirag_recruitment' and TABLE_NAME='travel' and column_name not like '%id%' && column_name not like '%update%' ";
 
 $result=$connect->query($sql) ;
   
