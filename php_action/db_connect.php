@@ -11,7 +11,7 @@ $password = "FVqJtab809]6@F";
 // $dbname = "recruitment";
 $dbname = "zakeirag_recruitment";
 //$store_url = "http://localhost/php-inventory-management-system/";
-$store_url = "/dashboard";
+$store_url = "/";
 // db connection
 $connect = new mysqli($localhost, $username, $password, $dbname);
 // check connection
