@@ -1,107 +1,45 @@
-<?php 
-require_once("core.php");
+<?php 	
 
-//
-//$sql="select
-//girls.girl_id,
-//girl_fullname,
-//girl_IDnumber,
-//girl_phone,
-//girl_dob,
-//girl_religion,
-//girl_county,
-//girl_passport,
-//passport_date_issue,
-//passport_date_expiry,
-//girl_passport_place,
-//girl_goodConduct,
-//girl_birth,
-//girl_firstMedical,
-//dateCreated,
-//next_of_kin_fullname,
-//next_of_kin_IDnumber,
-//next_of_kin_relationship,
-//next_of_kin_phone,
-//next_of_kin_fullname2,
-//next_of_kin_IDnumber2,
-//next_of_kin_relationship2,
-//next_of_kin_phone2,
-//school_name,
-//school_start,
-//school_end,
-//school_cert,
-//musaned_status,
-//musaned_sponsporName,
-//musaned_sponsporNumber,
-//musaned_sponsporID,
-//musaned_sponsporAddress,
-//musaned_contractNumber,
-//musaned_visaNumber,
-//agency_id,
-//nea_date,
-//nea_status,
-//enjaz_status,
-//enjaz_date,
-//enjaz_medical,
-//medical_id,
-//enjaz_medicalDate,
-//enjaz_wakala,
-//embassy_status,
-//embassy_date,
-//embassy_visaForm,
-//embassy_medical,
-//enjaz_number,
-//clearance_attestationList,
-//clearance_CertificateOfIncorporation,
-//clearance_status,
-//clearance_FullMedical,
-//clearance_GoodConduct,
-//clearance_PassportCopy,
-//clearance_GirlContract,
-//clearance_NextOfKinIDCopy,
-//clearance_VisaForm,
-//travel_date,
-//travel_arrival,
-//travel_pregnancy,
-//travel_pcrStatus,
-//travel_pcrCode,
-//travel_pcrDate,
-//travel_tshirt,
-//travel_stampedClearanceForm,
-//travel_ticket,
-//travel_yellowFever
-//
-//
-//from girls 
-// 
-//
-//
-//
-//left join next_of_kin on girls.girl_id=next_of_kin.girl_id
-//left join on (schools inner join school_names on ) on girls.girl_id=schools.girl_id
-//
-//
-//left join ( musaned inner join agencies on musaned.agency_id=agencies.agency_id)on girls.girl_id=musaned.girl_id
-//
-//left join nea on girls.girl_id=nea.girl_id
-//
-//
-//left join enjaz on girls.girl_id=enjaz.girl_id
-//
-//left join  embassy on girls.girl_id=embassy.girl_id
-//
-//left join clearance on girls.girl_id=clearance.girl_id
-//
-//left join travel on girls.girl_id=travel.girl_id
-//
-//
-//  ";
+require_once 'core.php';
+require_once 'db_connect.php';
 
 
 
 
 
-$sql="select * from info";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+if(isset($_REQUEST["term"])){
+    // Prepare a select statement
+   $girl=mysqli_real_escape_string($connect,$_REQUEST["term"]);
+$sql="select * from info where  girl_IDNumber like '%$girl%' ||girl_fullname like '%$girl%'||girl_passport like '%$girl%'";
 $result=$connect->query($sql);
 
 $rows=66;
@@ -242,57 +180,14 @@ $count=1;
   </td>
 </tr>
 
-
-
-
 <?php  endwhile;?>
 
 
 
 
-<!--<script>
-  //        $(document).ready(function(e) {
-  //          const row = $(".table-agent");
-  //
-  //          const selectColumnActive = $(".btn.btn-outline-str-secondary.active"),
-  //            selectColumn = $(".btn.btn-outline-str-secondary");
-  //
-  //          selectColumn.each(function() {
-  //            let th = document.createElement("th"),
-  //              text = $(this).text().trim();
-  //
-  //            th.setAttribute("scope", "col");
-  //            th.setAttribute("class", "sort ");
-  //            th.setAttribute("data-sort", $(this).text().trim());
-  //            th.setAttribute("data-toggle-table", $(this).text().trim());
-  //            th.innerText = text.replace(/\s\s+/g, " ");
-  //
-  //            // row.append(th);
-  //            $(th).insertBefore("th:last-child");
-  //          });
-  //          selectColumn.click(function(e) {
-  //            // console.log(
-  //            //   $(`[data-toggle-table='${$(this).text().trim()}']`).index()
-  //            // );
-  //            const INDEX = $(
-  //              `[data-toggle-table='${$(this).text().trim()}']`
-  //            ).index();
-  //
-  //            if ($(this).hasClass("active")) {
-  //              $(`[data-toggle-table='${$(this).text().trim()}']`).hide();
-  //              $(".table-agent-row").each(function() {
-  //                // console.log();
-  //                $(this).children().eq(INDEX).hide();
-  //              });
-  //            } else {
-  //              $(`[data-toggle-table='${$(this).text().trim()}']`).show();
-  //              $(".table-agent-row").each(function() {
-  //                // console.log();
-  //                $(this).children().eq(INDEX).show();
-  //              });
-  //            }
-  //          });
-  //        });
-
-</script>
--->
+<?php
+}
+ 
+// Close connection
+$mysqli->close();
+?>

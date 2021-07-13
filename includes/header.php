@@ -21,6 +21,6 @@
    <link rel="stylesheet" href="bower_components/bootstrap-table/dist/bootstrap-table.min.css">
   <!-- Page plugins -->
   <!-- Argon CSS -->
-  <link rel="stylesheet" href="assets/css/argon.css?v=1.3.1" type="text/css">
+  <link rel="stylesheet" href="assets/css/argon.css?v=1.3.8" type="text/css">
   <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
 </head>
