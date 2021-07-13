@@ -168,13 +168,7 @@ $count=1;
       </a>
       <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
         <a class="dropdown-item" href="?girl=<?php echo $girl_id;?>">Girl Details</a>
-        <a class="dropdown-item" href="?school=<?php echo $girl_id;?>">School</a>
-        <a class="dropdown-item" href="?musaned=<?php echo $girl_id;?>">Musaned</a>
-        <a class="dropdown-item" href="?nea=<?php echo $girl_id;?>">Nea</a>
-        <a class="dropdown-item" href="?enjaz=<?php echo $girl_id;?>">Enjaz</a>
-        <a class="dropdown-item" href="?embassy=<?php echo $girl_id;?>">Embassy</a>
-        <a class="dropdown-item" href="?clearance=<?php echo $girl_id;?>">Clearance</a>
-        <a class="dropdown-item" href="?travel=<?php echo $girl_id;?>">Travel</a>
+        
       </div>
     </div>
   </td>
