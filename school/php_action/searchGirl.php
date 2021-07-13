@@ -1,6 +1,7 @@
 <?php 	
 
 require_once 'core.php';
+require_once 'db_connect.php';
 //$q = $_REQUEST["q"];
 //$q = strtolower($q);
 //
@@ -74,12 +75,7 @@ require_once 'core.php';
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$mysqli = new mysqli("localhost", "root", "", "schools");
- 
-// Check connection
-if($mysqli === false){
-    die("ERROR: Could not connect. " . $mysqli->connect_error);
-}
+
  
 if(isset($_REQUEST["term"])){
     // Prepare a select statement
