@@ -7,9 +7,9 @@ if($_POST) {
 	$valid['success'] = array('success' => false, 'messages' => array());
 
 	$currentPassword = md5($_POST['password']);
-	$newPassword = md5($_POST['npassword']);
-	$conformPassword = md5($_POST['cpassword']);
-	$userId = $_POST['user_id'];
+	$newPassword = md5($_POST['new']);
+	$conformPassword = md5($_POST['confirm']);
+	$userId = $_SESSION['user'];
 
 	$sql ="SELECT * FROM users WHERE user_id = {$userId}";
 	$query = $connect->query($sql);

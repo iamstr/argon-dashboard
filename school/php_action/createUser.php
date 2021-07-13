@@ -18,8 +18,8 @@ if($_POST) {
   $phone			= mysqli_real_escape_string($connect,$_POST['phone']);
 
 	
-				$sql = "INSERT INTO `users`(`username`, `password`, `email`, `role`, `phone`, `branch_id`, `fullname`) 
-				VALUES ('$userName', '$password' , '$email','$role','$phone','$branch','$fullname')";
+				$sql = "INSERT INTO `users`(`username`, `password`, `email`, `role`, `phone`,  `fullname`) 
+				VALUES ('$userName', '$password' , '$email','$role','$phone','$fullname')";
 				if($connect->query($sql) === TRUE) {
 					$valid['success'] = true;
 					$valid['messages'] = "Successfully Added";	
