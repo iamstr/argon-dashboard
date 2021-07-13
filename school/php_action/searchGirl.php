@@ -81,7 +81,7 @@ if(isset($_REQUEST["term"])){
     // Prepare a select statement
     $sql = "select girl_id,girl_name,girl_IDnumber,passport from girls where  LOWER(girl_name) LIKE ? OR LOWER(girl_IDnumber)  LIKE ? OR  LOWER(passport) LIKE ?";
     
-    if($stmt = $mysqli->prepare($sql)){
+    if($stmt = $connect->prepare($sql)){
         // Bind variables to the prepared statement as parameters
         $stmt->bind_param("sss", $param_term,$param_term,$param_term);
         
@@ -118,5 +118,5 @@ if(isset($_REQUEST["term"])){
 }
  
 // Close connection
-$mysqli->close();
+$connect->close();
 ?>

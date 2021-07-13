@@ -24,13 +24,26 @@
     <!-- Page content -->
     <div class="container-fluid mt-5">
       <div class="card p-4">
-        <p>
+        <p class="mb-5 pb-2">
           <button class="btn btn-icon btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             <span class="btn-inner--icon"><i class="ni ni-ui-04"></i></span>
             <span class="btn-inner--text">Filter</span>
           </button>
         </p>
+        
+        
         <div class="collapse show" id="collapseExample">
+        
+ 
+        
+         <p class="mb-5 pb-2">
+          <button class="btn btn-icon btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseView" aria-expanded="false" aria-controls="collapseView">
+            <span class="btn-inner--icon"><i class="ni ni-ui-04"></i></span>
+            <span class="btn-inner--text">Show Columns</span>
+          </button>
+        </p>
+         
+        <div class="collapse" id="collapseView">
           <div class="card-body str-view">
             <h3 class="str-view-header text-muted">Change View</h3>
           
@@ -42,241 +55,54 @@
             <?php include("includes/modals/clearance.php");?>
             <?php include("includes/modals/travel.php");?>
             <div class="str-view-row d-flex flex-wrap">
-             
-<!--
-             
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" autocomplete="off" checked /> fullname
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" autocomplete="off" checked /> ID
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" autocomplete="off" checked /> Phone Number
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" autocomplete="off" checked /> County
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" autocomplete="off" checked /> Religion
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" checked /> birth
-                  certificate
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> first
-                  medical
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> photos
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> passport
-                  number
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> passport
-                  issue place
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> good
-                  conduct
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> next of
-                  kin names
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> next of
-                  kin relation
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> next of
-                  kin id
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> next of
-                  kin number
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> agent
-                  name
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> agent
-                  number
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> school
-                  start date
-                </label>
-              </div>
 
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> school
-                  name
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> school
-                  end date
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> school
-                  certificate
-                </label>
-              </div>
--->
-              <!--        this is would be introducted in the next release      
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> cv
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label
-                  class="btn btn-outline-str-secondary active"
-                  class="text-capitalize"
-                >
-                  <input type="checkbox" checked autocomplete="off" /> cv given
-                  date
-                </label>
-              </div>
-              
-              -->
-              
-<!--
-              
-              
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> saudia
-                  agency
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> musaned
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> sponspor
-                  name
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" />
-                  Enjaz
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" />
-                  destination
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" />
-                  Full Medical
-                </label>
-              </div>
-
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> yellow
-                  fever
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> pcr check
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> t-shirts
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> pregancy
-                  test
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> ticket
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> travel
-                  date
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> arrival
-                  date
-                </label>
-              </div>
-              <div class="btn-group-toggle m-1" data-toggle="buttons">
-                <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                  <input type="checkbox" checked autocomplete="off" /> duration
-                </label>
-              </div>
-              
--->
               <?php require_once("php_action/fetchColumnNames.php");?>
               
             </div>
           </div>
+        </div>
+        
+        
+        
+        
+        
+        
+                <p class="mb-5 pb-2">
+          <button class="btn btn-icon btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch">
+            <span class="btn-inner--icon"><i class="ni ni-ui-04"></i></span>
+            <span class="btn-inner--text">Show Search</span>
+          </button>
+        </p>
+        
+        <div class="collapse show" id="collapseSearch">
+          <div class="card-body str-view">
+            <h3 class="str-view-header text-muted">Search Girls</h3>
+          
+           
+            <div class="str-view-row d-flex flex-column flex-wrap">
+
+             <div class="form-group position-relative">
+              <input type="search" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number">
+              <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%">
+            </div>
+              
+              
+<!--
+              <ul class="list-group custom-list-group rounded-3">
+              <li class="list-group-item flex-row justify-content-between custom-list-group-item tasks" style="cursor: pointer;">
+                <span class="maid-name text-muted" style="height: 100%; width: 100%; display: block;">Start Typing...</span>
+                <i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>
+              </li>
+            
+            </ul>
+-->
+              
+            </div>
+          </div>
+        </div>
+        
+        
+        
         </div>
       </div>
     </div>
@@ -286,7 +112,7 @@
           <div class="card">
             <!-- Card header -->
             <div class="card-header border-0">
-              <h3 class="mb-0">Light table</h3>
+              <h3 class="mb-0">Girls table</h3>
             </div>
             <!-- Light table -->
             <div class="table-responsive">
@@ -700,6 +526,121 @@
               });
             }
           });
+          
+          
+          
+          
+    $(".form-control.form-control-muted.search-input").focus();
+    $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
+    $(".list-group-item span").css({
+      height: "100%",
+      width: "100%",
+      display: "block"
+    });
+   
+    $(".list-group-item ").css({
+      cursor: "pointer"
+    });
+    $(".list-group-item").removeClass("d-flex");
+
+    //    onkeyup attach the response to span
+
+    $(".form-control.form-control-muted.search-input").keyup(function() {
+
+
+
+
+      $.get("php_action/searchGirlTable?term=" + $(this).val(), function(data, status) {
+
+        if (status) {
+
+          $(".list").html(data)
+        }
+        console.log("Data: " + data + "\nStatus: " + status);
+      });
+    });
+    $("body ").on("click", ".list-group-item span", function(e) {
+
+      $(this).addClass("text-muted");
+
+      //      this is the clicked item text
+      const listText = $(this).text().trim();
+      const ID = $(this).attr("id").trim();
+      $(".selection-button.fade").addClass("show")
+      //      checks if the selected text is part of the selected label 
+      $(".search-input").val(ID)
+      const returned = [...$(".selected  .str-toggle-button")].some(e =>
+
+        {
+          let buttonText = e.children[0].innerText.replace(/\s/g, "").replace(/([A-Z])/g, ' $1').trim();
+
+
+          return buttonText === listText
+
+        }
+
+      );
+
+
+
+
+      if (!returned) {
+        //creates a clone from the first toggle button in the selected div
+        //        const button = $(".selected  .str-toggle-button:first-child").clone()
+        //        HTMLButtonElement>HTMLLabelElement>HTMLInputElement[radio]
+        //        button.children()[0].children[0].checked
+        //        button.children()[0].children[0].value = listText
+        //        button.children()[0].innerText = listText
+        //        button.clone().appendTo(".selected ")
+        const button = document.createElement("div"),
+          radio = document.createElement("input"),
+          label = document.createElement("label")
+
+
+        $(button).addClass("btn-group-toggle m-1 str-toggle-button")
+        $(label).addClass("btn btn-outline-secondary active")
+        $(button).attr("data-toggle", "buttons")
+        $(radio).attr("checked", "buttons")
+        $(radio).attr("autocomplete", "off")
+        $(radio).attr("type", "checkbox")
+        $(radio).attr("value", ID)
+        $(radio).attr("name", "girls[]")
+        $(label).attr("data-ID", ID)
+        label.innerText = listText
+        label.appendChild(radio)
+        button.appendChild(label)
+
+
+        $(".selected ").append(button)
+      }
+
+      //disabled after onclick
+
+      $(this).parent().css({
+        cursor: "no-drop",
+        "pointer-events": "none"
+      });
+      $(this).css({
+        cursor: "no-drop",
+        "pointer-events": "none"
+      });
+      $(".list-group.custom-list-group.rounded-3").addClass("d-none");
+    });
+
+    //    onfocus show the HTMLUListElement
+    $(".form-control.form-control-muted.search-input").focus(function() {
+      $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
+    });
+
+
+          
+          
+          
+          
+          
+          
+          
+          
         });
 
       </script>
