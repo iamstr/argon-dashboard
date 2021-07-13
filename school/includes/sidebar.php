@@ -71,12 +71,14 @@
 
          <ul class="navbar-nav">
 
+<!--
            <li class="nav-item">
              <a class="nav-link" href="expenses">
                <i class="ni ni-money-coins text-warning"></i>
                <span class="nav-link-text">View Reports</span>
              </a>
            </li>
+-->
            <li class="nav-item">
              <a class="nav-link" href="recieve">
                <i class="ni ni-collection text-success"></i>
