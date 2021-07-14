@@ -24,8 +24,9 @@ if(isset($_POST)) {
   
   if(isset($search)){
     
-    echo $search;
+    echo "SELECT  girl_fullname,girl_IDnumber from girls  WHERE girl_id='$search'";
     	$sql = "SELECT  girl_fullname,girl_IDnumber from girls  WHERE girl_id='$search'";
+    
     
    
 
