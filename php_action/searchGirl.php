@@ -45,15 +45,12 @@ server with default setting (user 'root' with no password) */
 
  
 // Check connection
-if($mysqli === false){
-    die("ERROR: Could not connect. " . $mysqli->connect_error);
-}
- 
+
 if(isset($_REQUEST["term"])){
     // Prepare a select statement
     $sql = "select girl_id,girl_fullname,girl_IDnumber,girl_passport from girls where  LOWER(girl_fullname) LIKE ? OR LOWER(girl_IDnumber)  LIKE ? OR  LOWER(girl_passport) LIKE ?";
     
-    if($stmt = $mysqli->prepare($sql)){
+    if($stmt = $connect->prepare($sql)){
         // Bind variables to the prepared statement as parameters
         $stmt->bind_param("sss", $param_term,$param_term,$param_term);
         
@@ -90,5 +87,5 @@ if(isset($_REQUEST["term"])){
 }
  
 // Close connection
-$mysqli->close();
+$connect->close();
 ?>
