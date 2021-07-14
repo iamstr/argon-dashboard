@@ -795,7 +795,7 @@
               var xhr = new window.XMLHttpRequest();
               xhr.upload.addEventListener("progress", function(evt) {
                 if (evt.lengthComputable) {
-                  var percentComplete = evt.loaded / evt.total;
+                  var percentComplete = (evt.loaded / evt.total)*100;
                   //Do something with upload progress here
                    $("#changeModal").modal("show")
                   $("#progressUploadStatus").css({width:`${percentComplete}%`})
