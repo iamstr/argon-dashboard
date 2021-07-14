@@ -2,44 +2,6 @@
 
 require_once 'core.php';
 require_once 'db_connect.php';
-//$q = $_REQUEST["q"];
-//$q = strtolower($q);
-//
-//$q = mysqli_real_escape_string($connect,$q);
-//$sql="select girl_id,girl_fullname,girl_IDnumber,girl_passport from girls where  LOWER(girl_fullname) LIKE '%mary%' OR LOWER(girl_IDnumber)  LIKE '%mary%' OR  LOWER(girl_passport) LIKE '%mary%' ";
-//echo $q;
-//
-//
-//if(isset($q)):
-//
-//if($result =$connect->query($sql) === TRUE) {
-//
-//  echo $result->fetch_array();
-//  echo "hey";
-//  while($row=$result->fetch_array()){
-    
-    
-//  echo $row["girl_fullname"];
-  
-  ?>
-  
-  
-<!--  <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">-->
-<!--                <span class="maid-name" id="<?php //echo $row["girl_id"];?>"><?php //echo $row["girl_fullname"];?></span>-->
-                <!--<i class="fa fa-trash-alt text-danger tasks-delete pt-1"></i>-->
-<!--              </li>-->
-  
-  
-  <?php
-  //} //end of while
-//}else{
-//  echo $connect->error;
-//  echo "not working";
-////  
-//}
-//
-//endif;
-?>
 
 
 
@@ -61,21 +23,11 @@ require_once 'db_connect.php';
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<?php
-/* Attempt MySQL server connection. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
-
+ 
+// Check connection
+if($connect === false){
+    die("ERROR: Could not connect. " . $connect->connect_error);
+}
  
 if(isset($_REQUEST["term"])){
     // Prepare a select statement
