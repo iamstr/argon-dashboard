@@ -500,9 +500,6 @@
               <div class="modal-body">
 
                 <div class="modal-message"></div>
-                <div class="event-log"></div>
-
-
                 <div class="d-flex justify-content-center">
                   <div class="progress-wrapper">
                     <div class="progress-info">
@@ -806,16 +803,6 @@
                 }
               }, false);
 
-const log = document.querySelector('.event-log');
-
-   function handleEvent(e) {
-    log.textContent = log.textContent + `${e.type}: ${e.loaded} bytes transferred\n`;
-}   
-              
-    xhr.addEventListener('loadstart', handleEvent);
-    xhr.addEventListener('load', handleEvent);
-    xhr.addEventListener('loadend', handleEvent);
-    xhr.addEventListener('progress', handleEvent);
 
 
               return xhr;
