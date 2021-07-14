@@ -45,7 +45,7 @@
     <div class="container-fluid mt-6">
       <div class="row">
 
-        <form  action="php_action/newUploads" method="post" enctype="multipart/form-data"  class="col"  id="uploadForm">
+        <form action="php_action/newUploads" method="post" enctype="multipart/form-data" class="col" id="uploadForm">
 
           <div class="card steps-form">
             <div class="card-header">
@@ -452,7 +452,7 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <h5 class="modal-title" id="exampleModalLabel">Upload Status</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
@@ -490,6 +490,40 @@
 
 
         </form>
+
+
+
+        <div class="modal fade" id="changeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+              <div class="modal-body">
+
+                <div class="modal-message"></div>
+                <div class="d-flex justify-content-center">
+                  <div class="progress-wrapper">
+                    <div class="progress-info">
+                      <div class="progress-label">
+                        <span>Upload Status</span>
+                      </div>
+                      <div class="progress-percentage">
+                        <span id="uploadStatus">60%</span>
+                      </div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;" id="progressUploadStatus"></div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="modal-footer">
+
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -500,7 +534,7 @@
     $(document).ready(function() {
 
 
-let inputElement,notAllowed=false;
+      let inputElement, notAllowed = false;
 
       $(".form-control.form-control-muted.search-input").focus();
       $(".list-group.custom-list-group.rounded-3").removeClass("d-none");
@@ -537,7 +571,7 @@ let inputElement,notAllowed=false;
 
             $(".custom-list-group").html(data)
           }
-          
+
         });
       });
       $("body ").on("click", ".list-group-item span", function(e) {
@@ -614,7 +648,7 @@ let inputElement,notAllowed=false;
       });
 
 
-      
+
 
       $("input[type=file]").change(function(e) {
 
@@ -629,7 +663,7 @@ let inputElement,notAllowed=false;
         $(img).addClass("mx-auto d-block rounded shadow-lg my-5")
         if (input.files && input.files[0] && (ext == "png" || ext == "jpeg" || ext == "jpg")) {
           var reader = new FileReader();
-          notAllowed=false;
+          notAllowed = false;
           reader.onload = function(e) {
             $(img).attr('src', e.target.result);
 
@@ -637,23 +671,23 @@ let inputElement,notAllowed=false;
           }
           reader.readAsDataURL(input.files[0]);
         } else {
-        notAllowed=true;
-        document.querySelector(".notified").click()
-        inputElement=$(element.target)[$(element.target).index($(element.target))]
-        
-       if(notAllowed){
-         
-       $(".retry").click(function(e) {
-        
-         
-         $(inputElement).click()
-          notAllowed=false;
+          notAllowed = true;
+          document.querySelector(".notified").click()
+          inputElement = $(element.target)[$(element.target).index($(element.target))]
 
-        })
-      
+          if (notAllowed) {
+
+            $(".retry").click(function(e) {
+
+
+              $(inputElement).click()
+              notAllowed = false;
+
+            })
+
+          }
+
         }
-        
-      }
 
       })
 
@@ -756,6 +790,23 @@ let inputElement,notAllowed=false;
           var formData = new FormData(this);
           console.log(formData)
           $.ajax({
+
+            xhr: function() {
+              var xhr = new window.XMLHttpRequest();
+              xhr.upload.addEventListener("progress", function(evt) {
+                if (evt.lengthComputable) {
+                  var percentComplete = evt.loaded / evt.total;
+                  //Do something with upload progress here
+                   $("#changeModal").modal("show")
+                  $("#progressUploadStatus").css({width:`${percentComplete}%`})
+                  $("#uploadStatus").text(`${percentComplete}%`)
+                }
+              }, false);
+
+
+
+              return xhr;
+            },
             url: form.attr('action'),
             type: form.attr('method'),
             data: formData,
@@ -765,15 +816,19 @@ let inputElement,notAllowed=false;
             processData: false,
             success: function(response) {
               console.log(response)
+
+
               if (response.success == true) {
 
-
+               $("#progressUploadStatus").css({width:`100%`})
+                  $("#uploadStatus").text(`100%`) 
+                
                 $("html, body, div.modal, .modal-content, div.modal-body").animate({
                   scrollTop: '0'
                 }, 100);
-                $('#modalButton').click()
+
                 // shows a successful message after operation
-                $('.modal-message').append('<div class="alert alert-success">' +
+                $('.modal-message').html('<div class="alert alert-success">' +
                   '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
                   '<strong><i class="ni ni-like-2"></i></strong> ' + response.messages +
                   '</div>');
@@ -782,7 +837,9 @@ let inputElement,notAllowed=false;
                 $(".alert-success").delay(1000).show(10, function() {
                   $(this).delay(3000).hide(10, function() {
                     $(this).remove();
-                    $('[data-dismiss="modal"]').click()
+//                    $("#changeModal").modal("hide");
+                  
+                    //                                  $('.modal-body form').show()
                   });
                 }); // /.alert
 
@@ -791,12 +848,12 @@ let inputElement,notAllowed=false;
               else {
 
 
-
+                $("#changeModal").modal("show")
 
                 $("html, body, div.modal, .modal-content, div.modal-body").animate({
                   scrollTop: '0'
                 }, 100);
-                $('#modalButton').click()
+
                 // shows a successful message after operation
                 $('.modal-message').append('<div class="alert alert-warning shaking-2">' +
                   '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
@@ -805,9 +862,10 @@ let inputElement,notAllowed=false;
 
                 // remove the mesages
                 $(".alert-warning").delay(500).show(10, function() {
-                  $(this).delay(5000).hide(10, function() {
+                  $(this).delay(3000).hide(10, function() {
                     $(this).remove();
-                    $('[data-dismiss="modal"]').click()
+                    $("#changeModal").modal("hide");
+
                   });
                 }); // /.alert
 
@@ -830,6 +888,5 @@ let inputElement,notAllowed=false;
 
 
     })
-
   </script>
 </body>
