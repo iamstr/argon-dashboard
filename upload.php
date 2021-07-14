@@ -434,7 +434,7 @@
             </div>
             <div class="card-body">
 
-              <h2 class="my-5 text-center">Great Work All Files Uploaded SuccessFully </h2>
+              <h2 class="my-5 text-center">Great Work  Now Upload All Files  </h2>
               <a href="https://storyset.com/work" class=" d-flex justify-content-center">
 
                 <?php include("includes/vectors/success.php");?></a>
@@ -500,6 +500,7 @@
               <div class="modal-body">
 
                 <div class="modal-message"></div>
+                <div class="event-log"></div>
                 <div class="d-flex justify-content-center">
                   <div class="progress-wrapper">
                     <div class="progress-info">
@@ -778,7 +779,7 @@
       //      ajax call
 
 
-
+const log = document.querySelector('.event-log');
 
       $("#uploadSubmit").unbind('click').bind('click', function(e) {
         //        e.preventDefault()
@@ -802,6 +803,14 @@
                   $("#uploadStatus").text(`${percentComplete}%`)
                 }
               }, false);
+           function handleEvent(e) {
+    log.textContent = log.textContent + `${e.type}: ${e.loaded} bytes transferred\n`;
+}   
+              
+    xhr.addEventListener('loadstart', handleEvent);
+    xhr.addEventListener('load', handleEvent);
+    xhr.addEventListener('loadend', handleEvent);
+    xhr.addEventListener('progress', handleEvent);
 
 
 
