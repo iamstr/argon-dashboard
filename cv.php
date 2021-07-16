@@ -53,7 +53,7 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Select</span> Girl's skill </h3>
+                  <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Select</span>'s skill </h3>
                 </div>
                 <div class="col-4 text-right">
                   <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
@@ -66,8 +66,8 @@
                   <div class="form-group">
                     <label for="religion">Marital Status</label>
                     <select class="form-control" id="exampleFormControlSelect1" name="religion" id="religion">
-                      <option>Muslim</option>
-                      <option>Non Muslim</option>
+                      <option>Single</option>
+                      <option>Married</option>
                     </select>
                   </div>
                 </div>
@@ -316,7 +316,7 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Select</span> Girl's skill </h3>
+                  <h3 class="mb-0 font-weight-normal"><span class="girl-name font-weight-bolder">Select</span>'s skill </h3>
                 </div>
                 <div class="col-4 text-right">
                   <!--                  <a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
@@ -443,6 +443,7 @@
       const listText = $(this).text().trim();
       const ID = $(this).attr("id").trim();
       $(".selection-button.fade").addClass("show")
+      $(".girl-name").text(listText)
       //      checks if the selected text is part of the selected label 
       const returned = [...$(".selected  .str-toggle-button")].some(e =>
 
