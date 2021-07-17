@@ -10,7 +10,7 @@
 
       <div class="row">
 
-        <div class="col">
+        <form class="col" action="php_action/generateCV">
 
           <div class="card steps-form">
             <div class="card-header">
@@ -28,7 +28,7 @@
                 <input type="search" class="form-control form-control-muted search-input" placeholder="Search by Name or ID or Passport Number" id="search" name="search" />
                 <img src="assets/img/icons/search.svg" alt="search icon" class="search-input position-absolute" style="width: 33px; top: 20%; right: 2%" />
               </div>
-
+              <input type="text" id="girl"  name ="girl" hidden>
               <ul class="list-group custom-list-group rounded-3 d-none">
                 <li class="list-group-item d-flex flex-row justify-content-between custom-list-group-item tasks">
                   <span class="maid-name text-muted">Start Typing...</span>
@@ -65,7 +65,7 @@
                 <div class="col-5">
                   <div class="form-group">
                     <label for="religion">Marital Status</label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="religion" id="religion">
+                    <select class="form-control" id="exampleFormControlSelect1" name="marital" id="marital">
                       <option>Single</option>
                       <option>Married</option>
                     </select>
@@ -76,7 +76,7 @@
 
                   <div class="form-group">
                     <label for="passport"> Number Of Kids</label>
-                    <input type="text" class="form-control form-control-muted" id="passport" name="passport" placeholder="AK078341">
+                    <input type="text" class="form-control form-control-muted" id="kids" name="kids" placeholder="AK078341">
                   </div>
                 </div>
               </div>
@@ -88,7 +88,7 @@
                 <div class="col-5">
                   <div class="form-group">
                     <label for="religion">Place of Birth</label>
-                    <select class="form-control" id="county" name="county">
+                    <select class="form-control" id="birth" name="birth">
                       <option>Mombasa</option>
                       <option>Kwale</option>
                       <option>Kilifi</option>
@@ -144,7 +144,7 @@
                   <div class="form-group">
                     <label for="county">Living Town</label>
                     
-                        <select class="form-control" id="county" name="county">
+                        <select class="form-control" id="town" name="town">
                       <option>Mombasa</option>
                       <option>Kwale</option>
                       <option>Kilifi</option>
@@ -202,14 +202,14 @@
                 <div class="col-5">
                   <div class="form-group">
                     <label for="passport"> Height in cm</label>
-                    <input type="text" class="form-control form-control-muted" id="passport" name="passport" placeholder="170">
+                    <input type="text" class="form-control form-control-muted" id="height" name="height" placeholder="170">
                   </div>
                 </div>
                 <div class="col-5">
 
                   <div class="form-group">
                     <label for="passport"> Weight in KG</label>
-                    <input type="text" class="form-control form-control-muted" id="passport" name="passport" placeholder="80">
+                    <input type="text" class="form-control form-control-muted" id="weight" name="weight" placeholder="80">
                   </div>
                 </div>
               </div>
@@ -219,7 +219,7 @@
                 <div class="col-5">
                   <div class="form-group">
                     <label for="religion">Educational Qualification</label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="religion" id="religion">
+                    <select class="form-control" id="exampleFormControlSelect1" name="education" id="education">
                       <option>HIGH SCHOOL</option>
                     
                     </select>
@@ -229,7 +229,7 @@
                  <div class="col-5">
                   <div class="form-group">
                     <label for="religion">Complexion</label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="religion" id="religion">
+                    <select class="form-control" id="exampleFormControlSelect1" name="complexion" id="complexion">
                       <option>Dark Skinned</option>
                       <option>Light Skinned</option>
                     </select>
@@ -241,7 +241,7 @@
                 <div class="col-5">
                   <div class="form-group">
                     <label for="religion">English</label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="religion" id="religion">
+                    <select class="form-control" id="exampleFormControlSelect1" name="english" id="english">
                       <option>POOR</option>
                       <option>LITTLE</option>
                       <option>FAIR</option>
@@ -254,7 +254,7 @@
                  <div class="col-5">
                   <div class="form-group">
                     <label for="religion">Arabic</label>
-                     <select class="form-control" id="exampleFormControlSelect1" name="religion" id="religion">
+                     <select class="form-control" id="exampleFormControlSelect1" name="arabic" id="arabic">
                       <option>POOR</option>
                       <option>LITTLE</option>
                       <option>FAIR</option>
@@ -271,7 +271,7 @@
                 <div class="col-5">
                   <div class="form-group">
                     <label for="religion">ABROAD PREVIOUS EMPLOYMENT</label>
-                     <select class="form-control" id="exampleFormControlSelect1" name="religion" id="religion">
+                     <select class="form-control" id="exampleFormControlSelect1" name="employment" id="employment">
                       <option>YES</option>
                       <option>NO</option>
                       
@@ -283,7 +283,7 @@
 
                   <div class="form-group">
                     <label for="passport"> COUNTRY</label>
-                    <input type="text" class="form-control form-control-muted" id="passport" name="passport" placeholder="Qatar">
+                    <input type="text" class="form-control form-control-muted" id="country" name="country" placeholder="Qatar">
                   </div>
                 </div>
               </div>
@@ -293,7 +293,7 @@
 
                   <div class="form-group">
                     <label for="passport"> PERIOD</label>
-                    <input type="text" class="form-control form-control-muted" id="passport" name="passport" placeholder="2">
+                    <input type="text" class="form-control form-control-muted" id="period" name="period" placeholder="2">
                   </div>
                 </div>
 </div>
@@ -330,31 +330,31 @@
 
                 <div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
                   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                    <input type="checkbox" autocomplete="off" checked /> Baby Sitting</label>
+                    <input type="checkbox" autocomplete="off" checked  value="Baby Sitting" name="skill"/> Baby Sitting</label>
                 </div>
                 <div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
                   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                    <input type="checkbox" autocomplete="off" checked /> Cleaning</label>
+                    <input type="checkbox" autocomplete="off" checked  value="Cleaning" name="skill"/> Cleaning</label>
                 </div>
                 <div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
                   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                    <input type="checkbox" autocomplete="off" checked /> Cooking</label>
+                    <input type="checkbox" autocomplete="off" checked  value="Cooking" name="skill"/> Cooking</label>
                 </div>
                 <div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
                   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                    <input type="checkbox" autocomplete="off" checked />Washing </label>
+                    <input type="checkbox" autocomplete="off" checked  value="Washing" name="skill"/>Washing </label>
                 </div>
                 <div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
                   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                    <input type="checkbox" autocomplete="off" checked /> Driving</label>
+                    <input type="checkbox" autocomplete="off" checked  value="Driving" name="skill"/> Driving</label>
                 </div>
                 <div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
                   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                    <input type="checkbox" autocomplete="off" checked /> Decorating</label>
+                    <input type="checkbox" autocomplete="off" checked  value="Decorating" name="skill"/> Decorating</label>
                 </div>
                 <div class="btn-group-toggle m-1 my-2" data-toggle="buttons">
                   <label class="btn btn-outline-str-secondary active" class="text-capitalize">
-                    <input type="checkbox" autocomplete="off" checked /> Sewing</label>
+                    <input type="checkbox" autocomplete="off" checked  value="Sewing"  name="skill"/> Sewing</label>
                 </div>
 
 
@@ -368,7 +368,7 @@
                   <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
                   <span class="btn-inner--text">Back</span>
                 </button>
-                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" type="button">
+                <button class="btn btn-icon btn-primary w-25 btn-lg  steps-form-button-next" type="submit">
                   <span class="btn-inner--text">Next</span>
                   <span class="btn-inner--icon"><i class="ni ni-bold-right"></i></span>
                 </button>
@@ -376,7 +376,7 @@
             </div>
           </div>
 
-        </div>
+        </form>
       </div>
 
     </div>
@@ -444,6 +444,8 @@
       const ID = $(this).attr("id").trim();
       $(".selection-button.fade").addClass("show")
       $(".girl-name").text(listText)
+      $("#girl").val(ID)
+      $("#search").val(listText)
       //      checks if the selected text is part of the selected label 
       const returned = [...$(".selected  .str-toggle-button")].some(e =>
 

@@ -1,0 +1,22 @@
+{
+  "name": "ewajibu",
+  "description": "this is  recruitment agency crm",
+  "main": "gulpfile.js",
+  "authors": [
+    "iamstr"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/iamstr/argon-dashboard",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-table": "^1.18.2",
+    "html2pdf.js": "^0.9.3"
+  }
+}
